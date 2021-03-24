@@ -1,0 +1,20 @@
+[book]
+title = "Tutorial"
+authors = ["THU iOS Club"]
+description = "Tutorials for THU iOS Club"
+src = "src"
+language = "zh-cn"
+multilingual = false
+
+[output.html]
+default-theme = "Ayu"
+preferred-dark-theme = "Ayu"
+no-section-label = true
+git-repository-url = "https://github.com/Yang-Xijie/yang-xijie.github.io"
+git-repository-icon = "fa-github"
+
+[output.html.print]
+enable = true
+
+[output.html.search]
+enable = false
