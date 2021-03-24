@@ -1,0 +1,326 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn" class="sidebar-visible no-js ayu">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Developing Tools - Tutorial</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="Tutorials for THU iOS Club">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="../favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="../favicon.png">
+        
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "ayu" : "ayu";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('ayu')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../foreword/site_info.html">Introduction</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="../article/Swift_SwiftUI.html">Swift/SwiftUI resources</a></li><li class="chapter-item expanded affix "><a href="../article/Tools.html" class="active">Developing Tools</a></li><li class="chapter-item expanded affix "><a href="../article/iOS_servise_app.html">A Framework of Network Service App</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="../postscript/site_build.html">About the Site</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu (default)</button></li>
+                        </ul>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Tutorial</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        <a href="https://github.com/Yang-Xijie/yang-xijie.github.io" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#tools" id="tools">Tools</a></h1>
+<blockquote>
+<p>Written by 杨希杰 on 210324</p>
+</blockquote>
+<ul>
+<li><a href="#tools">Tools</a>
+<ul>
+<li><a href="#google">Google</a></li>
+<li><a href="#git">Git</a></li>
+<li><a href="#linux">Linux</a></li>
+<li><a href="#github">GitHub</a></li>
+<li><a href="#markdown">markdown</a></li>
+<li><a href="#vs-code">VS Code</a></li>
+<li><a href="#%E8%99%9A%E6%8B%9F%E6%9C%BA">虚拟机</a></li>
+<li><a href="#lookin">Lookin</a></li>
+<li><a href="#cocoapods">CocoaPods</a></li>
+<li><a href="#postman">Postman</a></li>
+</ul>
+</li>
+<li><a href="#other">Other</a></li>
+</ul>
+<h2><a class="header" href="#google" id="google">Google</a></h2>
+<p>当你开始开发应用之后，百度一定会无法满足你的需求。这时就要去请教你最好的朋友<code>Google</code>了。</p>
+<h2><a class="header" href="#git" id="git">Git</a></h2>
+<p>项目代码版本管理工具：<a href="https://git-scm.com">Git Official Site</a></p>
+<p><a href="https://www.liaoxuefeng.com/wiki/896043488029600">廖雪峰｜Git教程</a></p>
+<ul>
+<li><strong>✡ RECOMMENDED ✡</strong></li>
+<li>非常通俗易懂的文字版Git教程，推荐多次翻阅</li>
+</ul>
+<p><a href="https://www.bilibili.com/video/BV1fv411B73p">Bilibili｜电子系科协2020年暑培 p1 Git</a></p>
+<p><a href="https://learngitbranching.js.org/?locale=zh_CN">可视化学习Git</a></p>
+<ul>
+<li>对Git中的高端操作不理解可以去试试可视动画</li>
+<li>初学阶段也可以通过闯关来加深对git的理解</li>
+</ul>
+<p><a href="https://git-scm.com/docs">Git docs｜快速查阅git操作</a></p>
+<p><a href="https://github.com/k88hudson/git-flight-rules">GitHub｜git-flight-rules</a></p>
+<ul>
+<li><strong>✡ RECOMMENDED ✡</strong></li>
+<li>如果你在使用git的过程中遇到了棘手的问题应该都可以在这里找到解决方法</li>
+</ul>
+<p><a href="http://iissnan.com/progit/html/zh/ch1_0.html">一个挺详细的 Git 中文手册</a></p>
+<p><a href="https://git-scm.com/book/en/v2">Git Pro｜进阶git的一本厚书</a></p>
+<ul>
+<li>一般没有必要看</li>
+</ul>
+<h2><a class="header" href="#linux" id="linux">Linux</a></h2>
+<p>开源类Unix操作系统，目前服务器安装的系统主要是<code>Linux</code>。如果要使用网络传输数据，那么跑在<code>Linux</code>上的服务器是必须的。</p>
+<p><a href="https://www.runoob.com/linux/linux-tutorial.html">菜鸟教程｜Linux</a></p>
+<h2><a class="header" href="#github" id="github">GitHub</a></h2>
+<p>世界范围的代码托管平台。</p>
+<h2><a class="header" href="#markdown" id="markdown">markdown</a></h2>
+<p>一种轻量的格式文本编辑风格。与word等富文本编辑不同，markdown采用一些标记来表示文本格式。一般使用markdown编辑的文本文件后缀为<code>.md</code>，进行渲染可以得到格式文本。</p>
+<p>markdown编辑器推荐：</p>
+<ul>
+<li><a href="https://www.typora.io">Typora</a>
+<ul>
+<li>全平台免费markdown编辑器，所见即所得型markdown编辑器。</li>
+</ul>
+</li>
+<li><code>VS Code</code>安装Markdown插件</li>
+</ul>
+<h2><a class="header" href="#vs-code" id="vs-code">VS Code</a></h2>
+<p>非常受世界开发者欢迎的轻量文本编辑器。</p>
+<h2><a class="header" href="#虚拟机" id="虚拟机">虚拟机</a></h2>
+<p>通过软件模拟硬件的方式实现在不同的硬件上运行不兼容的系统。</p>
+<p><code>iOS</code>开发主要使用<code>Mac</code>进行开发，需要使用<code>Xcode</code>，如果在学习阶段<strong>没有</strong><code>Mac</code>可以参考清华云盘上的资源（<code>Groups/iOS-Club-THU/iOS-Club/培训Training</code>）安装虚拟机。在项目开发中如果没有<code>Mac</code>可以从社团借用。</p>
+<h2><a class="header" href="#lookin" id="lookin">Lookin</a></h2>
+<p><code>iOS</code>的<code>UI调试</code>工具</p>
+<p><a href="https://lookin.work">Lookin官网</a></p>
+<h2><a class="header" href="#cocoapods" id="cocoapods">CocoaPods</a></h2>
+<p>项目引入库管理</p>
+<p><a href="https://www.jianshu.com/p/93c4cd8390d3">CocoaPods简介</a></p>
+<h2><a class="header" href="#postman" id="postman">Postman</a></h2>
+<p>测试HTTP请求</p>
+<h1><a class="header" href="#other" id="other">Other</a></h1>
+<p><a href="https://developer.apple.com">Apple Developer</a></p>
+<p><a href="https://github.com/eesast/training2020">GitHub｜EESAST training2020</a></p>
+<ul>
+<li>清华大学电子系学生科协 2020 年暑期培训相关 PPT 与文档</li>
+<li>包括但不限于：Git、Linux、Docker、HTML/CSS/JS/TS/React/Node.js/MongoDB/GraphQL/Hasura/Apollo、CI/CD</li>
+<li><a href="https://eesast.github.io/training2020/">GitHub pages｜training2020</a></li>
+<li>视频链接：<a href="https://www.bilibili.com/video/BV1fv411B73p">Bilibili training2020</a></li>
+</ul>
+<p><a href="https://docs.eesast.com">EESΛST Docs</a></p>
+<ul>
+<li>电子系科协技术文档仓库：包括Languages、Tools、Game、Web等部分。</li>
+</ul>
+<p><a href="https://missing.csail.mit.edu">MIT course｜The Missing Semester of Your CS Education</a></p>
+<ul>
+<li><strong>✡ RECOMMENDED ✡</strong></li>
+<li>大学里的计算机课程通常专注于讲授从操作系统到机器学习这些学院派的课程或主题，而对于如何精通工具这一主题则往往会留给学生自行探索……在这个系列课程中，我们讲授命令行、强大的文本编辑器的使用、使用版本控制系统提供的多种特性等等……精通这些工具不仅可以帮助您更快的使用工具完成任务，并且可以帮助您解决在之前看来似乎无比复杂的问题。</li>
+<li>包括但不限于：shell、shell script、Vim、Git</li>
+<li><a href="https://missing-semester-cn.github.io">MIT course｜The Missing Semester of Your CS Education 中文讲稿</a></li>
+</ul>
+<p><a href="https://github.com/heroku/12factor">12factor for SAAS</a></p>
+<ul>
+<li>In the modern era, software is commonly delivered as a service: called web apps, or software-as-a-service. The twelve-factor app is a methodology for building software-as-a-service apps.</li>
+<li>文章阐述了网络服务应用的十二个要素。只要从事与网络相关的App开发，这篇文章能够给你提供一个较宏观的认识与标准。</li>
+<li><a href="https://www.12factor.net/zh_cn/">12factor｜中文翻译</a></li>
+</ul>
+<p><a href="https://github.com/ivmm/Student-resources">GitHub｜Student-resources</a></p>
+<ul>
+<li>本文介绍的是利用学生、教职工身份可以享受到的相关学生优惠、教育优惠或教师优惠的权益（比如如何白嫖高性能服务器</li>
+</ul>
+<p><a href="http://www.catb.org/%7Eesr/faqs/smart-questions.html">How To Ask Questions The Smart Way</a></p>
+<ul>
+<li><a href="https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md">GitHub｜提问的智慧 简体中文版</a></li>
+<li>提问的时候总是惹别人生气、或者别人根本不理你？可能是你的提问方式出了点问题。提问的智慧教你如何在信息时代优雅的向别人提问！</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../article/Swift_SwiftUI.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../article/iOS_servise_app.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../article/Swift_SwiftUI.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../article/iOS_servise_app.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
