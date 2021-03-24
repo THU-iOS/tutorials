@@ -10,7 +10,7 @@ multilingual = false
 default-theme = "Ayu"
 preferred-dark-theme = "Ayu"
 no-section-label = true
-git-repository-url = "https://github.com/Yang-Xijie/yang-xijie.github.io"
+git-repository-url = "https://github.com/THU-iOS/tutorial"
 git-repository-icon = "fa-github"
 
 [output.html.print]
