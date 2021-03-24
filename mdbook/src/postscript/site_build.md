@@ -4,6 +4,7 @@
   - [Intro](#intro)
   - [Repository](#repository)
   - [Docs](#docs)
+  - [How to Contribute](#how-to-contribute)
 - [Other](#other)
   - [Change image size](#change-image-size)
 
@@ -21,6 +22,15 @@ You can go to GitHub repo by clicking the GitHub icon in the top right corner.
 [mdbook docs | SUMMARY.md](https://rust-lang.github.io/mdBook/format/summary.html)
 
 [mdbook docs | book.toml](https://rust-lang.github.io/mdBook/format/config.html)
+
+## How to Contribute
+First, clone the repo on your Mac.
+
+Then, add your markdown files in `mdbook/src/article`. Also add your file path and title in `mdbook/src/SUMMARY`.
+
+You should pay attention to images which are suggested to put in `mdbook/src/media` and use relative paths, or use urls instead, to avoid image disappearing.
+
+Next, fork that repo and push your edition to your GitHub. Then make a pull request and wait until admin merge your edition.
 
 # Other
 ## Change image size
