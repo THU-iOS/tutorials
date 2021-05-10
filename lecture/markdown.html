@@ -3,9 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Tutorial</title>
-        
-        <meta name="robots" content="noindex" />
+        <title>Markdown - Tutorial</title>
         
         
 
@@ -20,26 +18,26 @@
         <meta name="theme-color" content="#ffffff" />
 
         
-        <link rel="icon" href="favicon.svg">
+        <link rel="icon" href="../favicon.svg">
         
         
-        <link rel="shortcut icon" href="favicon.png">
+        <link rel="shortcut icon" href="../favicon.png">
         
-        <link rel="stylesheet" href="css/variables.css">
-        <link rel="stylesheet" href="css/general.css">
-        <link rel="stylesheet" href="css/chrome.css">
-        <link rel="stylesheet" href="css/print.css" media="print">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
         
-        <link rel="stylesheet" href="fonts/fonts.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
         
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="highlight.css">
-        <link rel="stylesheet" href="tomorrow-night.css">
-        <link rel="stylesheet" href="ayu-highlight.css">
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
         
@@ -49,7 +47,7 @@
     <body>
         <!-- Provide site root to javascript -->
         <script type="text/javascript">
-            var path_to_root = "";
+            var path_to_root = "../";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "ayu" : "ayu";
         </script>
 
@@ -95,7 +93,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="foreword/site_info.html">Introduction</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="article/Swift_SwiftUI.html">Swift/SwiftUI</a></li><li class="chapter-item expanded affix "><a href="article/Tools.html">Developing Tools</a></li><li class="chapter-item expanded affix "><a href="article/iOS_servise_app.html">SaaS Framework</a></li><li class="spacer"></li><li class="chapter-item expanded ">Lecture</li><li class="chapter-item expanded affix "><a href="lecture/markdown.html">Markdown</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="postscript/site_build.html">About the Site</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../foreword/site_info.html">Introduction</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="../article/Swift_SwiftUI.html">Swift/SwiftUI</a></li><li class="chapter-item expanded affix "><a href="../article/Tools.html">Developing Tools</a></li><li class="chapter-item expanded affix "><a href="../article/iOS_servise_app.html">SaaS Framework</a></li><li class="spacer"></li><li class="chapter-item expanded ">Lecture</li><li class="chapter-item expanded affix "><a href="../lecture/markdown.html" class="active">Markdown</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="../postscript/site_build.html">About the Site</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -126,7 +124,7 @@
                     <h1 class="menu-title">Tutorial</h1>
 
                     <div class="right-buttons">
-                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
                         
@@ -150,503 +148,68 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#introduction-of-tutorials-for-thu-ios-club" id="introduction-of-tutorials-for-thu-ios-club">Introduction of Tutorials for THU iOS Club</a></h1>
-<p><code>THU iOS Club</code>的文档/教程/资源～</p>
-<p>点击左上方图标调出文章列表，点击右上方GitHub图标前往仓库</p>
-<p>如果有想分享的技术文章/资源，欢迎随时提<code>Pull Request</code>！</p>
-<h1><a class="header" href="#languages" id="languages">Languages</a></h1>
-<blockquote>
-<p>Written by 杨希杰 on 210324</p>
-</blockquote>
-<ul>
-<li><a href="article/Swift_SwiftUI.html#languages">Languages</a>
-<ul>
-<li><a href="article/Swift_SwiftUI.html#swift">Swift</a>
-<ul>
-<li><a href="article/Swift_SwiftUI.html#new-features">New Features</a></li>
-</ul>
-</li>
-<li><a href="article/Swift_SwiftUI.html#objective-c">Objective-C</a></li>
-</ul>
-</li>
-<li><a href="article/Swift_SwiftUI.html#ui">UI</a>
-<ul>
-<li><a href="article/Swift_SwiftUI.html#swiftui">SwiftUI</a>
-<ul>
-<li><a href="article/Swift_SwiftUI.html#stanford">Stanford</a></li>
-<li><a href="article/Swift_SwiftUI.html#wwdc20">WWDC20</a></li>
-<li><a href="article/Swift_SwiftUI.html#designcode">designcode</a></li>
-<li><a href="article/Swift_SwiftUI.html#youtube">YouTube</a></li>
-</ul>
-</li>
-<li><a href="article/Swift_SwiftUI.html#other">Other</a>
-<ul>
-<li><a href="article/Swift_SwiftUI.html#sf-symblos-2">SF Symblos 2</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2><a class="header" href="#swift" id="swift">Swift</a></h2>
-<p><a href="https://www.bilibili.com/video/BV144411C7Gg">Bilibili | Aimls | Swift5 五十集入门教程</a></p>
-<ul>
-<li><strong>✡ RECOMMENDED ✡</strong></li>
-<li>需要有一些编程基础才能跟上老师</li>
-<li>有编程基础的同学跟着老师的讲解可以迅速入门Swift（甚至可以开启2倍速）</li>
-<li><a href="https://www.bilibili.com/video/BV1gJ411M72p">Bilibili | Aimls | Swift5.1新特性，SwiftUI初步了解</a></li>
-<li><a href="https://www.bilibili.com/video/BV1jE411y7cw">Bilibili | Aimls | 全部课程知识点整理总结</a></li>
-</ul>
-<p><a href="https://developer.apple.com/swift/">Apple Developer | Swift</a></p>
-<ul>
-<li>Swift简介</li>
-</ul>
-<p><a href="https://swift.org">Swift Official Site</a></p>
-<ul>
-<li>Swift英文文档</li>
-<li><a href="https://docs.swift.org/swift-book/">Swift | English documatation</a></li>
-<li><a href="https://docs.swift.org/swift-book/GuidedTour/GuidedTour.html">Swift | A Swift Tour</a>
-<ul>
-<li><strong>✡ RECOMMENDED ✡</strong></li>
-<li>有编程基础的话<code>Swift Tour</code>能够给你提供一个Swift与其他语言的异同，让你快速上手Swift</li>
-</ul>
-</li>
-<li><a href="https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html">Swift | Language Guide</a></li>
-</ul>
-<p><a href="https://cs193p.sites.stanford.edu">Stanford | CS193p - Developing Apps for iOS</a></p>
-<ul>
-<li>前六节课的三次<code>Reading</code>作业，会带着你看完Swift的文档</li>
-</ul>
-<p><a href="https://swiftgg.gitbook.io/swift/">Swift | 官方中文文档</a></p>
-<ul>
-<li>推荐阅读英文文档。中文文档中的词汇翻译可能并不是很原生</li>
-</ul>
-<p><a href="https://www.youtube.com/watch?v=Ulp1Kimblg0">YouTube | CodeWithChris | Swift Tutorial 2020 for Beginners</a></p>
-<p><a href="https://github.com/nicklockwood/SwiftFormat">Xcode Extension｜Swift Format Tool</a></p>
-<ul>
-<li>格式化<code>Swift</code>代码的<code>Xcode</code>插件。结合<code>Xcode</code>自带的快捷键设定可以实现快捷键格式代码的功能</li>
-</ul>
-<h3><a class="header" href="#new-features" id="new-features">New Features</a></h3>
-<p><a href="https://developer.apple.com/wwdc20/10170">WWDC20｜What's new in Swift</a> &amp; <a href="https://developer.apple.com/wwdc19/402">WWDC19｜What's new in Swift</a></p>
-<h2><a class="header" href="#objective-c" id="objective-c">Objective-C</a></h2>
-<p>清华云盘上的资源（Groups/iOS-Club-THU/iOS-Club/培训Training/OC基础语法）中的<code>iOS编程基础1-OC基础语法</code></p>
-<p><a href="https://www.jianshu.com/p/8944d90923b0">简书｜基础语法整理版本</a></p>
-<p>培训班教学视频请微信私戳：17810270258</p>
-<h1><a class="header" href="#ui" id="ui">UI</a></h1>
-<h2><a class="header" href="#swiftui" id="swiftui">SwiftUI</a></h2>
-<p><a href="https://developer.apple.com/xcode/swiftui/">Apple Developer | SwiftUI</a></p>
-<ul>
-<li>SwiftUI简介</li>
-</ul>
-<h3><a class="header" href="#stanford" id="stanford">Stanford</a></h3>
-<p><a href="https://cs193p.sites.stanford.edu">Stanford | CS193p - Developing Apps for iOS</a>（每年五月份课程更新）</p>
-<ul>
-<li><strong>✡ RECOMMENDED ✡</strong></li>
-<li>是得到<code>Apple</code>认可的高校<code>SwiftUI</code>课程，是系统性的教学，质量有保证</li>
-<li>英文课程，但<code>YouTube</code>有实时字幕，学习难度并不大</li>
-</ul>
-<h3><a class="header" href="#wwdc20" id="wwdc20">WWDC20</a></h3>
-<p><a href="https://developer.apple.com/videos/wwdc2019">Apple Developer｜WWDC19</a> &amp; <a href="https://developer.apple.com/videos/wwdc2020">Apple Developer｜WWDC20</a></p>
-<p>注：查看<code>WWDC</code>推荐在<code>macOS</code>下载<code>Developer.app</code>，支持下载保存视频，支持实时字幕/讲稿，包含样例代码。已下载的话点击下列链接会跳转至App。</p>
-<p>WWDC中还有很多非常不错的教程，下方并没有全部列出。</p>
-<p><a href="https://developer.apple.com/videos/play/wwdc2020/10119">WWDC20｜Introduction to SwiftUI</a></p>
-<ul>
-<li><strong>✡ RECOMMENDED ✡</strong></li>
-<li>通过一个三明治的例子快速入门SwiftUI</li>
-</ul>
-<p><a href="https://developer.apple.com/videos/play/wwdc2020/10037">WWDC20｜App essentials in SwiftUI</a></p>
-<ul>
-<li><strong>✡ RECOMMENDED ✡</strong></li>
-<li>阐述Views/Scenes/Apps的关系</li>
-</ul>
-<p><a href="https://developer.apple.com/wwdc20/10040">WWDC20｜Data essentials in SwiftUI</a></p>
-<ul>
-<li><strong>✡ RECOMMENDED ✡</strong></li>
-<li>About <code>How to use ObservableObject, State, StateObject, and AppStorage/SceneStorage</code></li>
-<li>对理解SwiftUI中的数据流动非常有帮助</li>
-</ul>
-<p><a href="https://developer.apple.com/documentation/swiftui/fruta_building_a_feature-rich_app_with_swiftui">Apple Developer｜WWDC20｜Fruta: Building a Feature-Rich App with SwiftUI</a></p>
-<ul>
-<li>一个Apple给出的小例子</li>
-</ul>
-<p><a href="https://developer.apple.com/videos/play/wwdc2020/10041/">WWDC20｜What's new in SwiftUI</a></p>
-<h3><a class="header" href="#designcode" id="designcode">designcode</a></h3>
-<p><a href="https://designcode.io">designcode.io</a></p>
-<ul>
-<li>质量较高的付费教程</li>
-<li><a href="https://designcode.io/swiftui-ios14">designcode | SwiftUI 2 iOS14</a>
-<ul>
-<li>最新一版</li>
-<li><a href="https://www.bilibili.com/video/BV1fT4y157zK">Bilibili搬运｜中文字幕</a></li>
-</ul>
-</li>
-<li><a href="https://designcode.io/swiftui">designcode | SwiftUI iOS13 Part1</a>
-<ul>
-<li><a href="https://www.bilibili.com/video/BV1X7411R73g">Bilibili搬运｜中文字幕</a></li>
-</ul>
-</li>
-<li><a href="https://designcode.io/swiftui2">designcode | SwiftUI iOS13 Part2</a>
-<ul>
-<li><a href="https://www.bilibili.com/video/BV1X7411R73g">Bilibili搬运｜中文字幕</a></li>
-</ul>
-</li>
-<li><a href="https://designcode.io/swiftui3">designcode | SwiftUI iOS13 Part3</a>
-<ul>
-<li><a href="https://www.acfun.cn/v/ac15856717">Acfun搬运｜中文字幕</a></li>
-</ul>
-</li>
-</ul>
-<h3><a class="header" href="#youtube" id="youtube">YouTube</a></h3>
-<p><a href="https://www.youtube.com/watch?v=VlhcNR7Qrno">YouTube | CodeWithChris | Your First SwiftUI App</a></p>
-<h2><a class="header" href="#other" id="other">Other</a></h2>
-<h3><a class="header" href="#sf-symblos-2" id="sf-symblos-2">SF Symblos 2</a></h3>
-<p><a href="https://developer.apple.com/wwdc20/10207">WWDC20 | SF Symbols 2</a></p>
-<ul>
-<li><strong>✡ RECOMMENDED ✡</strong></li>
-<li><code>Apple</code>设计的一些小图标，可以直接在项目中使用。</li>
-</ul>
-<p><a href="https://developer.apple.com/sf-symbols/">Apple Developer | SF Symbols 2</a></p>
-<p><a href="https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overview/">Apple Developer | human-interface-guidelines/sf-symbols</a></p>
-<h1><a class="header" href="#tools" id="tools">Tools</a></h1>
-<blockquote>
-<p>Written by 杨希杰 on 210324</p>
-</blockquote>
-<ul>
-<li><a href="article/Tools.html#tools">Tools</a>
-<ul>
-<li><a href="article/Tools.html#google">Google</a></li>
-<li><a href="article/Tools.html#git">Git</a></li>
-<li><a href="article/Tools.html#linux">Linux</a></li>
-<li><a href="article/Tools.html#github">GitHub</a></li>
-<li><a href="article/Tools.html#markdown">markdown</a></li>
-<li><a href="article/Tools.html#vs-code">VS Code</a></li>
-<li><a href="article/Tools.html#%E8%99%9A%E6%8B%9F%E6%9C%BA">虚拟机</a></li>
-<li><a href="article/Tools.html#lookin">Lookin</a></li>
-<li><a href="article/Tools.html#cocoapods">CocoaPods</a></li>
-<li><a href="article/Tools.html#postman">Postman</a></li>
-</ul>
-</li>
-<li><a href="article/Tools.html#other">Other</a></li>
-</ul>
-<h2><a class="header" href="#google" id="google">Google</a></h2>
-<p>当你开始开发应用之后，百度一定会无法满足你的需求。这时就要去请教你最好的朋友<code>Google</code>了。</p>
-<h2><a class="header" href="#git" id="git">Git</a></h2>
-<p>项目代码版本管理工具：<a href="https://git-scm.com">Git Official Site</a></p>
-<p><a href="https://www.liaoxuefeng.com/wiki/896043488029600">廖雪峰｜Git教程</a></p>
-<ul>
-<li><strong>✡ RECOMMENDED ✡</strong></li>
-<li>非常通俗易懂的文字版Git教程，推荐多次翻阅</li>
-</ul>
-<p><a href="https://www.bilibili.com/video/BV1fv411B73p">Bilibili｜电子系科协2020年暑培 p1 Git</a></p>
-<p><a href="https://learngitbranching.js.org/?locale=zh_CN">可视化学习Git</a></p>
-<ul>
-<li>对Git中的高端操作不理解可以去试试可视动画</li>
-<li>初学阶段也可以通过闯关来加深对git的理解</li>
-</ul>
-<p><a href="https://git-scm.com/docs">Git docs｜快速查阅git操作</a></p>
-<p><a href="https://github.com/k88hudson/git-flight-rules">GitHub｜git-flight-rules</a></p>
-<ul>
-<li><strong>✡ RECOMMENDED ✡</strong></li>
-<li>如果你在使用git的过程中遇到了棘手的问题应该都可以在这里找到解决方法</li>
-</ul>
-<p><a href="http://iissnan.com/progit/html/zh/ch1_0.html">一个挺详细的 Git 中文手册</a></p>
-<p><a href="https://git-scm.com/book/en/v2">Git Pro｜进阶git的一本厚书</a></p>
-<ul>
-<li>一般没有必要看</li>
-</ul>
-<h2><a class="header" href="#linux" id="linux">Linux</a></h2>
-<p>开源类Unix操作系统，目前服务器安装的系统主要是<code>Linux</code>。如果要使用网络传输数据，那么跑在<code>Linux</code>上的服务器是必须的。</p>
-<p><a href="https://www.runoob.com/linux/linux-tutorial.html">菜鸟教程｜Linux</a></p>
-<h2><a class="header" href="#github" id="github">GitHub</a></h2>
-<p>世界范围的代码托管平台。</p>
-<h2><a class="header" href="#markdown" id="markdown">markdown</a></h2>
-<p>一种轻量的格式文本编辑风格。与word等富文本编辑不同，markdown采用一些标记来表示文本格式。一般使用markdown编辑的文本文件后缀为<code>.md</code>，进行渲染可以得到格式文本。</p>
-<p>markdown编辑器推荐：</p>
-<ul>
-<li><a href="https://www.typora.io">Typora</a>
-<ul>
-<li>全平台免费markdown编辑器，所见即所得型markdown编辑器。</li>
-</ul>
-</li>
-<li><code>VS Code</code>安装Markdown插件</li>
-</ul>
-<h2><a class="header" href="#vs-code" id="vs-code">VS Code</a></h2>
-<p>非常受世界开发者欢迎的轻量文本编辑器。</p>
-<h2><a class="header" href="#虚拟机" id="虚拟机">虚拟机</a></h2>
-<p>通过软件模拟硬件的方式实现在不同的硬件上运行不兼容的系统。</p>
-<p><code>iOS</code>开发主要使用<code>Mac</code>进行开发，需要使用<code>Xcode</code>，如果在学习阶段<strong>没有</strong><code>Mac</code>可以参考清华云盘上的资源（<code>Groups/iOS-Club-THU/iOS-Club/培训Training</code>）安装虚拟机。在项目开发中如果没有<code>Mac</code>可以从社团借用。</p>
-<h2><a class="header" href="#lookin" id="lookin">Lookin</a></h2>
-<p><code>iOS</code>的<code>UI调试</code>工具</p>
-<p><a href="https://lookin.work">Lookin官网</a></p>
-<h2><a class="header" href="#cocoapods" id="cocoapods">CocoaPods</a></h2>
-<p>项目引入库管理</p>
-<p><a href="https://www.jianshu.com/p/93c4cd8390d3">CocoaPods简介</a></p>
-<h2><a class="header" href="#postman" id="postman">Postman</a></h2>
-<p>测试HTTP请求</p>
-<h1><a class="header" href="#other-1" id="other-1">Other</a></h1>
-<p><a href="https://developer.apple.com">Apple Developer</a></p>
-<p><a href="https://github.com/eesast/training2020">GitHub｜EESAST training2020</a></p>
-<ul>
-<li>清华大学电子系学生科协 2020 年暑期培训相关 PPT 与文档</li>
-<li>包括但不限于：Git、Linux、Docker、HTML/CSS/JS/TS/React/Node.js/MongoDB/GraphQL/Hasura/Apollo、CI/CD</li>
-<li><a href="https://eesast.github.io/training2020/">GitHub pages｜training2020</a></li>
-<li>视频链接：<a href="https://www.bilibili.com/video/BV1fv411B73p">Bilibili training2020</a></li>
-</ul>
-<p><a href="https://docs.eesast.com">EESΛST Docs</a></p>
-<ul>
-<li>电子系科协技术文档仓库：包括Languages、Tools、Game、Web等部分。</li>
-</ul>
-<p><a href="https://missing.csail.mit.edu">MIT course｜The Missing Semester of Your CS Education</a></p>
-<ul>
-<li><strong>✡ RECOMMENDED ✡</strong></li>
-<li>大学里的计算机课程通常专注于讲授从操作系统到机器学习这些学院派的课程或主题，而对于如何精通工具这一主题则往往会留给学生自行探索……在这个系列课程中，我们讲授命令行、强大的文本编辑器的使用、使用版本控制系统提供的多种特性等等……精通这些工具不仅可以帮助您更快的使用工具完成任务，并且可以帮助您解决在之前看来似乎无比复杂的问题。</li>
-<li>包括但不限于：shell、shell script、Vim、Git</li>
-<li><a href="https://missing-semester-cn.github.io">MIT course｜The Missing Semester of Your CS Education 中文讲稿</a></li>
-</ul>
-<p><a href="https://github.com/heroku/12factor">12factor for SAAS</a></p>
-<ul>
-<li>In the modern era, software is commonly delivered as a service: called web apps, or software-as-a-service. The twelve-factor app is a methodology for building software-as-a-service apps.</li>
-<li>文章阐述了网络服务应用的十二个要素。只要从事与网络相关的App开发，这篇文章能够给你提供一个较宏观的认识与标准。</li>
-<li><a href="https://www.12factor.net/zh_cn/">12factor｜中文翻译</a></li>
-</ul>
-<p><a href="https://github.com/ivmm/Student-resources">GitHub｜Student-resources</a></p>
-<ul>
-<li>本文介绍的是利用学生、教职工身份可以享受到的相关学生优惠、教育优惠或教师优惠的权益（比如如何白嫖高性能服务器</li>
-</ul>
-<p><a href="http://www.catb.org/%7Eesr/faqs/smart-questions.html">How To Ask Questions The Smart Way</a></p>
-<ul>
-<li><a href="https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md">GitHub｜提问的智慧 简体中文版</a></li>
-<li>提问的时候总是惹别人生气、或者别人根本不理你？可能是你的提问方式出了点问题。提问的智慧教你如何在信息时代优雅的向别人提问！</li>
-</ul>
-<h1><a class="header" href="#ios网络服务应用尝试" id="ios网络服务应用尝试">iOS网络服务应用尝试</a></h1>
-<blockquote>
-<p>Written by 杨希杰 on 210324</p>
-</blockquote>
-<ul>
-<li><a href="article/iOS_servise_app.html#ios%E7%BD%91%E7%BB%9C%E6%9C%8D%E5%8A%A1%E5%BA%94%E7%94%A8%E5%B0%9D%E8%AF%95">iOS网络服务应用尝试</a>
-<ul>
-<li><a href="article/iOS_servise_app.html#ui">UI</a></li>
-<li><a href="article/iOS_servise_app.html#graphql">GraphQL</a>
-<ul>
-<li><a href="article/iOS_servise_app.html#introduction">Introduction</a></li>
-<li><a href="article/iOS_servise_app.html#resources">Resources</a></li>
-</ul>
-</li>
-<li><a href="article/iOS_servise_app.html#graphql-clientapollo-client-ios">GraphQL Client｜Apollo Client (iOS)</a></li>
-<li><a href="article/iOS_servise_app.html#graphql-serverhasura--databse">GraphQL Server｜Hasura + Databse</a></li>
-<li><a href="article/iOS_servise_app.html#%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8%E6%9C%8D%E5%8A%A1">对象存储服务</a></li>
-<li><a href="article/iOS_servise_app.html#%E7%99%BB%E5%BD%95%E9%AA%8C%E8%AF%81">登录验证</a></li>
-</ul>
-</li>
-<li><a href="article/iOS_servise_app.html#hasura-tutorial">Hasura Tutorial</a>
-<ul>
-<li><a href="article/iOS_servise_app.html#introduction-to-graphql">Introduction to GraphQL</a></li>
-<li><a href="article/iOS_servise_app.html#frontend-graphql-tutorial">Frontend GraphQL Tutorial</a></li>
-<li><a href="article/iOS_servise_app.html#hasura-tutorials">Hasura Tutorials</a></li>
-<li><a href="article/iOS_servise_app.html#sample-apps">Sample Apps</a></li>
-</ul>
-</li>
-</ul>
-<h2><a class="header" href="#ui-1" id="ui-1">UI</a></h2>
-<p>SwiftUI</p>
-<h2><a class="header" href="#graphql" id="graphql">GraphQL</a></h2>
-<h3><a class="header" href="#introduction" id="introduction">Introduction</a></h3>
-<p>一种前后端数据请求/交互的风格/标准/规范。是有着大公司做靠山、较新的查询语言规范，是一种基于图的查询语言。对比原有的REST请求风格，GraphQL能够让你每次都获取到不多不少的数据，结合社区的工具，几乎可以省掉后端的开发团队，让你的项目开发效率大大提升。</p>
-<blockquote>
-<p>GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data. GraphQL provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need and nothing more, makes it easier to evolve APIs over time, and enables powerful developer tools.</p>
-</blockquote>
-<p><code>GraphQL clients</code>是嵌入在前端/需要在前端导入的一个工具，这个工具能帮助你在UI中引入数据查询，让你用GraphQL的语句来向后端的<code>GraphQL server</code>发送请求。</p>
-<blockquote>
-<p><strong>GraphQL clients</strong> can help you handle queries, mutations, and subscriptions to a <strong>GraphQL server</strong>. They use the underlying structure of a GraphQL API to automate certain processes. This includes batching, UI updates, build-time schema validation, and more.</p>
-</blockquote>
-<h3><a class="header" href="#resources" id="resources">Resources</a></h3>
-<p><a href="https://graphql.org">GraphQL</a></p>
-<ul>
-<li>GraphQL官网</li>
-</ul>
-<p><a href="https://graphql.cn">GraphQL｜中文官网</a></p>
-<ul>
-<li>推荐看英文官网</li>
-</ul>
-<p><a href="https://graphql.org/learn/">GraphQL | Learn</a></p>
-<ul>
-<li><strong>IMPORTANT</strong></li>
-<li>入门GraphQL</li>
-</ul>
-<h2><a class="header" href="#graphql-clientapollo-client-ios" id="graphql-clientapollo-client-ios">GraphQL Client｜Apollo Client (iOS)</a></h2>
-<pre><code>Apollo is the industry-standard GraphQL implementation, providing the data graph layer that connects modern apps to the cloud.
-</code></pre>
-<p><a href="https://www.apollographql.com">Apollo</a></p>
-<ul>
-<li>Apollo官网</li>
-</ul>
-<p><a href="https://www.apollographql.com/docs/">Apollo docs｜Apollo Basics</a></p>
-<ul>
-<li><strong>IMPORTANT</strong></li>
-</ul>
-<p><a href="https://www.apollographql.com/docs/ios/">Apollo Client | iOS</a></p>
-<ul>
-<li><strong>IMPORTANT</strong></li>
-<li><a href="https://github.com/apollographql/apollo-ios">GitHub | Apollo Client | iOS</a></li>
-</ul>
-<h2><a class="header" href="#graphql-serverhasura--databse" id="graphql-serverhasura--databse">GraphQL Server｜Hasura + Databse</a></h2>
-<p><code>GraphQL Server</code>处理前端从<code>GraphQL Client</code>发送的<code>GraphQL请求</code>，在数据库中获取相应的数据并返回到前端/客户端。</p>
-<p>这里<code>Hasura</code>相当于一个控制台，帮你在中间操作数据库；同时<code>Hasura</code>也提供可视化的控制台，让数据库的管理变得方便。</p>
-<blockquote>
-<p>The Hasura GraphQL engine makes your data instantly accessible over a real-time GraphQL API, so you can build and ship modern apps and APIs faster. Hasura connects to your databases, REST servers, GraphQL servers, and third party APIs to provide a unified realtime GraphQL API across all your data sources.</p>
-</blockquote>
-<p><a href="https://hasura.io">Hasura</a></p>
-<ul>
-<li>Hasura官网</li>
-</ul>
-<p><a href="https://hasura.io/learn/">Hasura | Tutorials</a></p>
-<ul>
-<li><strong>IMPORTANT</strong></li>
-<li>教程资源整合，包括了从GraphQL到Hasura的所有内容</li>
-<li>具体见下方</li>
-</ul>
-<p><a href="https://hasura.io/docs/latest/graphql/core/index.html">Hasura | GraphQL Engine Documentation</a></p>
-<ul>
-<li><strong>IMPORTANT</strong></li>
-<li>关于Hasura的部署使用的文档</li>
-</ul>
-<p><a href="https://github.com/hasura/graphql-engine/">GitHub | GraphQL engine</a></p>
-<ul>
-<li><a href="https://realtime-chat.demo.hasura.app/">实时聊天软件展示</a>
-<a href="https://github.com/hasura/graphql-engine/tree/master/community/sample-apps/realtime-chat">实时聊天软件repo</a></li>
-<li><a href="https://github.com/hasura/graphql-engine/tree/master/community/sample-apps">其他的一些sample-app</a></li>
-</ul>
-<p><a href="https://cloud.hasura.io">Hasura Cloud</a></p>
-<ul>
-<li>Hasura Cloud相当于一个搭建好的Hasura平台，可以直接通过在其中创建的project开启console。</li>
-<li>注意这个是不带数据库的，你需要将一个已有的postgres数据库链接到Hasura上（这里数据库可以用Heroku免费的，但我并不清楚有这个的使用是不是有限制）</li>
-<li>免费版的可以自己尝试玩，但是有流量限制（1G/month），一分钟也只能请求60次</li>
-<li>标准版流量可叠加（20G/month，2刀 per additional GB），但没有请求限制。每月100刀</li>
-<li><a href="https://hasura.io/docs/latest/graphql/cloud/index.html">Hasura Cloud Documentation</a></li>
-</ul>
-<p>其他：</p>
-<ul>
-<li>Hasura-cli
-<ul>
-<li>记录每次在Hasura控制台对数据库的操作，方便对项目进行迁移</li>
-</ul>
-</li>
-<li>跑在服务器Docker上的postgres
-<ul>
-<li>也可以在服务器上安装postgres</li>
-<li>需要将数据库的地址或服务端口交给Hasura</li>
-</ul>
-</li>
-</ul>
-<h2><a class="header" href="#对象存储服务" id="对象存储服务">对象存储服务</a></h2>
-<p>图片和视频等资源存储在哪里？数据库里？服务器的文件路径下？云服务厂商提供的对象存储服务上？</p>
-<h2><a class="header" href="#登录验证" id="登录验证">登录验证</a></h2>
-<p>token、jwt需要去了解一下，密码加盐如何前后端中分别实现？</p>
-<h1><a class="header" href="#hasura-tutorial" id="hasura-tutorial">Hasura Tutorial</a></h1>
-<p><a href="https://hasura.io/learn/">Hasura | Tutorial</a></p>
-<ul>
-<li>一条龙的教程资源整合。非常详细的文档。总之就是非常推荐</li>
-<li><a href="https://github.com/hasura/learn-graphql">GitHub｜Hasura | Tutorials</a>
-<ul>
-<li>所有教程代码的存放仓库</li>
-</ul>
-</li>
-</ul>
-<h2><a class="header" href="#introduction-to-graphql" id="introduction-to-graphql">Introduction to GraphQL</a></h2>
-<p><a href="https://hasura.io/learn/graphql/intro-graphql/introduction/">Hasura Tutorial｜GraphQL intro</a></p>
-<ul>
-<li><strong>IMPORTANT</strong></li>
-<li><code>GraphQL</code>简介，包括：<code>GraphQL</code>是什么，<code>GraphQL</code>与<code>REST</code>的区别，<code>GraphQL</code>中的核心概念和术语，<code>GraphQL</code>三种请求数据的方式，<code>GraphQL Clients</code>和<code>GraphQL Servers</code></li>
-</ul>
-<h2><a class="header" href="#frontend-graphql-tutorial" id="frontend-graphql-tutorial">Frontend GraphQL Tutorial</a></h2>
-<p><a href="https://hasura.io/learn/graphql/ios/introduction/">Hasura Tutorial｜GraphQL Client with iOS</a></p>
-<ul>
-<li><strong>IMPORTANT</strong></li>
-</ul>
-<h2><a class="header" href="#hasura-tutorials" id="hasura-tutorials">Hasura Tutorials</a></h2>
-<p><a href="https://hasura.io/learn/graphql/hasura/introduction/">Hasura Tutorial｜Hasura Basics</a></p>
-<ul>
-<li><strong>IMPORTANT</strong></li>
-</ul>
-<p><a href="https://hasura.io/learn/graphql/hasura-auth-slack/introduction/">Hasura Tutorial｜Auth Patterns with Hasura</a></p>
-<ul>
-<li><strong>IMPORTANT</strong></li>
-</ul>
-<p><a href="article/">Hasura Tutorial｜Hasura Advanced</a></p>
-<ul>
-<li><strong>IMPORTANT</strong></li>
-</ul>
-<h2><a class="header" href="#sample-apps" id="sample-apps">Sample Apps</a></h2>
-<p><a href="https://whatsapp-clone.demo.hasura.app/sign-in">Hasura Tutorial｜WhatsApp Clone</a></p>
-<ul>
-<li><a href="https://github.com/hasura/graphql-engine/tree/master/community/sample-apps/whatsapp-clone-typescript-react">GitHub｜whatsapp-clone-typescript-react</a></li>
-</ul>
-<p><a href="https://react-apollo-todo.demo.hasura.app">Hasura Tutorial｜React to-do app</a></p>
-<ul>
-<li><a href="https://github.com/hasura/graphql-engine/tree/master/community/sample-apps/todo-auth0-jwt">GitHub｜todo-auth0-jwt</a></li>
-<li><a href="https://github.com/hasura/graphql-engine/tree/master/community/sample-apps/react-apollo-todo">GitHub｜react-apollo-todo</a></li>
-</ul>
-<h1><a class="header" href="#面向开发的markdown学习" id="面向开发的markdown学习">面向开发的Markdown学习</a></h1>
+                        <h1><a class="header" href="#面向开发的markdown学习" id="面向开发的markdown学习">面向开发的Markdown学习</a></h1>
 <blockquote>
 <p>started on 210409
 finished on 210504
 Author: <a href="https://github.com/Yang-Xijie">杨希杰 Yang Xijie</a></p>
 </blockquote>
 <ul>
-<li><a href="lecture/markdown.html#%E9%9D%A2%E5%90%91%E5%BC%80%E5%8F%91%E7%9A%84markdown%E5%AD%A6%E4%B9%A0">面向开发的Markdown学习</a></li>
-<li><a href="lecture/markdown.html#%E8%A1%A8%E8%BE%BE%E4%B8%8E%E8%AF%B4%E6%98%8E%E7%9A%84%E6%96%B9%E5%BC%8F">表达与说明的方式</a>
+<li><a href="#%E9%9D%A2%E5%90%91%E5%BC%80%E5%8F%91%E7%9A%84markdown%E5%AD%A6%E4%B9%A0">面向开发的Markdown学习</a></li>
+<li><a href="#%E8%A1%A8%E8%BE%BE%E4%B8%8E%E8%AF%B4%E6%98%8E%E7%9A%84%E6%96%B9%E5%BC%8F">表达与说明的方式</a>
 <ul>
-<li><a href="lecture/markdown.html#markdown%E5%BC%95%E8%A8%80">Markdown引言</a>
+<li><a href="#markdown%E5%BC%95%E8%A8%80">Markdown引言</a>
 <ul>
-<li><a href="lecture/markdown.html#markdown%E4%B8%BE%E4%BE%8B">Markdown举例</a></li>
+<li><a href="#markdown%E4%B8%BE%E4%BE%8B">Markdown举例</a></li>
 </ul>
 </li>
-<li><a href="lecture/markdown.html#markdown%E8%AF%AD%E6%B3%95">Markdown语法</a>
+<li><a href="#markdown%E8%AF%AD%E6%B3%95">Markdown语法</a>
 <ul>
-<li><a href="lecture/markdown.html#%E5%85%B7%E4%BD%93%E8%AF%AD%E6%B3%95">具体语法</a>
+<li><a href="#%E5%85%B7%E4%BD%93%E8%AF%AD%E6%B3%95">具体语法</a>
 <ul>
-<li><a href="lecture/markdown.html#headers-%E6%A0%87%E9%A2%98">Headers 标题</a></li>
-<li><a href="lecture/markdown.html#emphasis-%E5%8A%A0%E7%B2%97%E5%92%8C%E6%96%9C%E4%BD%93">Emphasis 加粗和斜体</a></li>
-<li><a href="lecture/markdown.html#lists-%E5%88%97%E8%A1%A8">Lists 列表</a>
+<li><a href="#headers-%E6%A0%87%E9%A2%98">Headers 标题</a></li>
+<li><a href="#emphasis-%E5%8A%A0%E7%B2%97%E5%92%8C%E6%96%9C%E4%BD%93">Emphasis 加粗和斜体</a></li>
+<li><a href="#lists-%E5%88%97%E8%A1%A8">Lists 列表</a>
 <ul>
-<li><a href="lecture/markdown.html#unordered-%E6%97%A0%E5%BA%8F%E5%88%97%E8%A1%A8">Unordered 无序列表</a></li>
-<li><a href="lecture/markdown.html#ordered-%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8">Ordered 有序列表</a></li>
-<li><a href="lecture/markdown.html#task-lists-%E4%BB%BB%E5%8A%A1%E5%88%97%E8%A1%A8">Task Lists 任务列表</a></li>
+<li><a href="#unordered-%E6%97%A0%E5%BA%8F%E5%88%97%E8%A1%A8">Unordered 无序列表</a></li>
+<li><a href="#ordered-%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8">Ordered 有序列表</a></li>
+<li><a href="#task-lists-%E4%BB%BB%E5%8A%A1%E5%88%97%E8%A1%A8">Task Lists 任务列表</a></li>
 </ul>
 </li>
-<li><a href="lecture/markdown.html#links-%E9%93%BE%E6%8E%A5">Links 链接</a></li>
-<li><a href="lecture/markdown.html#images-%E5%9B%BE%E7%89%87">Images 图片</a></li>
-<li><a href="lecture/markdown.html#inline-code-%E8%A1%8C%E5%86%85%E4%BB%A3%E7%A0%81">Inline Code 行内代码</a></li>
-<li><a href="lecture/markdown.html#code-block-%E4%BB%A3%E7%A0%81%E5%9D%97">Code Block 代码块</a></li>
-<li><a href="lecture/markdown.html#blockquotes-%E5%BC%95%E7%94%A8">Blockquotes 引用</a></li>
-<li><a href="lecture/markdown.html#tables-%E8%A1%A8%E6%A0%BC">Tables 表格</a></li>
+<li><a href="#links-%E9%93%BE%E6%8E%A5">Links 链接</a></li>
+<li><a href="#images-%E5%9B%BE%E7%89%87">Images 图片</a></li>
+<li><a href="#inline-code-%E8%A1%8C%E5%86%85%E4%BB%A3%E7%A0%81">Inline Code 行内代码</a></li>
+<li><a href="#code-block-%E4%BB%A3%E7%A0%81%E5%9D%97">Code Block 代码块</a></li>
+<li><a href="#blockquotes-%E5%BC%95%E7%94%A8">Blockquotes 引用</a></li>
+<li><a href="#tables-%E8%A1%A8%E6%A0%BC">Tables 表格</a></li>
 </ul>
 </li>
-<li><a href="lecture/markdown.html#%E5%85%B6%E4%BB%96github%E6%94%AF%E6%8C%81%E7%9A%84%E8%AF%AD%E6%B3%95">其他GitHub支持的语法</a></li>
-<li><a href="lecture/markdown.html#%E5%AF%B9%E6%96%87%E4%BB%B6%E8%B7%AF%E5%BE%84%E7%9A%84%E7%90%86%E8%A7%A3">对文件路径的理解</a></li>
-<li><a href="lecture/markdown.html#%E5%AF%B9url%E8%B5%84%E6%BA%90%E7%9A%84%E7%90%86%E8%A7%A3">对url资源的理解</a></li>
-<li><a href="lecture/markdown.html#%E5%85%B6%E4%BB%96%E4%B8%80%E4%BA%9B%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9">其他一些注意事项</a></li>
+<li><a href="#%E5%85%B6%E4%BB%96github%E6%94%AF%E6%8C%81%E7%9A%84%E8%AF%AD%E6%B3%95">其他GitHub支持的语法</a></li>
+<li><a href="#%E5%AF%B9%E6%96%87%E4%BB%B6%E8%B7%AF%E5%BE%84%E7%9A%84%E7%90%86%E8%A7%A3">对文件路径的理解</a></li>
+<li><a href="#%E5%AF%B9url%E8%B5%84%E6%BA%90%E7%9A%84%E7%90%86%E8%A7%A3">对url资源的理解</a></li>
+<li><a href="#%E5%85%B6%E4%BB%96%E4%B8%80%E4%BA%9B%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9">其他一些注意事项</a></li>
 </ul>
 </li>
-<li><a href="lecture/markdown.html#markdown%E5%B7%A5%E5%85%B7%E4%BB%8B%E7%BB%8D">Markdown工具介绍</a>
+<li><a href="#markdown%E5%B7%A5%E5%85%B7%E4%BB%8B%E7%BB%8D">Markdown工具介绍</a>
 <ul>
-<li><a href="lecture/markdown.html#macos">macOS</a>
+<li><a href="#macos">macOS</a>
 <ul>
-<li><a href="lecture/markdown.html#typora">Typora</a></li>
-<li><a href="lecture/markdown.html#vs-code">VS Code</a></li>
-<li><a href="lecture/markdown.html#xcode">Xcode</a></li>
-<li><a href="lecture/markdown.html#%E5%85%B6%E4%BB%96">其他</a></li>
+<li><a href="#typora">Typora</a></li>
+<li><a href="#vs-code">VS Code</a></li>
+<li><a href="#xcode">Xcode</a></li>
+<li><a href="#%E5%85%B6%E4%BB%96">其他</a></li>
 </ul>
 </li>
-<li><a href="lecture/markdown.html#%E7%BD%91%E7%BB%9C%E5%B9%B3%E5%8F%B0">网络平台</a></li>
+<li><a href="#%E7%BD%91%E7%BB%9C%E5%B9%B3%E5%8F%B0">网络平台</a></li>
 </ul>
 </li>
-<li><a href="lecture/markdown.html#%E5%85%B3%E4%BA%8E%E4%B8%8D%E5%90%8C%E9%A3%8E%E6%A0%BC%E5%92%8C%E6%89%A9%E5%B1%95%E7%9A%84%E8%AF%B4%E6%98%8E">关于不同风格和扩展的说明</a></li>
-<li><a href="lecture/markdown.html#markdown%E7%9A%84%E5%AF%BC%E5%87%BA">Markdown的导出</a></li>
-<li><a href="lecture/markdown.html#markdown%E7%9A%84%E5%8F%91%E5%B8%83">Markdown的发布</a></li>
-<li><a href="lecture/markdown.html#%E6%96%87%E5%AD%97%E7%BC%96%E8%BE%91%E6%95%88%E7%8E%87up%E6%8A%80%E5%B7%A7">文字编辑效率up技巧</a></li>
+<li><a href="#%E5%85%B3%E4%BA%8E%E4%B8%8D%E5%90%8C%E9%A3%8E%E6%A0%BC%E5%92%8C%E6%89%A9%E5%B1%95%E7%9A%84%E8%AF%B4%E6%98%8E">关于不同风格和扩展的说明</a></li>
+<li><a href="#markdown%E7%9A%84%E5%AF%BC%E5%87%BA">Markdown的导出</a></li>
+<li><a href="#markdown%E7%9A%84%E5%8F%91%E5%B8%83">Markdown的发布</a></li>
+<li><a href="#%E6%96%87%E5%AD%97%E7%BC%96%E8%BE%91%E6%95%88%E7%8E%87up%E6%8A%80%E5%B7%A7">文字编辑效率up技巧</a></li>
 </ul>
 </li>
-<li><a href="lecture/markdown.html#homework">Homework</a></li>
+<li><a href="#homework">Homework</a></li>
 </ul>
 <p><strong>说明</strong>：所讲的内容包括但不限于：使用<code>markdown</code>的原因、<code>markdown</code>基础语法、对<code>markdown</code>中路径和互联网资源的理解、<code>markdown</code>编写工具、导出、发布……
 <strong>面向对象</strong>：需要进行合作编程开发的同学（主要）；没有使用过<code>markdown</code>风格写过文字的同学。教程以使用<code>macOS</code>的同学为主。
@@ -818,7 +381,7 @@ Content in the first column | Content in the second column
 <p>我们在插入链接的时候，会使用：</p>
 <pre><code>[Google](www.google.com) is your best friend!
 </code></pre>
-<p><a href="lecture/www.google.com">Google</a> is your best friend!</p>
+<p><a href="www.google.com">Google</a> is your best friend!</p>
 <p>方括号里面放你要呈现的名字，圆括号里面放网页的链接。</p>
 <p>更普通的，这个链接还可以换成文件：</p>
 <pre><code>点击查看[帮助文档](./doc/help.md)
@@ -850,7 +413,7 @@ Content in the first column | Content in the second column
 <p><a href="https://www.typora.io">Typora官网</a></p>
 <p>所见即所得的<code>markdown</code>编辑软件，全平台；各种意义上都应该是<code>markdown</code>编辑的首选！</p>
 <p>主要用来写单独的markdown（比如我今天要写讲稿了，用markdown写的话我就会考虑Typora）；也可以开一个文件夹专门放自己的笔记……</p>
-<h4><a class="header" href="#vs-code-1" id="vs-code-1">VS Code</a></h4>
+<h4><a class="header" href="#vs-code" id="vs-code">VS Code</a></h4>
 <p>安装插件<code>Markdown All in One</code>，会支持不少快捷操作。</p>
 <p><code>VS Code</code>作为程序员中口碑最好的编辑器，写写<code>markdown</code>什么的肯定没问题！拖入一个文件夹新建<code>markdown文件</code>就可以编辑了！</p>
 <p>一般来说，软件开发的项目中，代码都是和<code>markdown文件</code>在一起的，以后如果有一些需要在<code>VS Code</code>打开的项目，使用<code>VS Code</code>编写<code>README.md</code>或者其他的<code>markdown文件</code>也是很方便的一个选择。</p>
@@ -908,47 +471,21 @@ Content in the first column | Content in the second column
 <p>〇 用<code>markdown</code>语法写一个两行五列的表格：表头为<strong>周一到周五</strong>，表的内容为那天你的<strong>早八课程</strong>；如果某天没有早八课程，那么对应的格空下来不填写。</p>
 <p>〇 在<code>markdown</code>中插入图片时小括号中可以填写图片在互联网上的（），也可以填写在文件管理器（如<code>访达</code>）中的<strong>图片</strong>与<strong>markdown文件</strong>的（）。</p>
 <p>〇 阅览<code>Github</code>支持的<code>markdown</code>语法<a href="https://guides.github.com/features/mastering-markdown/">GitHub Guides | Mastering Markdown</a>，使用删除线语法在右边的文字中只添加符号来表示“Google是你最好的朋友”）：<code>Baidu Google is your best friend.</code>（提示：<code>crossed out</code>）</p>
-<h1><a class="header" href="#build-this-site" id="build-this-site">Build This Site</a></h1>
-<ul>
-<li><a href="postscript/site_build.html#build-this-site">Build This Site</a>
-<ul>
-<li><a href="postscript/site_build.html#intro">Intro</a></li>
-<li><a href="postscript/site_build.html#repository">Repository</a></li>
-<li><a href="postscript/site_build.html#docs">Docs</a></li>
-<li><a href="postscript/site_build.html#how-to-contribute">How to Contribute</a></li>
-</ul>
-</li>
-<li><a href="postscript/site_build.html#other">Other</a>
-<ul>
-<li><a href="postscript/site_build.html#change-image-size">Change image size</a></li>
-</ul>
-</li>
-</ul>
-<h2><a class="header" href="#intro" id="intro">Intro</a></h2>
-<p>This site is generated by <a href="https://github.com/rust-lang/mdBook">mdbook</a> and is issued by GitHub pages using GitHub workflow.</p>
-<p><a href="https://github.com/rust-lang/mdBook">mdbook</a> render markdown files to html. Use <code>brew install mdbook</code> to install it on your Mac. <code>GitHub pages</code> develops this site to GitHub server.</p>
-<h2><a class="header" href="#repository" id="repository">Repository</a></h2>
-<p>You can go to GitHub repo by clicking the GitHub icon in the top right corner.</p>
-<h2><a class="header" href="#docs" id="docs">Docs</a></h2>
-<p><a href="https://rust-lang.github.io/mdBook/index.html">mdbook docs</a></p>
-<p><a href="https://rust-lang.github.io/mdBook/format/summary.html">mdbook docs | SUMMARY.md</a></p>
-<p><a href="https://rust-lang.github.io/mdBook/format/config.html">mdbook docs | book.toml</a></p>
-<h2><a class="header" href="#how-to-contribute" id="how-to-contribute">How to Contribute</a></h2>
-<p>First, clone the repo on your Mac.</p>
-<p>Then, add your markdown files in <code>mdbook/src/article</code>. Also add your file path and title in <code>mdbook/src/SUMMARY</code>.</p>
-<p>You should pay attention to images which are suggested to put in <code>mdbook/src/media</code> and use relative paths, or use urls instead, to avoid image disappearing.</p>
-<p>Next, fork that repo and push your edition to your GitHub. Then make a pull request and wait until admin merge your edition.</p>
-<h1><a class="header" href="#other-2" id="other-2">Other</a></h1>
-<h2><a class="header" href="#change-image-size" id="change-image-size">Change image size</a></h2>
-<pre><code class="language-html">&lt;img src=&quot;&quot; style=&quot;zoom:40%&quot;/&gt;
-</code></pre>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                         
+                            <a rel="prev" href="../article/iOS_servise_app.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
 
+                        
+                            <a rel="next" href="../postscript/site_build.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
                         
 
                         <div style="clear: both"></div>
@@ -958,7 +495,15 @@ Content in the first column | Content in the second column
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
+                    <a rel="prev" href="../article/iOS_servise_app.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
 
+                
+                    <a rel="next" href="../postscript/site_build.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
                 
             </nav>
 
@@ -980,21 +525,13 @@ Content in the first column | Content in the second column
 
         
 
-        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
-        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
 
         <!-- Custom JS scripts -->
         
 
-        
-        
-        <script type="text/javascript">
-        window.addEventListener('load', function() {
-            window.setTimeout(window.print, 100);
-        });
-        </script>
-        
         
 
     </body>
