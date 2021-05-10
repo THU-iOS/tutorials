@@ -12,4 +12,10 @@
 
 ---
 
+- [Lecture]()
+
+[Markdown](./lecture/markdown.md)
+
+---
+
 [About the Site](./postscript/site_build.md)
