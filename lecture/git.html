@@ -151,9 +151,137 @@
                         <h1><a class="header" href="#git讲座" id="git讲座">Git讲座</a></h1>
 <blockquote>
 <p>Started on 210504
+Finished on 210518
 by <a href="https://github.com/Yang-Xijie">杨希杰 Yang Xijie</a></p>
 </blockquote>
-<p>[toc]</p>
+<ul>
+<li><a href="#git%E8%AE%B2%E5%BA%A7">Git讲座</a></li>
+<li><a href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%94%A8git">为什么要用Git</a></li>
+<li><a href="#git%E5%87%86%E5%A4%87">Git准备</a>
+<ul>
+<li><a href="#%E8%AE%A4%E8%AF%86mac%E7%9A%84%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F">认识Mac的文件系统</a>
+<ul>
+<li><a href="#%E5%AF%B9%E8%AE%BF%E8%BE%BE%E8%BF%9B%E8%A1%8C%E8%AE%BE%E7%BD%AE">对访达进行设置</a></li>
+<li><a href="#%E7%BB%A7%E7%BB%AD%E8%B0%83%E6%95%B4%E8%AE%BF%E8%BE%BE">继续调整访达</a></li>
+<li><a href="#%E8%A7%82%E5%AF%9F%E6%A0%B9%E7%9B%AE%E5%BD%95%E5%88%9D%E8%AF%86%E7%9B%AE%E5%BD%95">观察根目录/初识目录</a>
+<ul>
+<li><a href="#%E8%A7%82%E5%AF%9F%E6%A0%91%E7%8A%B6%E7%BB%93%E6%9E%84">观察树状结构</a></li>
+<li><a href="#%E6%96%87%E4%BB%B6%E5%A4%B9%E8%B7%AF%E5%BE%84">文件夹路径</a></li>
+<li><a href="#%E6%9F%A5%E7%9C%8B%E6%96%87%E4%BB%B6%E5%B1%9E%E6%80%A7%E4%B8%AD%E7%9A%84%E8%B7%AF%E5%BE%84">查看文件属性中的路径</a></li>
+</ul>
+</li>
+<li><a href="#%E9%9A%90%E8%97%8F%E6%96%87%E4%BB%B6">隐藏文件</a></li>
+<li><a href="#%E6%96%87%E4%BB%B6%E5%90%8D%E5%90%8E%E7%BC%80%E7%9A%84%E8%AF%B4%E6%98%8E">文件名后缀的说明</a></li>
+</ul>
+</li>
+<li><a href="#%E8%AE%A4%E8%AF%86%E7%BB%88%E7%AB%AFshell%E5%91%BD%E4%BB%A4%E8%A1%8C">认识终端、Shell、命令行</a>
+<ul>
+<li><a href="#%E7%BB%88%E7%AB%AF%E5%92%8Cshell">终端和Shell</a></li>
+<li><a href="#shell%E7%9A%84%E5%B7%A5%E4%BD%9C%E8%B7%AF%E5%BE%84">Shell的工作路径</a></li>
+<li><a href="#%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4">常用命令</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#git%E6%95%99%E7%A8%8B">Git教程</a>
+<ul>
+<li><a href="#%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AEgit">安装/配置Git</a>
+<ul>
+<li><a href="#%E6%B7%BB%E5%8A%A0git%E7%94%A8%E6%88%B7%E5%90%8D%E5%92%8C%E9%82%AE%E7%AE%B1">添加Git用户名和邮箱</a></li>
+</ul>
+</li>
+<li><a href="#git%E5%9F%BA%E7%A1%80">Git基础</a>
+<ul>
+<li><a href="#%E5%88%9B%E5%BB%BA%E7%89%88%E6%9C%AC%E5%BA%93">创建版本库</a></li>
+<li><a href="#%E5%B7%A5%E4%BD%9C%E5%8C%BA%E6%9A%82%E5%AD%98%E5%8C%BA%E6%9C%AC%E5%9C%B0%E7%89%88%E6%9C%AC%E5%BA%93">工作区、暂存区、本地版本库</a>
+<ul>
+<li><a href="#%E6%A6%82%E8%BF%B0">概述</a></li>
+<li><a href="#git-add">git add</a></li>
+<li><a href="#git-commit">git commit</a></li>
+<li><a href="#git-status">git status</a></li>
+<li><a href="#git-diff">git diff</a></li>
+<li><a href="#git-log">git log</a></li>
+<li><a href="#git-rm">git rm</a></li>
+</ul>
+</li>
+<li><a href="#%E6%A1%88%E4%BE%8B%E5%85%B3%E4%BA%8E%E4%B8%8A%E9%9D%A2%E6%89%80%E6%9C%89%E5%91%BD%E4%BB%A4%E7%9A%84%E6%A1%88%E4%BE%8B">案例：关于上面所有命令的案例</a></li>
+<li><a href="#%E8%88%8D%E5%BC%83%E5%B7%A5%E4%BD%9C%E5%8C%BA%E6%9A%82%E5%AD%98%E5%8C%BA%E7%9A%84%E4%BF%AE%E6%94%B9">舍弃工作区/暂存区的修改</a>
+<ul>
+<li><a href="#%E6%A1%88%E4%BE%8B%E5%85%B3%E4%BA%8Egit-restore">案例：关于git restore</a></li>
+</ul>
+</li>
+<li><a href="#%E7%89%88%E6%9C%AC%E5%9B%9E%E9%80%80">版本回退</a></li>
+</ul>
+</li>
+<li><a href="#git%E8%BF%9B%E9%98%B6---gitignore">Git进阶 - gitignore</a></li>
+<li><a href="#git%E8%BF%9B%E9%98%B6---%E5%88%86%E6%94%AF">Git进阶 - 分支</a>
+<ul>
+<li><a href="#%E5%88%86%E6%94%AF">分支</a></li>
+<li><a href="#%E5%88%86%E6%94%AF%E6%93%8D%E4%BD%9C">分支操作</a></li>
+<li><a href="#%E8%A7%A3%E5%86%B3%E5%86%B2%E7%AA%81">解决冲突</a></li>
+<li><a href="#%E5%88%86%E6%94%AF%E6%A1%88%E4%BE%8B">分支案例</a></li>
+<li><a href="#%E6%B3%A8%E8%AE%BE%E7%BD%AE%E9%BB%98%E8%AE%A4%E5%88%86%E6%94%AF%E4%B8%BAmain">注：设置默认分支为main</a></li>
+</ul>
+</li>
+<li><a href="#git%E8%BF%9B%E9%98%B6---%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93">Git进阶 - 远程仓库</a>
+<ul>
+<li><a href="#%E8%BF%9E%E6%8E%A5%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93">连接远程仓库</a></li>
+<li><a href="#%E5%B0%86%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93%E4%B8%8A%E4%BC%A0%E5%88%B0%E4%BB%A3%E7%A0%81%E6%89%98%E7%AE%A1%E5%B9%B3%E5%8F%B0">将本地仓库上传到代码托管平台</a></li>
+<li><a href="#%E5%92%8C%E4%BB%96%E4%BA%BA%E5%90%88%E4%BD%9C%E5%BC%80%E5%8F%91%E4%B8%80%E4%B8%AA%E9%A1%B9%E7%9B%AE">和他人合作开发一个项目</a>
+<ul>
+<li><a href="#%E6%9C%89%E4%BB%93%E5%BA%93%E7%9A%84%E8%AF%BB%E5%86%99%E6%9D%83%E9%99%90">有仓库的读写权限</a></li>
+<li><a href="#%E4%B8%BA%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE%E6%B7%BB%E7%A0%96%E5%8A%A0%E7%93%A6%E6%B2%A1%E6%9C%89%E4%BB%93%E5%BA%93%E7%9A%84%E8%AF%BB%E5%86%99%E6%9D%83%E9%99%90">为开源项目添砖加瓦/没有仓库的读写权限</a>
+<ul>
+<li><a href="#1-%E5%B0%86%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E4%B8%8B%E8%BD%BD%E9%93%BE%E6%8E%A5%E5%88%B0%E6%9C%AC%E5%9C%B0">1 将远程仓库下载、链接到本地</a></li>
+<li><a href="#2-%E5%BC%80%E5%A7%8B%E5%BC%80%E5%8F%91%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8A%9F%E8%83%BD">2 开始开发自己的功能</a></li>
+<li><a href="#3-push%E5%88%B0%E8%BF%9C%E7%AB%AF%E5%92%8C%E6%8F%90pr">3 push到远端和提PR</a></li>
+<li><a href="#4-%E5%BC%80%E5%8F%91%E8%80%85merge%E4%B9%8B%E5%90%8E%E5%88%A0%E9%99%A4newfeature%E5%88%86%E6%94%AF">4 开发者merge之后删除newFeature分支</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#git%E8%BF%9B%E9%98%B6---%E6%A0%87%E7%AD%BE%E7%AE%A1%E7%90%86">Git进阶 - 标签管理</a>
+<ul>
+<li><a href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E6%B7%BB%E5%8A%A0%E6%A0%87%E7%AD%BE">为什么要添加标签</a></li>
+<li><a href="#%E5%9C%A8%E6%9C%AC%E5%9C%B0%E7%9A%84commit%E4%B8%8A%E6%B7%BB%E5%8A%A0%E6%A0%87%E7%AD%BE">在本地的commit上添加标签</a></li>
+<li><a href="#%E5%B0%86%E6%A0%87%E7%AD%BE%E4%B8%8A%E4%BC%A0%E8%87%B3%E4%BB%A3%E7%A0%81%E6%89%98%E7%AE%A1%E5%B9%B3%E5%8F%B0">将标签上传至代码托管平台</a></li>
+</ul>
+</li>
+<li><a href="#git%E8%BF%9B%E9%98%B6---%E5%91%BD%E4%BB%A4%E7%AE%80%E5%86%99">Git进阶 - 命令简写</a>
+<ul>
+<li><a href="#gitconfig">gitconfig</a></li>
+<li><a href="#zshrc">zshrc</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8github%E4%B8%8A%E7%9A%84%E4%BB%A3%E7%A0%81">如何使用GitHub上的代码</a>
+<ul>
+<li><a href="#%E8%AF%B4%E8%AF%B4%E5%BC%80%E6%BA%90">说说开源</a>
+<ul>
+<li><a href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%BC%80%E6%BA%90">什么是开源</a></li>
+<li><a href="#%E5%BC%80%E6%BA%90%E8%80%85">开源者</a></li>
+<li><a href="#%E5%BC%80%E6%BA%90%E5%8D%8F%E8%AE%AE">开源协议</a></li>
+</ul>
+</li>
+<li><a href="#github%E7%AE%80%E4%BB%8B">GitHub简介</a></li>
+<li><a href="#%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8Bgithub%E4%BB%A3%E7%A0%81%E4%BB%93%E5%BA%93%E4%BD%BF%E7%94%A8%E5%88%AB%E4%BA%BA%E5%86%99%E7%9A%84%E4%BB%A3%E7%A0%81">如何查看GitHub代码仓库/使用别人写的代码</a></li>
+</ul>
+</li>
+<li><a href="#references">References</a></li>
+<li><a href="#%E8%A1%A5%E5%85%85%E5%86%85%E5%AE%B9">补充内容</a>
+<ul>
+<li><a href="#%E5%85%B3%E4%BA%8E%E6%88%91%E8%AE%B2%E7%9A%84%E5%86%85%E5%AE%B9">关于我讲的内容</a></li>
+<li><a href="#%E4%BB%80%E4%B9%88%E6%98%AF%E6%A2%AF%E5%AD%90">什么是梯子</a></li>
+<li><a href="#%E4%BD%BF%E7%94%A8thu-gitlab">使用THU GitLab</a></li>
+<li><a href="#%E5%9B%BE%E5%BD%A2%E5%8C%96git">图形化Git</a></li>
+<li><a href="#%E7%BB%88%E7%AB%AF%E8%BF%9B%E9%98%B6">终端进阶</a></li>
+</ul>
+</li>
+<li><a href="#homework">Homework</a></li>
+</ul>
 <h1><a class="header" href="#为什么要用git" id="为什么要用git">为什么要用Git</a></h1>
 <p>〇 版本控制</p>
 <p>比如，你晚上写一篇论文，写好了存起来。结果第二天早上起来，你再拿出来一看，害，写的什么啊。早上修改了一大堆，改完了存起来。结果下午一想，害，早上我改什么啊！昨晚那个写的不是挺好的吗…但这时，你已经没有昨晚存的那一份文稿了，只能凭着记忆把论文再改回昨晚写完之后的样子……</p>
@@ -658,25 +786,25 @@ alias glg=&quot;git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yell
 <p><code>history | grep git</code></p>
 <p>终端脚本的编写：需要掌握，在Xcode里面可能就要写的。但不是刚需。也很简单，用到的时候再简单学一下就好了</p>
 <h1><a class="header" href="#homework" id="homework">Homework</a></h1>
-<p>〇（Git基础）
-Git是目前世界上最先进的分布式（）控制系统</p>
-<p>〇（路径的理解）
-如果使用<code>pwd</code>命令得到的路径为<code>~/Developer/git_learning/</code>，请写出文件<code>~/Developer/Swift_learning/help.md</code>的相对路径：</p>
-<p>〇（Finder操作）
-在Finder中显示/隐藏以点开头文件的快捷键为：
-提示：快捷键符号可以在macOS按⌃⌘space调出表情/符号面板（菜单栏的<code>Emoji &amp; Symbols</code>），在技术符号（<code>Technical Symbols</code>）中找到这些快捷键符号。也可以用英文简写表示。</p>
+<p>〇（Git基础）</p>
+<p>Git是目前世界上最先进的分布式（）控制系统</p>
+<p>〇（路径的理解）</p>
+<p>如果使用<code>pwd</code>命令得到的路径为<code>~/Developer/git_learning/</code>，请写出文件<code>~/Developer/Swift_learning/help.md</code>的相对路径：</p>
+<p>〇（Finder操作）</p>
+<p>在Finder中显示/隐藏以点开头文件的快捷键为：</p>
+<p>提示：快捷键符号可以在macOS按⌃⌘space调出表情/符号面板（菜单栏的<code>Emoji &amp; Symbols</code>），在技术符号（<code>Technical Symbols</code>）中找到这些快捷键符号。也可以用英文简写表示。</p>
 <p>〇 （终端常用命令与注意事项）使用终端在当前路径下创建一个名为“learning git.md”的文本文件的命令为：</p>
-<p>〇（查看帮助文档的方式、命令的参数）
-在命令行查看Git帮助的命令为：
-在命令行查看Git的restore操作的帮助文档的命令为：
-使用终端查看一个文本文件的命令为<code>cat &lt;file&gt;</code>，请问这个<code>cat</code>是哪个英文单词的缩写呢？
-提示：查看<code>cat</code>的帮助文档</p>
-<p>〇 （Git版本回退）选择题：命令<code>git reset --hard &lt;commit&gt;</code>的作用是（），命令<code>git revert &lt;commit&gt;</code>的作用是（）
-A. 将工作区的所有文件恢复到某个<code>commit</code>之后的样子
-B. 将某个<code>commit</code>所做的更改恢复</p>
+<p>〇（查看帮助文档的方式、命令的参数）</p>
+<p>在命令行查看Git帮助的命令为：</p>
+<p>在命令行查看Git的restore操作的帮助文档的命令为：</p>
+<p>使用终端查看一个文本文件的命令为<code>cat &lt;file&gt;</code>，请问这个<code>cat</code>是哪个英文单词的缩写呢？</p>
+<p>提示：查看<code>cat</code>的帮助文档</p>
+<p>〇 （Git版本回退）选择题：命令<code>git reset --hard &lt;commit&gt;</code>的作用是（），命令<code>git revert &lt;commit&gt;</code>的作用是（）</p>
+<p>A. 将工作区的所有文件恢复到某个<code>commit</code>之后的样子</p>
+<p>B. 将某个<code>commit</code>所做的更改恢复</p>
 <p>〇 （Git使用注意）一般来说，使用<code>git init</code>初始化之后，需要给文件夹添加怎样的一个文件，这样之后才能才能直接使用<code>git add .</code>呢？</p>
-<p>〇 （Git进阶操作）请问<code>git rebase</code>命令的作用是什么呢？
-提示：使用搜索引擎了解，一句话简述即可</p>
+<p>〇 （Git进阶操作）请问<code>git rebase</code>命令的作用是什么呢？</p>
+<p>提示：使用搜索引擎了解，一句话简述即可</p>
 <p>〇 （开源协议）MIT协议中有一句话<code>THE SOFTWARE IS PROVIDED &quot;XX XX&quot;</code>，浏览文章<a href="https://mp.weixin.qq.com/s/WyBZpChPA5xLo90rBHi8Mw">从MIT协议谈契约精神</a>，回答<code>&quot;XX XX&quot;</code>代表的英文单词是？它的中文意思是？</p>
 
                     </main>
