@@ -16,6 +16,8 @@
 
 [Markdown](./lecture/markdown.md)
 
+[Git](./lecture/git.md)
+
 ---
 
 [About the Site](./postscript/site_build.md)
