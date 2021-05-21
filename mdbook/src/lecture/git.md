@@ -54,6 +54,7 @@
         - [2 开始开发自己的功能](#2-开始开发自己的功能)
         - [3 push到远端和提PR](#3-push到远端和提pr)
         - [4 开发者merge之后删除newFeature分支](#4-开发者merge之后删除newfeature分支)
+      - [使用private仓库进行合作开发](#使用private仓库进行合作开发)
   - [Git进阶 - 标签管理](#git进阶---标签管理)
     - [为什么要添加标签](#为什么要添加标签)
     - [在本地的commit上添加标签](#在本地的commit上添加标签)
@@ -339,7 +340,6 @@ log——日志
 如果你想改变工作区的文件，或者让暂存区的文件变成
 
 ### 案例：关于上面所有命令的案例
-TODO
 
 git init/add/status/diff/commit/status/add/commit/log/diff
 
@@ -363,7 +363,6 @@ Specify the restore location. If neither option is specified, by default the wor
 ![git restore](../media/git-restore.jpg)
 
 #### 案例：关于git restore
-TODO
 
 ### 版本回退
 首先我们需要明确两点：每一次`commit`的编号，一方面代表所有文件的状态，另一方面代表这一次`commit`相比于上一次`commit`所做的更改。
@@ -443,7 +442,6 @@ git branch --delete(-d) <branch> # 删除开发新功能的分支，因为开发
 合并的时候可能会产生冲突。这时我们需要自己去解决冲突。比如你和同学一块写UI组件，各自开了一份文件来写，结果你俩把文件名起成了一样的，或者在同一份文件中修改了相同的地方，这时在第一个同学合并之后，第二个同学的合并就会出现冲突。解决冲突的方式很简单，在被Git用箭头标出来的地方进行删改就好了。
 
 ### 分支案例
-TODO
 
 ### 注：设置默认分支为main
 [Stack Overflow | How can I create a Git repository with the default branch name other than master?](https://stackoverflow.com/questions/42871542/how-can-i-create-a-git-repository-with-the-default-branch-name-other-than-maste)
@@ -704,6 +702,11 @@ git fetch -p --all
 
 详情可以查看：[CSDN | Git远程分支的删除与同步](https://blog.csdn.net/dta0502/article/details/90214417)
 
+#### 使用private仓库进行合作开发
+与参与开源项目是类似的。
+
+如果直接在`private项目`中添加他人的**access权限**（**添加collaborator**），相当于**添加maintainer**，maintainer**可以直接push**仓库；不过也可以fork之后提PR。注意，没有仓库的access权限应该是不能fork的！
+
 ## Git进阶 - 标签管理
 ### 为什么要添加标签
 > 发布一个版本时，我们通常先在版本库中打一个标签（tag），这样，就唯一确定了打标签时刻的版本。将来无论什么时候，取某个标签的版本，就是把那个打标签的时刻的历史版本取出来。所以，标签也是版本库的一个快照。
@@ -836,7 +839,7 @@ GitHub是一个代码托管平台和世界最大的程序员交流社区。你�
 
 网络如何访问（骨干网，路由器）
 
-概括的来说，能让你上午速度加快，能让你访问原本访问不了的网站的工具，就叫梯子/VPN/加速器…
+概括的来说，能让你上网速度加快，能让你访问原本访问不了的网站的工具，就叫梯子/VPN/加速器…
 
 ## 使用THU GitLab
 注意无法和校外的同学一起使用
