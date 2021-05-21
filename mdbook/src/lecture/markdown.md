@@ -1,7 +1,9 @@
 # 面向开发的Markdown学习
 
-> started on 210409
-> finished on 210504
+> Started on 210409
+> 
+> First version on 210504
+> 
 > Author: [杨希杰 Yang Xijie](https://github.com/Yang-Xijie)
 
 

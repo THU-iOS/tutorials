@@ -1,8 +1,10 @@
 # Git讲座
 
 > Started on 210504
-> Finished on 210518
-> by [杨希杰 Yang Xijie](https://github.com/Yang-Xijie)
+> 
+> First version on 210518
+> 
+> Author: [杨希杰 Yang Xijie](https://github.com/Yang-Xijie)
 
 - [Git讲座](#git讲座)
 - [为什么要用Git](#为什么要用git)
