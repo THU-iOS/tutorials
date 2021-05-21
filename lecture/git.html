@@ -93,7 +93,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../foreword/site_info.html">Introduction</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="../article/Swift_SwiftUI.html">Swift/SwiftUI</a></li><li class="chapter-item expanded affix "><a href="../article/Tools.html">Developing Tools</a></li><li class="chapter-item expanded affix "><a href="../article/iOS_servise_app.html">SaaS Framework</a></li><li class="spacer"></li><li class="chapter-item expanded ">Lecture</li><li class="chapter-item expanded affix "><a href="../lecture/markdown.html">Markdown</a></li><li class="chapter-item expanded affix "><a href="../lecture/git.html" class="active">Git</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="../postscript/site_build.html">About the Site</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../foreword/site_info.html">Introduction</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="../article/Swift_SwiftUI.html">Swift/SwiftUI</a></li><li class="chapter-item expanded affix "><a href="../article/Tools.html">Developing Tools</a></li><li class="chapter-item expanded affix "><a href="../article/iOS_servise_app.html">SaaS Framework</a></li><li class="spacer"></li><li class="chapter-item expanded ">Lecture</li><li class="chapter-item expanded affix "><a href="../lecture/markdown.html">Markdown</a></li><li class="chapter-item expanded affix "><a href="../lecture/git.html" class="active">Git</a></li><li class="chapter-item expanded affix "><a href="../lecture/git-demos.html">Git Demos</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="../postscript/site_build.html">About the Site</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -238,6 +238,7 @@ by <a href="https://github.com/Yang-Xijie">杨希杰 Yang Xijie</a></p>
 <li><a href="#4-%E5%BC%80%E5%8F%91%E8%80%85merge%E4%B9%8B%E5%90%8E%E5%88%A0%E9%99%A4newfeature%E5%88%86%E6%94%AF">4 开发者merge之后删除newFeature分支</a></li>
 </ul>
 </li>
+<li><a href="#%E4%BD%BF%E7%94%A8private%E4%BB%93%E5%BA%93%E8%BF%9B%E8%A1%8C%E5%90%88%E4%BD%9C%E5%BC%80%E5%8F%91">使用private仓库进行合作开发</a></li>
 </ul>
 </li>
 </ul>
@@ -416,6 +417,10 @@ Initialized empty Git repository in /Users/yangxijie/Desktop/git_notes/.git/
 git commit -m&quot;&lt;message&gt;&quot;
 </code></pre>
 <p>一般<code>&lt;message&gt;</code>使用动词加名词的形式，记录你这次<code>commit</code>修改的主要内容。使用英文或中文都可以，个人推荐使用英文，因为如果你之后开源，英文可以让你方便的将你的项目推向世界。</p>
+<p>一般来说，一次commit之后，这次commit就不应该被改变了；类似你这次做的修改已经写入历史书的感觉。但是你commit之后突然发现刚刚的commit实在不行，这时怎么办呢？使用：</p>
+<pre><code class="language-sh">git commit -m &quot;&lt;message&gt;&quot; --amend
+</code></pre>
+<p>来修补上一次commit。这样之前的一次commit就会变成你新提交的commit。</p>
 <h4><a class="header" href="#git-status" id="git-status">git status</a></h4>
 <p>查看每个区的状态。</p>
 <h4><a class="header" href="#git-diff" id="git-diff">git diff</a></h4>
@@ -448,7 +453,6 @@ git diff &lt;commit&gt; &lt;commit&gt; # between two commits
 <p>如果你要将用<code>git add</code>放到暂存区的文件取消暂存，使用<code>git rm --cached &lt;file&gt;</code>命令</p>
 <p>如果你想改变工作区的文件，或者让暂存区的文件变成</p>
 <h3><a class="header" href="#案例关于上面所有命令的案例" id="案例关于上面所有命令的案例">案例：关于上面所有命令的案例</a></h3>
-<p>TODO</p>
 <p>git init/add/status/diff/commit/status/add/commit/log/diff</p>
 <h3><a class="header" href="#舍弃工作区暂存区的修改" id="舍弃工作区暂存区的修改">舍弃工作区/暂存区的修改</a></h3>
 <p>舍弃更改<code>==</code>用某些之前的东西来覆盖</p>
@@ -463,7 +467,6 @@ Specify the restore location. If neither option is specified, by default the wor
 </code></pre>
 <p><img src="../media/git-restore.jpg" alt="git restore" /></p>
 <h4><a class="header" href="#案例关于git-restore" id="案例关于git-restore">案例：关于git restore</a></h4>
-<p>TODO</p>
 <h3><a class="header" href="#版本回退" id="版本回退">版本回退</a></h3>
 <p>首先我们需要明确两点：每一次<code>commit</code>的编号，一方面代表所有文件的状态，另一方面代表这一次<code>commit</code>相比于上一次<code>commit</code>所做的更改。</p>
 <p>那么我们如果希望回到之前的某个<code>commit</code>，指的就是直接将工作区所有文件都恢复成那个<code>commit</code>之后的样子。</p>
@@ -512,7 +515,6 @@ git branch --delete(-d) &lt;branch&gt; # 删除开发新功能的分支，因为
 <h3><a class="header" href="#解决冲突" id="解决冲突">解决冲突</a></h3>
 <p>合并的时候可能会产生冲突。这时我们需要自己去解决冲突。比如你和同学一块写UI组件，各自开了一份文件来写，结果你俩把文件名起成了一样的，或者在同一份文件中修改了相同的地方，这时在第一个同学合并之后，第二个同学的合并就会出现冲突。解决冲突的方式很简单，在被Git用箭头标出来的地方进行删改就好了。</p>
 <h3><a class="header" href="#分支案例" id="分支案例">分支案例</a></h3>
-<p>TODO</p>
 <h3><a class="header" href="#注设置默认分支为main" id="注设置默认分支为main">注：设置默认分支为main</a></h3>
 <p><a href="https://stackoverflow.com/questions/42871542/how-can-i-create-a-git-repository-with-the-default-branch-name-other-than-maste">Stack Overflow | How can I create a Git repository with the default branch name other than master?</a></p>
 <pre><code class="language-sh"># 查看Git版本
@@ -672,6 +674,9 @@ git merge &lt;team-repo-nickname&gt;/main
 <pre><code class="language-shell">git fetch -p --all
 </code></pre>
 <p>详情可以查看：<a href="https://blog.csdn.net/dta0502/article/details/90214417">CSDN | Git远程分支的删除与同步</a></p>
+<h4><a class="header" href="#使用private仓库进行合作开发" id="使用private仓库进行合作开发">使用private仓库进行合作开发</a></h4>
+<p>与参与开源项目是类似的。</p>
+<p>如果直接在<code>private项目</code>中添加他人的<strong>access权限</strong>（<strong>添加collaborator</strong>），相当于<strong>添加maintainer</strong>，maintainer<strong>可以直接push</strong>仓库；不过也可以fork之后提PR。注意，没有仓库的access权限应该是不能fork的！</p>
 <h2><a class="header" href="#git进阶---标签管理" id="git进阶---标签管理">Git进阶 - 标签管理</a></h2>
 <h3><a class="header" href="#为什么要添加标签" id="为什么要添加标签">为什么要添加标签</a></h3>
 <blockquote>
@@ -777,7 +782,7 @@ alias glg=&quot;git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yell
 <h2><a class="header" href="#什么是梯子" id="什么是梯子">什么是梯子</a></h2>
 <p>什么是服务器——就是一台电脑</p>
 <p>网络如何访问（骨干网，路由器）</p>
-<p>概括的来说，能让你上午速度加快，能让你访问原本访问不了的网站的工具，就叫梯子/VPN/加速器…</p>
+<p>概括的来说，能让你上网速度加快，能让你访问原本访问不了的网站的工具，就叫梯子/VPN/加速器…</p>
 <h2><a class="header" href="#使用thu-gitlab" id="使用thu-gitlab">使用THU GitLab</a></h2>
 <p>注意无法和校外的同学一起使用</p>
 <h2><a class="header" href="#图形化git" id="图形化git">图形化Git</a></h2>
@@ -828,7 +833,7 @@ alias glg=&quot;git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yell
                         
 
                         
-                            <a rel="next" href="../postscript/site_build.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="../lecture/git-demos.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         
@@ -846,7 +851,7 @@ alias glg=&quot;git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yell
                 
 
                 
-                    <a rel="next" href="../postscript/site_build.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="../lecture/git-demos.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
                 

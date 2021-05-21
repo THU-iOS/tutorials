@@ -1,0 +1,455 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn" class="sidebar-visible no-js ayu">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Git Demos - Tutorial</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="Tutorials for THU iOS Club">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="../favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="../favicon.png">
+        
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "ayu" : "ayu";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('ayu')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../foreword/site_info.html">Introduction</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="../article/Swift_SwiftUI.html">Swift/SwiftUI</a></li><li class="chapter-item expanded affix "><a href="../article/Tools.html">Developing Tools</a></li><li class="chapter-item expanded affix "><a href="../article/iOS_servise_app.html">SaaS Framework</a></li><li class="spacer"></li><li class="chapter-item expanded ">Lecture</li><li class="chapter-item expanded affix "><a href="../lecture/markdown.html">Markdown</a></li><li class="chapter-item expanded affix "><a href="../lecture/git.html">Git</a></li><li class="chapter-item expanded affix "><a href="../lecture/git-demos.html" class="active">Git Demos</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="../postscript/site_build.html">About the Site</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu (default)</button></li>
+                        </ul>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Tutorial</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        <a href="https://github.com/THU-iOS/tutorial" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#git实例" id="git实例">Git实例</a></h1>
+<h2><a class="header" href="#git-initaddstatusdiffcommitstatusaddcommitlogdiff" id="git-initaddstatusdiffcommitstatusaddcommitlogdiff">git init/add/status/diff/commit/status/add/commit/log/diff</a></h2>
+<h3><a class="header" href="#初始化仓库" id="初始化仓库">初始化仓库</a></h3>
+<pre><code>$ cd ~/Desktop
+$ mkdir notes
+$ cd notes
+$ git init
+Initialized empty Git repository in /Users/yangxijie/Desktop/notes/.git/
+</code></pre>
+<h3><a class="header" href="#添加一个文件" id="添加一个文件">添加一个文件</a></h3>
+<pre><code>$ touch markdown_learn.md
+$ vim markdown_learn.md
+$ cat markdown_learn.md
+# Markdown Note
+# Grammar
+`#`: title
+
+[](): add link
+
+![](): add image
+</code></pre>
+<h3><a class="header" href="#查看状态" id="查看状态">查看状态</a></h3>
+<pre><code>$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+	markdown_learn.md
+
+nothing added to commit but untracked files present (use &quot;git add&quot; to track)
+</code></pre>
+<h3><a class="header" href="#添加文件到暂存区" id="添加文件到暂存区">添加文件到暂存区</a></h3>
+<pre><code>$ git add markdown_learn.md
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use &quot;git rm --cached &lt;file&gt;...&quot; to unstage)
+	new file:   markdown_learn.md
+</code></pre>
+<h3><a class="header" href="#再添加一篇文件" id="再添加一篇文件">再添加一篇文件</a></h3>
+<pre><code>$ touch git_learn.md
+$ vim git_learn.md
+$ cat git_learn.md
+# Git Note
+# About Git
+Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
+
+# Git Commands
+`git add &lt;file&gt;`
+`git commit -m &quot;&lt;msg&gt;&quot;`
+</code></pre>
+<h3><a class="header" href="#查看状态-1" id="查看状态-1">查看状态</a></h3>
+<pre><code>$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use &quot;git rm --cached &lt;file&gt;...&quot; to unstage)
+	new file:   markdown_learn.md
+
+Untracked files:
+  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+	git_learn.md
+</code></pre>
+<h3><a class="header" href="#修改文件" id="修改文件">修改文件</a></h3>
+<pre><code>$ vim markdown_learn.md
+# Markdown Note
+# Grammar
+`#`: title
+
+[](): add link
+
+![](): add image
+
+**bold_text**
+
+*italic_text*
+</code></pre>
+<h3><a class="header" href="#再次查看状态" id="再次查看状态">再次查看状态</a></h3>
+<pre><code>$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use &quot;git rm --cached &lt;file&gt;...&quot; to unstage)
+	new file:   markdown_learn.md
+
+Changes not staged for commit:
+  (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
+  (use &quot;git restore &lt;file&gt;...&quot; to discard changes in working directory)
+	modified:   markdown_learn.md
+
+Untracked files:
+  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+	git_learn.md
+</code></pre>
+<h3><a class="header" href="#添加gitignore" id="添加gitignore">添加gitignore</a></h3>
+<p>我们希望一次添加这两个文件，在这之前先创建<code>.gitignore</code>：</p>
+<pre><code>$ touch .gitignore
+$ echo &quot;.DS_Store&quot; &gt;&gt; .gitignore
+
+$ git add .
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use &quot;git rm --cached &lt;file&gt;...&quot; to unstage)
+	new file:   .gitignore
+	new file:   git_learn.md
+	new file:   markdown_learn.md
+</code></pre>
+<h3><a class="header" href="#提交" id="提交">提交</a></h3>
+<pre><code>$ git commit -m &quot;add two notes&quot;
+[main (root-commit) bdf79c8] add two notes
+ 3 files changed, 19 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 git_learn.md
+ create mode 100644 markdown_learn.md
+</code></pre>
+<h3><a class="header" href="#查看状态-2" id="查看状态-2">查看状态</a></h3>
+<pre><code>$ git status
+On branch main
+nothing to commit, working tree clean
+</code></pre>
+<h3><a class="header" href="#添加和提交" id="添加和提交">添加和提交</a></h3>
+<pre><code>$ vim git_learn.md
+$ cat git_learn.md
+# Git Note
+# About Git
+Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
+
+# Git Commands
+`git add &lt;file&gt;`
+`git commit -m &quot;&lt;msg&gt;&quot;`
+`git status`
+
+$ git add .
+$ git commit -m &quot;add new git commands&quot;
+[main c874462] add new git commands
+ 1 file changed, 1 insertion(+)
+</code></pre>
+<h3><a class="header" href="#查看log" id="查看log">查看log</a></h3>
+<pre><code>$ git log
+commit c874462dba874eb098a4445f8ff6a15b2e381fc7 (HEAD -&gt; main)
+Author: yxj &lt;564197835@qq.com&gt;
+Date:   Thu May 20 20:42:43 2021 +0800
+
+    add new git commands
+
+commit bdf79c8b45ebdd1e7644d0a19b47b8c4cba84f9a
+Author: yxj &lt;564197835@qq.com&gt;
+Date:   Thu May 20 20:40:03 2021 +0800
+
+    add two notes
+</code></pre>
+<h3><a class="header" href="#比较差异" id="比较差异">比较差异</a></h3>
+<p>比较两次commit的差异（其中前面有加号的是第二次提交添加的，剩下的信息并不那么重要）：</p>
+<pre><code>$ git diff bdf79c c87446
+diff --git a/git_learn.md b/git_learn.md
+index 575b88e..1b60d22 100644
+--- a/git_learn.md
++++ b/git_learn.md
+@@ -5,3 +5,4 @@ Git is a free and open source distributed version control system designed to han
+ # Git Commands
+ `git add &lt;file&gt;`
+ `git commit -m &quot;&lt;msg&gt;&quot;`
++`git status`
+</code></pre>
+<h2><a class="header" href="#git-restore" id="git-restore">git restore</a></h2>
+<p>TODO</p>
+<h2><a class="header" href="#git-brancnswitch" id="git-brancnswitch">git brancn/switch</a></h2>
+<h3><a class="header" href="#新建仓库" id="新建仓库">新建仓库</a></h3>
+<pre><code>$ cd ~/Desktop
+$ mkdir teamwork
+$ cd teamwork
+$ git init
+</code></pre>
+<h3><a class="header" href="#添加文件在main分支至少有一次commit" id="添加文件在main分支至少有一次commit">添加文件在main分支至少有一次commit</a></h3>
+<pre><code>$ touch README.md
+$ echo  'This is our teamwork!'  &gt;&gt; README.md
+$ cat README.md
+This is our teamwork!
+$ git add README.md
+$ git commit -m &quot;add README&quot;
+[main (root-commit) 605051f] add README
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+</code></pre>
+<h3><a class="header" href="#在sayhello分支上写代码" id="在sayhello分支上写代码">在sayHello分支上写代码</a></h3>
+<pre><code>$ git branch -c sayHello
+$ git switch sayHello
+Switched to branch 'sayHello'
+$ touch sayHello.swift
+$ vim sayHello.swift
+$ cat sayHello.swift
+func sayHello(name: String) {
+    print(&quot;Hello, \(name).&quot;)
+}
+$ git add sayHello.swift
+$ git commit -m &quot;add func sayHello&quot;
+[sayHello e30ff7a] add func sayHello
+ 1 file changed, 3 insertions(+)
+ create mode 100644 sayHello.swift
+</code></pre>
+<h3><a class="header" href="#回到main分支进行合并" id="回到main分支进行合并">回到main分支进行合并</a></h3>
+<pre><code>$ git switch main
+Switched to branch 'main'
+$ git merge sayHello
+Updating 605051f..e30ff7a
+Fast-forward
+ sayHello.swift | 3 +++
+ 1 file changed, 3 insertions(+)
+ create mode 100644 sayHello.swift
+ $ git log
+ Untracked files:
+commit e30ff7a9797f9577b056c91cdbc46b37bff71168 (HEAD -&gt; main, sayHello)
+Author: yxj &lt;564197835@qq.com&gt;
+Date:   Fri May 21 18:37:09 2021 +0800
+
+    add func sayHello
+
+commit 605051f10e676b477d5f101dca5828cf34165ab6
+Author: yxj &lt;564197835@qq.com&gt;
+Date:   Fri May 21 18:30:57 2021 +0800
+
+    add README
+</code></pre>
+<h3><a class="header" href="#在goodmorning分支上写代码" id="在goodmorning分支上写代码">在goodMorning分支上写代码</a></h3>
+<p>同上述<code>在sayHello分支上写代码</code>的内容，之后也是回到<code>main分支</code>进行合并</p>
+<h2><a class="header" href="#向github上的开源项目提交代码" id="向github上的开源项目提交代码">向GitHub上的开源项目提交代码</a></h2>
+<p>TODO</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../lecture/git.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../postscript/site_build.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../lecture/git.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../postscript/site_build.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
