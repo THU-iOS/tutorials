@@ -18,6 +18,8 @@
 
 [Git](./lecture/git.md)
 
+[Git Demos](./lecture/git-demos.md)
+
 ---
 
 [About the Site](./postscript/site_build.md)
