@@ -75,6 +75,7 @@
   - [使用THU GitLab](#使用thu-gitlab)
   - [图形化Git](#图形化git)
   - [终端进阶](#终端进阶)
+  - [GitHub CI](#github-ci)
 - [Homework](#homework)
 
 # 为什么要用Git
@@ -231,7 +232,7 @@ git --version
 git version 2.24.3 (Apple Git-128)
 ```
 
-如果无法出现版本号，说明你需要安装`Xcode`或者`Command Line Tools`，安装的时候会顺带安装`Git`。推荐之后打算**学习iOS软件开发的同学**直接从`App Store`安装`Xcode`；Mac存储较小的同学或者之后不打算用`Xcode`的话在Apple Developer下载[Command Line Tools](https://developer.apple.com/download/more/)安装就好。
+如果无法出现版本号，说明你需要安装`Xcode`或者`Command Line Tools`，安装的时候会顺带安装`Git`。推荐之后打算**学习iOS软件开发的同学**直接从`App Store`安装`Xcode`；Mac存储较小的同学或者之后不打算用`Xcode`的话在Apple Developer下载[Command Line Tools](https://developer.apple.com/download/more/)安装就好。如果希望使用更新版本的`Git`，需要使用`Homebrew`进行安装，这里不多说，因为自带的版本版本已经足够了。
 
 ### 添加Git用户名和邮箱
 ```sh
@@ -333,7 +334,9 @@ log——日志
 
 这两步合成一步，就是`git rm <file>`。还是推荐大家使用上面的命令，因为我们在之后实际开发的时候，可能一次commit会对很多文件作出修改，这其中包括新建一些文件、删除一些文件，因此直接`git add .`就好了，不需要考虑这么多；如果文件是删除了的，那么`git add .`就会将这个文件识别为被删除的文件。
 
-如果你只是要将用`git add`放到暂存区的文件取消暂存，看下面的`git restore`命令
+如果你要将用`git add`放到暂存区的文件取消暂存，使用`git rm --cached <file>`命令
+
+如果你想改变工作区的文件，或者让暂存区的文件变成
 
 ### 案例：关于上面所有命令的案例
 TODO
@@ -424,7 +427,7 @@ git revert -n <commit> # -n: --no-commit，自己提交
 
 ### 分支操作
 ```sh
-git branch --create <branch> # 创建分支
+git branch --create(-c) <branch> # 创建分支
 git branch # 查看本地分支
 git switch <branch> # 切换分支
 ```
@@ -433,7 +436,7 @@ git switch <branch> # 切换分支
 # 开发好了新功能之后
 git switch main # 切换到主分支，因为我们的所有功能都要合并到一个分支上
 git merge <branch> # 将开发新功能的分支的内容合并（merge）到main分支上
-git branch -d <branch> # 删除开发新功能的分支，因为开发好了合并进来原来的开发分支就没有用了
+git branch --delete(-d) <branch> # 删除开发新功能的分支，因为开发好了合并进来原来的开发分支就没有用了
 ```
 
 ### 解决冲突
@@ -519,7 +522,7 @@ git push -u origin main
 首先确保你的分支已经关联了远程仓库的分支，之后使用
 
 ```sh
-git fetch # 将远程仓库的内容拉取到本地
+git fetch <repo-nickname> # 将远程仓库的内容拉取到本地
 git merge # 将本地中远程仓库的内容merge到当前分支
 ```
 
@@ -569,7 +572,7 @@ git remote --verbose show <repo-nickname>
 
 〇 2.1 先拉取最新内容
 ```shell
-git fetch <team-repo-nickname>
+git fetch <team-repo-nickname> # 或 git fetch --all
 ```
 
 〇 2.2 将最新的内容merge到自己的main分支
@@ -612,7 +615,7 @@ git merge <team-repo-nickname>/main
 在上一次commit之后，再次修改代码之前，你需要拉取最新的代码；这时可能会遇到冲突，因为你在本地修改的时候别人可能已经在远端仓库提交了PR并且被管理者merge到新的代码中。遇到冲突需要自己解决
 
 ```shell
-git fetch <team-repo-nickname>
+git fetch <team-repo-nickname> # 或 git fetch --all
 (newFeature) git merge <team-repo-nickname>/main
 ```
 
@@ -640,7 +643,7 @@ git push <my-repo-nickname> newFeature:newFeature
 也可以写作：
 
 ```shell
-(newFeature) git push yxj newFeature
+(newFeature) git push <my-repo-nickname> newFeature
 ```
 
 这里的语法是：`git push <远程主机> <远程分支>`
@@ -850,6 +853,9 @@ GitHub是一个代码托管平台和世界最大的程序员交流社区。你�
 
 终端脚本的编写：需要掌握，在Xcode里面可能就要写的。但不是刚需。也很简单，用到的时候再简单学一下就好了
 
+## GitHub CI
+查看[THU-iOS tutorial repo](https://github.com/THU-iOS/tutorial)中`.github/workflows`中的`yaml`文件，可以看到我们将上传的讲稿自动部署到`GitHub pages`
+
 # Homework
 〇（Git基础）
 
@@ -865,7 +871,9 @@ Git是目前世界上最先进的分布式（）控制系统
 
 提示：快捷键符号可以在macOS按⌃⌘space调出表情/符号面板（菜单栏的`Emoji & Symbols`），在技术符号（`Technical Symbols`）中找到这些快捷键符号。也可以用英文简写表示。
 
-〇 （终端常用命令与注意事项）使用终端在当前路径下创建一个名为“learning git.md”的文本文件的命令为：
+〇 （终端常用命令与注意事项）
+
+使用终端在当前路径下创建一个名为`learning git.md`的文本文件的命令为：
 
 〇（查看帮助文档的方式、命令的参数）
 
@@ -875,18 +883,28 @@ Git是目前世界上最先进的分布式（）控制系统
 
 使用终端查看一个文本文件的命令为`cat <file>`，请问这个`cat`是哪个英文单词的缩写呢？
 
+如何退出帮助页面？
+
 提示：查看`cat`的帮助文档
 
-〇 （Git版本回退）选择题：命令`git reset --hard <commit>`的作用是（），命令`git revert <commit>`的作用是（）
+〇 （Git版本回退）
+
+选择题：命令`git reset --hard <commit>`的作用是（），命令`git revert <commit>`的作用是（）
 
 A. 将工作区的所有文件恢复到某个`commit`之后的样子
 
-B. 将某个`commit`所做的更改恢复
+B. 撤销/回退某个`commit`所做的更改
 
-〇 （Git使用注意）一般来说，使用`git init`初始化之后，需要给文件夹添加怎样的一个文件，这样之后才能才能直接使用`git add .`呢？
+〇 （Git使用注意）
 
-〇 （Git进阶操作）请问`git rebase`命令的作用是什么呢？
+一般来说，使用`git init`初始化之后，需要给文件夹添加怎样的一个文件，这样之后才能才能直接使用`git add .`呢？
+
+〇 （Git进阶操作）
+
+请问`git rebase`命令的作用是什么呢？
 
 提示：使用搜索引擎了解，一句话简述即可
 
-〇 （开源协议）MIT协议中有一句话`THE SOFTWARE IS PROVIDED "XX XX"`，浏览文章[从MIT协议谈契约精神](https://mp.weixin.qq.com/s/WyBZpChPA5xLo90rBHi8Mw)，回答`"XX XX"`代表的英文单词是？它的中文意思是？
+〇 （开源协议）
+
+MIT协议中有一句话`THE SOFTWARE IS PROVIDED "XX XX"`，浏览文章[从MIT协议谈契约精神](https://mp.weixin.qq.com/s/WyBZpChPA5xLo90rBHi8Mw)，回答`"XX XX"`代表的英文单词是？它的中文意思是？

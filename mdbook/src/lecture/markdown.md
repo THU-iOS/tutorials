@@ -425,10 +425,18 @@ mdbook server
 〇 ⌥⌫、⌘⌫；fn⌫：删除词、删除到行首；向后删除 delete
 
 # Homework
-〇 用`markdown`写出带格式的文字：`Hello, world!`其中`Hello`用**粗体**，`world`用*斜体*。
+〇 （markdown语法：粗体/斜体）
 
-〇 用`markdown`语法写一个两行五列的表格：表头为**周一到周五**，表的内容为那天你的**早八课程**；如果某天没有早八课程，那么对应的格空下来不填写。
+用`markdown`写出带格式的文字：`Hello, world!`其中`Hello`用**粗体**，`world`用*斜体*。
 
-〇 在`markdown`中插入图片时小括号中可以填写图片在互联网上的（），也可以填写在文件管理器（如`访达`）中的**图片**与**markdown文件**的（）。
+〇 （markdown语法：表格）
 
-〇 阅览`Github`支持的`markdown`语法[GitHub Guides | Mastering Markdown](https://guides.github.com/features/mastering-markdown/)，使用删除线语法在右边的文字中只添加符号来表示“Google是你最好的朋友”）：`Baidu Google is your best friend.`（提示：`crossed out`）
+用`markdown`语法列一个两行五列的表格：表头为**周一到周五**，表的内容为那天你的**早八课程**；如果某天没有早八课程，那么对应的格空下来不填写。
+
+〇 （markdown图片插入）
+
+在`markdown`中插入图片时小括号中可以填写图片在互联网上的（），也可以填写在文件管理器（如`访达`）中的**图片**与**markdown文件**的（）。
+
+〇 （其他markdown语法）
+
+阅览`Github`支持的`markdown`语法[GitHub Guides | Mastering Markdown](https://guides.github.com/features/mastering-markdown/)，使用删除线语法在右边的文字中只添加符号来表示“Google是你最好的朋友”）：`Baidu Google is your best friend.`（提示：`crossed out`）
