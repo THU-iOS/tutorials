@@ -904,10 +904,14 @@ Content in the first column | Content in the second column
 <p>〇 按住⌥：矩形区域选中</p>
 <p>〇 ⌥⌫、⌘⌫；fn⌫：删除词、删除到行首；向后删除 delete</p>
 <h1><a class="header" href="#homework" id="homework">Homework</a></h1>
-<p>〇 用<code>markdown</code>写出带格式的文字：<code>Hello, world!</code>其中<code>Hello</code>用<strong>粗体</strong>，<code>world</code>用<em>斜体</em>。</p>
-<p>〇 用<code>markdown</code>语法写一个两行五列的表格：表头为<strong>周一到周五</strong>，表的内容为那天你的<strong>早八课程</strong>；如果某天没有早八课程，那么对应的格空下来不填写。</p>
-<p>〇 在<code>markdown</code>中插入图片时小括号中可以填写图片在互联网上的（），也可以填写在文件管理器（如<code>访达</code>）中的<strong>图片</strong>与<strong>markdown文件</strong>的（）。</p>
-<p>〇 阅览<code>Github</code>支持的<code>markdown</code>语法<a href="https://guides.github.com/features/mastering-markdown/">GitHub Guides | Mastering Markdown</a>，使用删除线语法在右边的文字中只添加符号来表示“Google是你最好的朋友”）：<code>Baidu Google is your best friend.</code>（提示：<code>crossed out</code>）</p>
+<p>〇 （markdown语法：粗体/斜体）</p>
+<p>用<code>markdown</code>写出带格式的文字：<code>Hello, world!</code>其中<code>Hello</code>用<strong>粗体</strong>，<code>world</code>用<em>斜体</em>。</p>
+<p>〇 （markdown语法：表格）</p>
+<p>用<code>markdown</code>语法列一个两行五列的表格：表头为<strong>周一到周五</strong>，表的内容为那天你的<strong>早八课程</strong>；如果某天没有早八课程，那么对应的格空下来不填写。</p>
+<p>〇 （markdown图片插入）</p>
+<p>在<code>markdown</code>中插入图片时小括号中可以填写图片在互联网上的（），也可以填写在文件管理器（如<code>访达</code>）中的<strong>图片</strong>与<strong>markdown文件</strong>的（）。</p>
+<p>〇 （其他markdown语法）</p>
+<p>阅览<code>Github</code>支持的<code>markdown</code>语法<a href="https://guides.github.com/features/mastering-markdown/">GitHub Guides | Mastering Markdown</a>，使用删除线语法在右边的文字中只添加符号来表示“Google是你最好的朋友”）：<code>Baidu Google is your best friend.</code>（提示：<code>crossed out</code>）</p>
 <h1><a class="header" href="#git讲座" id="git讲座">Git讲座</a></h1>
 <blockquote>
 <p>Started on 210504
@@ -1038,6 +1042,7 @@ by <a href="https://github.com/Yang-Xijie">杨希杰 Yang Xijie</a></p>
 <li><a href="lecture/git.html#%E4%BD%BF%E7%94%A8thu-gitlab">使用THU GitLab</a></li>
 <li><a href="lecture/git.html#%E5%9B%BE%E5%BD%A2%E5%8C%96git">图形化Git</a></li>
 <li><a href="lecture/git.html#%E7%BB%88%E7%AB%AF%E8%BF%9B%E9%98%B6">终端进阶</a></li>
+<li><a href="lecture/git.html#github-ci">GitHub CI</a></li>
 </ul>
 </li>
 <li><a href="lecture/git.html#homework">Homework</a></li>
@@ -1139,7 +1144,7 @@ clear # 清除终端屏幕上的内容
 <pre><code>git --version
 git version 2.24.3 (Apple Git-128)
 </code></pre>
-<p>如果无法出现版本号，说明你需要安装<code>Xcode</code>或者<code>Command Line Tools</code>，安装的时候会顺带安装<code>Git</code>。推荐之后打算<strong>学习iOS软件开发的同学</strong>直接从<code>App Store</code>安装<code>Xcode</code>；Mac存储较小的同学或者之后不打算用<code>Xcode</code>的话在Apple Developer下载<a href="https://developer.apple.com/download/more/">Command Line Tools</a>安装就好。</p>
+<p>如果无法出现版本号，说明你需要安装<code>Xcode</code>或者<code>Command Line Tools</code>，安装的时候会顺带安装<code>Git</code>。推荐之后打算<strong>学习iOS软件开发的同学</strong>直接从<code>App Store</code>安装<code>Xcode</code>；Mac存储较小的同学或者之后不打算用<code>Xcode</code>的话在Apple Developer下载<a href="https://developer.apple.com/download/more/">Command Line Tools</a>安装就好。如果希望使用更新版本的<code>Git</code>，需要使用<code>Homebrew</code>进行安装，这里不多说，因为自带的版本版本已经足够了。</p>
 <h3><a class="header" href="#添加git用户名和邮箱" id="添加git用户名和邮箱">添加Git用户名和邮箱</a></h3>
 <pre><code class="language-sh"># 查看
 git config user.name
@@ -1204,7 +1209,8 @@ git diff &lt;commit&gt; &lt;commit&gt; # between two commits
 <p>所以我们使用<code>git add &lt;file&gt;</code>命令，将删除的文件添加到暂存区</p>
 <p>相当于：如果你需要在工作区（在文件管理器）删除一个文件，而且还要让git不再跟踪记录这个文件，那么需要先在文件管理器中删除，之后再使用<code>git add</code>命令添加这个文件。</p>
 <p>这两步合成一步，就是<code>git rm &lt;file&gt;</code>。还是推荐大家使用上面的命令，因为我们在之后实际开发的时候，可能一次commit会对很多文件作出修改，这其中包括新建一些文件、删除一些文件，因此直接<code>git add .</code>就好了，不需要考虑这么多；如果文件是删除了的，那么<code>git add .</code>就会将这个文件识别为被删除的文件。</p>
-<p>如果你只是要将用<code>git add</code>放到暂存区的文件取消暂存，看下面的<code>git restore</code>命令</p>
+<p>如果你要将用<code>git add</code>放到暂存区的文件取消暂存，使用<code>git rm --cached &lt;file&gt;</code>命令</p>
+<p>如果你想改变工作区的文件，或者让暂存区的文件变成</p>
 <h3><a class="header" href="#案例关于上面所有命令的案例" id="案例关于上面所有命令的案例">案例：关于上面所有命令的案例</a></h3>
 <p>TODO</p>
 <p>git init/add/status/diff/commit/status/add/commit/log/diff</p>
@@ -1258,14 +1264,14 @@ It is not possible to re-include a file if a parent directory of that file is ex
 <h3><a class="header" href="#分支" id="分支">分支</a></h3>
 <p>创建一个分支，你可以在这个分支上开发新功能A，过一段时间，你又想开发新功能B，这时你可以再开一个分支。过了一段时间，你两个新功能都开发好了，就可以将两个分支合在一起，这样你的产品就同时有了两个新的功能。</p>
 <h3><a class="header" href="#分支操作" id="分支操作">分支操作</a></h3>
-<pre><code class="language-sh">git branch --create &lt;branch&gt; # 创建分支
+<pre><code class="language-sh">git branch --create(-c) &lt;branch&gt; # 创建分支
 git branch # 查看本地分支
 git switch &lt;branch&gt; # 切换分支
 </code></pre>
 <pre><code class="language-sh"># 开发好了新功能之后
 git switch main # 切换到主分支，因为我们的所有功能都要合并到一个分支上
 git merge &lt;branch&gt; # 将开发新功能的分支的内容合并（merge）到main分支上
-git branch -d &lt;branch&gt; # 删除开发新功能的分支，因为开发好了合并进来原来的开发分支就没有用了
+git branch --delete(-d) &lt;branch&gt; # 删除开发新功能的分支，因为开发好了合并进来原来的开发分支就没有用了
 </code></pre>
 <h3><a class="header" href="#解决冲突" id="解决冲突">解决冲突</a></h3>
 <p>合并的时候可能会产生冲突。这时我们需要自己去解决冲突。比如你和同学一块写UI组件，各自开了一份文件来写，结果你俩把文件名起成了一样的，或者在同一份文件中修改了相同的地方，这时在第一个同学合并之后，第二个同学的合并就会出现冲突。解决冲突的方式很简单，在被Git用箭头标出来的地方进行删改就好了。</p>
@@ -1322,7 +1328,7 @@ git push -u origin main
 <p>需要注意的是，在我们开发一个功能的时候，他人可能已经写了一些代码commit然后push到了远程仓库。这时我们一般需要将他人的代码merge到自己目前的分支上，保持自己的代码最新，减少之后自己开发完毕push到远端仓库出现冲突的情况，也减少重复开发的情况。</p>
 <p>具体做法
 首先确保你的分支已经关联了远程仓库的分支，之后使用</p>
-<pre><code class="language-sh">git fetch # 将远程仓库的内容拉取到本地
+<pre><code class="language-sh">git fetch &lt;repo-nickname&gt; # 将远程仓库的内容拉取到本地
 git merge # 将本地中远程仓库的内容merge到当前分支
 </code></pre>
 <h4><a class="header" href="#为开源项目添砖加瓦没有仓库的读写权限" id="为开源项目添砖加瓦没有仓库的读写权限">为开源项目添砖加瓦/没有仓库的读写权限</a></h4>
@@ -1353,7 +1359,7 @@ git remote --verbose show &lt;repo-nickname&gt;
 <h5><a class="header" href="#2-开始开发自己的功能" id="2-开始开发自己的功能">2 开始开发自己的功能</a></h5>
 <p>注：一般团队的远程仓库只有一个main分支</p>
 <p>〇 2.1 先拉取最新内容</p>
-<pre><code class="language-shell">git fetch &lt;team-repo-nickname&gt;
+<pre><code class="language-shell">git fetch &lt;team-repo-nickname&gt; # 或 git fetch --all
 </code></pre>
 <p>〇 2.2 将最新的内容merge到自己的main分支</p>
 <pre><code class="language-shell">git switch main
@@ -1378,7 +1384,7 @@ git merge &lt;team-repo-nickname&gt;/main
 </code></pre>
 <p>〇 2.4.4 拉取最新代码查看是否有冲突</p>
 <p>在上一次commit之后，再次修改代码之前，你需要拉取最新的代码；这时可能会遇到冲突，因为你在本地修改的时候别人可能已经在远端仓库提交了PR并且被管理者merge到新的代码中。遇到冲突需要自己解决</p>
-<pre><code class="language-shell">git fetch &lt;team-repo-nickname&gt;
+<pre><code class="language-shell">git fetch &lt;team-repo-nickname&gt; # 或 git fetch --all
 (newFeature) git merge &lt;team-repo-nickname&gt;/main
 </code></pre>
 <p>在解决冲突后再次commit；如果无冲突则没有必要commit</p>
@@ -1394,7 +1400,7 @@ git merge &lt;team-repo-nickname&gt;/main
 <p>这里的语法是：<code>git push &lt;远程主机&gt; &lt;本地分支&gt;:&lt;远程分支&gt;</code></p>
 <p>含义：将某一本地分支推到远程主机的远程分支；如果远程仓库没有这一分支，则创建</p>
 <p>也可以写作：</p>
-<pre><code class="language-shell">(newFeature) git push yxj newFeature
+<pre><code class="language-shell">(newFeature) git push &lt;my-repo-nickname&gt; newFeature
 </code></pre>
 <p>这里的语法是：<code>git push &lt;远程主机&gt; &lt;远程分支&gt;</code></p>
 <p>含义：将本地的当前分支推到远程主机的远程分支；如果远程仓库没有这一分支，则创建</p>
@@ -1545,6 +1551,8 @@ alias glg=&quot;git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yell
 <p><code>echo hello world &gt;&gt; haha</code></p>
 <p><code>history | grep git</code></p>
 <p>终端脚本的编写：需要掌握，在Xcode里面可能就要写的。但不是刚需。也很简单，用到的时候再简单学一下就好了</p>
+<h2><a class="header" href="#github-ci" id="github-ci">GitHub CI</a></h2>
+<p>查看<a href="https://github.com/THU-iOS/tutorial">THU-iOS tutorial repo</a>中<code>.github/workflows</code>中的<code>yaml</code>文件，可以看到我们将上传的讲稿自动部署到<code>GitHub pages</code></p>
 <h1><a class="header" href="#homework-1" id="homework-1">Homework</a></h1>
 <p>〇（Git基础）</p>
 <p>Git是目前世界上最先进的分布式（）控制系统</p>
@@ -1553,19 +1561,25 @@ alias glg=&quot;git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yell
 <p>〇（Finder操作）</p>
 <p>在Finder中显示/隐藏以点开头文件的快捷键为：</p>
 <p>提示：快捷键符号可以在macOS按⌃⌘space调出表情/符号面板（菜单栏的<code>Emoji &amp; Symbols</code>），在技术符号（<code>Technical Symbols</code>）中找到这些快捷键符号。也可以用英文简写表示。</p>
-<p>〇 （终端常用命令与注意事项）使用终端在当前路径下创建一个名为“learning git.md”的文本文件的命令为：</p>
+<p>〇 （终端常用命令与注意事项）</p>
+<p>使用终端在当前路径下创建一个名为<code>learning git.md</code>的文本文件的命令为：</p>
 <p>〇（查看帮助文档的方式、命令的参数）</p>
 <p>在命令行查看Git帮助的命令为：</p>
 <p>在命令行查看Git的restore操作的帮助文档的命令为：</p>
 <p>使用终端查看一个文本文件的命令为<code>cat &lt;file&gt;</code>，请问这个<code>cat</code>是哪个英文单词的缩写呢？</p>
+<p>如何退出帮助页面？</p>
 <p>提示：查看<code>cat</code>的帮助文档</p>
-<p>〇 （Git版本回退）选择题：命令<code>git reset --hard &lt;commit&gt;</code>的作用是（），命令<code>git revert &lt;commit&gt;</code>的作用是（）</p>
+<p>〇 （Git版本回退）</p>
+<p>选择题：命令<code>git reset --hard &lt;commit&gt;</code>的作用是（），命令<code>git revert &lt;commit&gt;</code>的作用是（）</p>
 <p>A. 将工作区的所有文件恢复到某个<code>commit</code>之后的样子</p>
-<p>B. 将某个<code>commit</code>所做的更改恢复</p>
-<p>〇 （Git使用注意）一般来说，使用<code>git init</code>初始化之后，需要给文件夹添加怎样的一个文件，这样之后才能才能直接使用<code>git add .</code>呢？</p>
-<p>〇 （Git进阶操作）请问<code>git rebase</code>命令的作用是什么呢？</p>
+<p>B. 撤销/回退某个<code>commit</code>所做的更改</p>
+<p>〇 （Git使用注意）</p>
+<p>一般来说，使用<code>git init</code>初始化之后，需要给文件夹添加怎样的一个文件，这样之后才能才能直接使用<code>git add .</code>呢？</p>
+<p>〇 （Git进阶操作）</p>
+<p>请问<code>git rebase</code>命令的作用是什么呢？</p>
 <p>提示：使用搜索引擎了解，一句话简述即可</p>
-<p>〇 （开源协议）MIT协议中有一句话<code>THE SOFTWARE IS PROVIDED &quot;XX XX&quot;</code>，浏览文章<a href="https://mp.weixin.qq.com/s/WyBZpChPA5xLo90rBHi8Mw">从MIT协议谈契约精神</a>，回答<code>&quot;XX XX&quot;</code>代表的英文单词是？它的中文意思是？</p>
+<p>〇 （开源协议）</p>
+<p>MIT协议中有一句话<code>THE SOFTWARE IS PROVIDED &quot;XX XX&quot;</code>，浏览文章<a href="https://mp.weixin.qq.com/s/WyBZpChPA5xLo90rBHi8Mw">从MIT协议谈契约精神</a>，回答<code>&quot;XX XX&quot;</code>代表的英文单词是？它的中文意思是？</p>
 <h1><a class="header" href="#build-this-site" id="build-this-site">Build This Site</a></h1>
 <ul>
 <li><a href="postscript/site_build.html#build-this-site">Build This Site</a>
