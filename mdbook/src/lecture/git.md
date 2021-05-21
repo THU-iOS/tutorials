@@ -291,6 +291,14 @@ git commit -m"<message>"
 
 一般`<message>`使用动词加名词的形式，记录你这次`commit`修改的主要内容。使用英文或中文都可以，个人推荐使用英文，因为如果你之后开源，英文可以让你方便的将你的项目推向世界。
 
+一般来说，一次commit之后，这次commit就不应该被改变了；类似你这次做的修改已经写入历史书的感觉。但是你commit之后突然发现刚刚的commit实在不行，这时怎么办呢？使用：
+
+```sh
+git commit -m "<message>" --amend
+```
+
+来修补上一次commit。这样之前的一次commit就会变成你新提交的commit。
+
 #### git status
 查看每个区的状态。
 
