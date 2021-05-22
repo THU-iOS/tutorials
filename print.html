@@ -624,6 +624,7 @@
 <li><a href="lecture/markdown.html#%E5%85%B6%E4%BB%96github%E6%94%AF%E6%8C%81%E7%9A%84%E8%AF%AD%E6%B3%95">其他GitHub支持的语法</a></li>
 <li><a href="lecture/markdown.html#%E5%AF%B9%E6%96%87%E4%BB%B6%E8%B7%AF%E5%BE%84%E7%9A%84%E7%90%86%E8%A7%A3">对文件路径的理解</a></li>
 <li><a href="lecture/markdown.html#%E5%AF%B9url%E8%B5%84%E6%BA%90%E7%9A%84%E7%90%86%E8%A7%A3">对url资源的理解</a></li>
+<li><a href="lecture/markdown.html#%E6%B7%BB%E5%8A%A0%E7%9B%AE%E5%BD%95">添加目录</a></li>
 <li><a href="lecture/markdown.html#%E5%85%B6%E4%BB%96%E4%B8%80%E4%BA%9B%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9">其他一些注意事项</a></li>
 </ul>
 </li>
@@ -646,7 +647,11 @@
 <li><a href="lecture/markdown.html#%E6%96%87%E5%AD%97%E7%BC%96%E8%BE%91%E6%95%88%E7%8E%87up%E6%8A%80%E5%B7%A7">文字编辑效率up技巧</a></li>
 </ul>
 </li>
-<li><a href="lecture/markdown.html#homework">Homework</a></li>
+<li><a href="lecture/markdown.html#homework">Homework</a>
+<ul>
+<li><a href="lecture/markdown.html#answer">Answer</a></li>
+</ul>
+</li>
 </ul>
 <p><strong>说明</strong>：所讲的内容包括但不限于：使用<code>markdown</code>的原因、<code>markdown</code>基础语法、对<code>markdown</code>中路径和互联网资源的理解、<code>markdown</code>编写工具、导出、发布……</p>
 <p><strong>面向对象</strong>：需要进行合作编程开发的同学（主要）；没有使用过<code>markdown</code>风格写过文字的同学。教程以使用<code>macOS</code>的同学为主。</p>
@@ -839,6 +844,9 @@ Content in the first column | Content in the second column
 </code></pre>
 <p>但这样，你就需要在和你现在写的<code>markdown</code>的同一目录下，放一个<code>media</code>文件夹，里面有这张<code>markdown_icon.png</code>的图片。</p>
 <p>有的时候，图片和代码相比起来，是个庞然大物（<code>1KB</code> vs <code>1MB</code>），这时我们不希望将图片加入到项目中（指不希望项目的体积很大，别人从<code>GitHub</code>上下载项目时花的时间过久），可是在项目说明中还需要加入图片进行说明，这时怎么办呢？最简单的，将图片压缩一下（<code>1MB-&gt;100KB</code>）扔进项目文件夹，这是最省心的…但要是图比较多，一般来说，我们会选择某些厂商的对象存储服务，将这些图片资源放到比如阿里云的服务器上，然后这个服务把图片的网络链接给你，你就可以在<code>markdown</code>中使用这个链接了。如果没有那么正式，那么这种服务叫做图床。比如我一直在用的<a href="https://www.superbed.cn">聚合图床</a>，你把图片丢进去，它帮你将图片转为一个链接。但是使用这种服务也有需要注意的地方，如果运营图床的工作室哪天跑路了，你放进去的图片可能就没了。</p>
+<h3><a class="header" href="#添加目录" id="添加目录">添加目录</a></h3>
+<p>不少平台都支持使用<code>[toc]</code>来添加目录。你只需要输入<code>[toc]</code>，平台就会帮你自动渲染生成目录。</p>
+<p>但也有一些平台不支持这样，这时你需要使用VS Code中的<code>Markdown All in One</code>插件，使用这个插件提供的<code>自动生成目录</code>功能来添加目录。</p>
 <h3><a class="header" href="#其他一些注意事项" id="其他一些注意事项">其他一些注意事项</a></h3>
 <p>有的时候你在<code>markdown</code>明明换行了，可是上传到<code>GitHub</code>上面一看，文字都粘在一起了。这是为什么呢？</p>
 <p>英文在分段的时候，不像我们写文章段前空两格，他们会直接在两段之间多空一行。一般的回车只是用来方便阅读，不然一行的内容太长了。</p>
@@ -912,6 +920,22 @@ Content in the first column | Content in the second column
 <p>在<code>markdown</code>中插入图片时小括号中可以填写图片在互联网上的（），也可以填写在文件管理器（如<code>访达</code>）中的<strong>图片</strong>与<strong>markdown文件</strong>的（）。</p>
 <p>〇 （其他markdown语法）</p>
 <p>阅览<code>Github</code>支持的<code>markdown</code>语法<a href="https://guides.github.com/features/mastering-markdown/">GitHub Guides | Mastering Markdown</a>，使用删除线语法在右边的文字中只添加符号来表示“Google是你最好的朋友”）：<code>Baidu Google is your best friend.</code>（提示：<code>crossed out</code>）</p>
+<h2><a class="header" href="#answer" id="answer">Answer</a></h2>
+<p>〇 （markdown语法：粗体/斜体）</p>
+<p>用<code>markdown</code>写出带格式的文字：<code>Hello, world!</code>其中<code>Hello</code>用<strong>粗体</strong>，<code>world</code>用<em>斜体</em>。</p>
+<pre><code>**Hello**/__Hello__ 和 _word_/*world* 的任意组合
+</code></pre>
+<p>〇 （markdown语法：表格）</p>
+<p>参考：</p>
+<pre><code>Monday | Tuesday | Wednesday | Thursday | Friday
+- | - | - | - | -
+ | | Technical Drawing | | Signal and System
+</code></pre>
+<p>〇 （markdown图片插入）</p>
+<p>链接 相对路径</p>
+<p>〇 （其他markdown语法）</p>
+<pre><code>~~Baidu~~ Google is your best friend.
+</code></pre>
 <h1><a class="header" href="#git讲座" id="git讲座">Git讲座</a></h1>
 <blockquote>
 <p>Started on 210504</p>
@@ -1046,7 +1070,11 @@ Content in the first column | Content in the second column
 <li><a href="lecture/git.html#github-ci">GitHub CI</a></li>
 </ul>
 </li>
-<li><a href="lecture/git.html#homework">Homework</a></li>
+<li><a href="lecture/git.html#homework">Homework</a>
+<ul>
+<li><a href="lecture/git.html#answer">Answer</a></li>
+</ul>
+</li>
 </ul>
 <h1><a class="header" href="#为什么要用git" id="为什么要用git">为什么要用Git</a></h1>
 <p>〇 版本控制</p>
@@ -1444,14 +1472,14 @@ git merge &lt;team-repo-nickname&gt;/main
 <h2><a class="header" href="#git进阶---标签管理" id="git进阶---标签管理">Git进阶 - 标签管理</a></h2>
 <h3><a class="header" href="#为什么要添加标签" id="为什么要添加标签">为什么要添加标签</a></h3>
 <blockquote>
-<p>发布一个版本时，我们通常先在版本库中打一个标签（tag），这样，就唯一确定了打标签时刻的版本。将来无论什么时候，取某个标签的版本，就是把那个打标签的时刻的历史版本取出来。所以，标签也是版本库的一个快照。
-Git有commit，为什么还要引入tag？
-“请把上周一的那个版本打包发布，commit号是6a5819e...”
-如果换一个办法：
-“请把上周一的那个版本打包发布，版本号是v1.2”
-“好的，按照tag v1.2查找commit就行！”
-所以，tag就是一个让人容易记住的有意义的名字，它跟某个commit绑在一起。
-——<a href="https://www.liaoxuefeng.com/wiki/896043488029600/900788941487552">廖雪峰Git教程-标签管理</a></p>
+<p>发布一个版本时，我们通常先在版本库中打一个标签（tag），这样，就唯一确定了打标签时刻的版本。将来无论什么时候，取某个标签的版本，就是把那个打标签的时刻的历史版本取出来。所以，标签也是版本库的一个快照。</p>
+<p>Git有commit，为什么还要引入tag？</p>
+<p>“请把上周一的那个版本打包发布，commit号是6a5819e...”</p>
+<p>如果换一个办法：</p>
+<p>“请把上周一的那个版本打包发布，版本号是v1.2”</p>
+<p>“好的，按照tag v1.2查找commit就行！”</p>
+<p>所以，tag就是一个让人容易记住的有意义的名字，它跟某个commit绑在一起。</p>
+<p>——<a href="https://www.liaoxuefeng.com/wiki/896043488029600/900788941487552">廖雪峰Git教程-标签管理</a></p>
 </blockquote>
 <h3><a class="header" href="#在本地的commit上添加标签" id="在本地的commit上添加标签">在本地的commit上添加标签</a></h3>
 <pre><code class="language-sh"> git tag -a &quot;1.0&quot; -m&quot;first versioin&quot;
@@ -1585,6 +1613,28 @@ alias glg=&quot;git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yell
 <p>提示：使用搜索引擎了解，一句话简述即可</p>
 <p>〇 （开源协议）</p>
 <p>MIT协议中有一句话<code>THE SOFTWARE IS PROVIDED &quot;XX XX&quot;</code>，浏览文章<a href="https://mp.weixin.qq.com/s/WyBZpChPA5xLo90rBHi8Mw">从MIT协议谈契约精神</a>，回答<code>&quot;XX XX&quot;</code>代表的英文单词是？它的中文意思是？</p>
+<h2><a class="header" href="#answer-1" id="answer-1">Answer</a></h2>
+<p>〇（Git基础）</p>
+<p>版本</p>
+<p>〇（路径的理解）</p>
+<p>../Swift_learning/help.md</p>
+<p>〇（Finder操作）</p>
+<p>⇧⌘.</p>
+<p>〇 （终端常用命令与注意事项）使用终端在当前路径下创建一个名为“learning git.md”的文本文件的命令为：</p>
+<p>touch &quot;learning git.md&quot; 或 touch learning\ git.md 或 touch 'learning git.md'</p>
+<p>〇（查看帮助文档的方式、命令的参数）</p>
+<p>man git 或 git --help</p>
+<p>git --help restore 或 git restore --help</p>
+<p>concatenate</p>
+<p>在英文输入方式下按q</p>
+<p>〇 （Git版本回退）</p>
+<p>A B</p>
+<p>〇 （Git使用注意）</p>
+<p>.gitignore</p>
+<p>〇 （Git进阶操作）</p>
+<p>合并多次commit为一次commit</p>
+<p>〇 （开源协议）</p>
+<p>AS IS 中文意思：按照原样的</p>
 <h1><a class="header" href="#git实例" id="git实例">Git实例</a></h1>
 <blockquote>
 <p>Author: <a href="https://github.com/Yang-Xijie">杨希杰 Yang Xijie</a></p>

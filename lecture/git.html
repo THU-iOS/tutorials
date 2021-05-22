@@ -282,7 +282,11 @@
 <li><a href="#github-ci">GitHub CI</a></li>
 </ul>
 </li>
-<li><a href="#homework">Homework</a></li>
+<li><a href="#homework">Homework</a>
+<ul>
+<li><a href="#answer">Answer</a></li>
+</ul>
+</li>
 </ul>
 <h1><a class="header" href="#为什么要用git" id="为什么要用git">为什么要用Git</a></h1>
 <p>〇 版本控制</p>
@@ -680,14 +684,14 @@ git merge &lt;team-repo-nickname&gt;/main
 <h2><a class="header" href="#git进阶---标签管理" id="git进阶---标签管理">Git进阶 - 标签管理</a></h2>
 <h3><a class="header" href="#为什么要添加标签" id="为什么要添加标签">为什么要添加标签</a></h3>
 <blockquote>
-<p>发布一个版本时，我们通常先在版本库中打一个标签（tag），这样，就唯一确定了打标签时刻的版本。将来无论什么时候，取某个标签的版本，就是把那个打标签的时刻的历史版本取出来。所以，标签也是版本库的一个快照。
-Git有commit，为什么还要引入tag？
-“请把上周一的那个版本打包发布，commit号是6a5819e...”
-如果换一个办法：
-“请把上周一的那个版本打包发布，版本号是v1.2”
-“好的，按照tag v1.2查找commit就行！”
-所以，tag就是一个让人容易记住的有意义的名字，它跟某个commit绑在一起。
-——<a href="https://www.liaoxuefeng.com/wiki/896043488029600/900788941487552">廖雪峰Git教程-标签管理</a></p>
+<p>发布一个版本时，我们通常先在版本库中打一个标签（tag），这样，就唯一确定了打标签时刻的版本。将来无论什么时候，取某个标签的版本，就是把那个打标签的时刻的历史版本取出来。所以，标签也是版本库的一个快照。</p>
+<p>Git有commit，为什么还要引入tag？</p>
+<p>“请把上周一的那个版本打包发布，commit号是6a5819e...”</p>
+<p>如果换一个办法：</p>
+<p>“请把上周一的那个版本打包发布，版本号是v1.2”</p>
+<p>“好的，按照tag v1.2查找commit就行！”</p>
+<p>所以，tag就是一个让人容易记住的有意义的名字，它跟某个commit绑在一起。</p>
+<p>——<a href="https://www.liaoxuefeng.com/wiki/896043488029600/900788941487552">廖雪峰Git教程-标签管理</a></p>
 </blockquote>
 <h3><a class="header" href="#在本地的commit上添加标签" id="在本地的commit上添加标签">在本地的commit上添加标签</a></h3>
 <pre><code class="language-sh"> git tag -a &quot;1.0&quot; -m&quot;first versioin&quot;
@@ -821,6 +825,28 @@ alias glg=&quot;git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yell
 <p>提示：使用搜索引擎了解，一句话简述即可</p>
 <p>〇 （开源协议）</p>
 <p>MIT协议中有一句话<code>THE SOFTWARE IS PROVIDED &quot;XX XX&quot;</code>，浏览文章<a href="https://mp.weixin.qq.com/s/WyBZpChPA5xLo90rBHi8Mw">从MIT协议谈契约精神</a>，回答<code>&quot;XX XX&quot;</code>代表的英文单词是？它的中文意思是？</p>
+<h2><a class="header" href="#answer" id="answer">Answer</a></h2>
+<p>〇（Git基础）</p>
+<p>版本</p>
+<p>〇（路径的理解）</p>
+<p>../Swift_learning/help.md</p>
+<p>〇（Finder操作）</p>
+<p>⇧⌘.</p>
+<p>〇 （终端常用命令与注意事项）使用终端在当前路径下创建一个名为“learning git.md”的文本文件的命令为：</p>
+<p>touch &quot;learning git.md&quot; 或 touch learning\ git.md 或 touch 'learning git.md'</p>
+<p>〇（查看帮助文档的方式、命令的参数）</p>
+<p>man git 或 git --help</p>
+<p>git --help restore 或 git restore --help</p>
+<p>concatenate</p>
+<p>在英文输入方式下按q</p>
+<p>〇 （Git版本回退）</p>
+<p>A B</p>
+<p>〇 （Git使用注意）</p>
+<p>.gitignore</p>
+<p>〇 （Git进阶操作）</p>
+<p>合并多次commit为一次commit</p>
+<p>〇 （开源协议）</p>
+<p>AS IS 中文意思：按照原样的</p>
 
                     </main>
 
