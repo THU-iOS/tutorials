@@ -648,9 +648,9 @@
 </li>
 <li><a href="lecture/markdown.html#homework">Homework</a></li>
 </ul>
-<p><strong>说明</strong>：所讲的内容包括但不限于：使用<code>markdown</code>的原因、<code>markdown</code>基础语法、对<code>markdown</code>中路径和互联网资源的理解、<code>markdown</code>编写工具、导出、发布……
-<strong>面向对象</strong>：需要进行合作编程开发的同学（主要）；没有使用过<code>markdown</code>风格写过文字的同学。教程以使用<code>macOS</code>的同学为主。
-<strong>Lecture特色</strong>：不仅仅讲<code>markdown</code>本身，会从<code>markdown</code>延伸出去，有一些扩展的内容</p>
+<p><strong>说明</strong>：所讲的内容包括但不限于：使用<code>markdown</code>的原因、<code>markdown</code>基础语法、对<code>markdown</code>中路径和互联网资源的理解、<code>markdown</code>编写工具、导出、发布……</p>
+<p><strong>面向对象</strong>：需要进行合作编程开发的同学（主要）；没有使用过<code>markdown</code>风格写过文字的同学。教程以使用<code>macOS</code>的同学为主。</p>
+<p><strong>Lecture特色</strong>：不仅仅讲<code>markdown</code>本身，会从<code>markdown</code>延伸出去，有一些扩展的内容</p>
 <h1><a class="header" href="#表达与说明的方式" id="表达与说明的方式">表达与说明的方式</a></h1>
 <p>我们要给别人说明一样东西、一样事情的时候，往往需要至少一种的表达方式：比如用语言、用文字、用图片、视频、音乐等媒体；或者将它们结合起来，比如<code>PPT</code>。</p>
 <p>但其实一般来说，更方便的保留和传播的一种方式是文字。但如果只有文字，总是会让人觉得有些索然无味。这时，带格式的文字作为一种增强的表达方式出现了。大家最常用的可能就是<code>Microsoft Word</code>。你在<code>Word</code>中敲好文字，然后添加一些格式，比如加粗、斜体、居中、设置段落格式、艺术字和颜色调整；这样文字也变得有表现力了起来。</p>
@@ -705,10 +705,10 @@ __This will also be bold__
 
 _You **can** combine them_
 </code></pre>
-<p><em>This text will be italic</em>
-<em>This will also be italic</em></p>
-<p><strong>This text will be bold</strong>
-<strong>This will also be bold</strong></p>
+<p><em>This text will be italic</em></p>
+<p><em>This will also be italic</em></p>
+<p><strong>This text will be bold</strong></p>
+<p><strong>This will also be bold</strong></p>
 <p><em>You <strong>can</strong> combine them</em></p>
 <p>一般我们单个使用的时候用<code>*</code>多一些，但是两种格式组合使用的时候就随意了。</p>
 <h4><a class="header" href="#lists-列表" id="lists-列表">Lists 列表</a></h4>
@@ -765,8 +765,8 @@ https://github.com
 &lt;https://github.com&gt;
 </code></pre>
 <p><a href="https://github.com">GitHub Official Site</a></p>
-<p>https://github.com
-<a href="https://github.com">https://github.com</a></p>
+<p>https://github.com</p>
+<p><a href="https://github.com">https://github.com</a></p>
 <h4><a class="header" href="#images-图片" id="images-图片">Images 图片</a></h4>
 <p><code>![Text](url)</code>：感叹号，中括号，小括号。小括号里面放图片链接，中括号里面放图片说明（不必须；写了的话会在图片下方或某处显示说明，当因为某种原因图片无法加载的时候，显示时也会用说明替代图片）</p>
 <pre><code>![GitHub Logo](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)
@@ -779,10 +779,10 @@ https://github.com
 <p><code>Swift</code>中，<code>var</code>定义变量，<code>let</code>定义常量</p>
 <h4><a class="header" href="#code-block-代码块" id="code-block-代码块">Code Block 代码块</a></h4>
 <p>用一对三个反撇```包裹，在最开始三个反撇后可以加代码的语言名称或简写以在渲染时获得高亮支持。</p>
-<p>```swift
-var natural_numbers: Array<Int> = [0,1,2,3]</p>
-<p>print(natural_numbers.capacity)
-```</p>
+<p>```swift</p>
+<p>var natural_numbers: Array<Int> = [0,1,2,3]</p>
+<p>print(natural_numbers.capacity)</p>
+<p>```</p>
 <pre><code class="language-swift">var natural_numbers: Array&lt;Int&gt; = [0,1,2,3]
 
 print(natural_numbers.capacity)
@@ -798,8 +798,8 @@ print(natural_numbers.capacity)
 <blockquote>
 <p>Fearlessness means taking the frst step, 
 even if you don't know where it will take you.</p>
-</blockquote>
 <p>——Tim Cook's Commencement Address at Duke University, 2018</p>
+</blockquote>
 <p>我一般会用它来在文章开头写一下文档的更新日期和作者。</p>
 <h4><a class="header" href="#tables-表格" id="tables-表格">Tables 表格</a></h4>
 <p>You can create tables by assembling a list of words and dividing them with hyphens <code>-</code> (for the first row), and then separating each column with a pipe <code>|</code>:</p>
@@ -902,7 +902,7 @@ Content in the first column | Content in the second column
 <p>〇 ⌘上下左右：移动光标到行首/行未/文头/文末</p>
 <p>〇 按住⇧：文字选中；⇧上下左右 / ⇧⌥左右 / ⌘⇧上下左右</p>
 <p>〇 按住⌥：矩形区域选中</p>
-<p>〇 ⌥⌫、⌘⌫；fn⌫：删除词、删除到行首；向后删除 delete</p>
+<p>〇 ⌥⌫、⌘⌫；fn⌫：删除词、删除到行首；向后删除 delete；⌘X也是一种删除的方式</p>
 <h1><a class="header" href="#homework" id="homework">Homework</a></h1>
 <p>〇 （markdown语法：粗体/斜体）</p>
 <p>用<code>markdown</code>写出带格式的文字：<code>Hello, world!</code>其中<code>Hello</code>用<strong>粗体</strong>，<code>world</code>用<em>斜体</em>。</p>
