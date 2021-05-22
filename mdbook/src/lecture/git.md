@@ -80,6 +80,7 @@
   - [终端进阶](#终端进阶)
   - [GitHub CI](#github-ci)
 - [Homework](#homework)
+  - [Answer](#answer)
 
 # 为什么要用Git
 〇 版本控制
@@ -720,12 +721,19 @@ git fetch -p --all
 ## Git进阶 - 标签管理
 ### 为什么要添加标签
 > 发布一个版本时，我们通常先在版本库中打一个标签（tag），这样，就唯一确定了打标签时刻的版本。将来无论什么时候，取某个标签的版本，就是把那个打标签的时刻的历史版本取出来。所以，标签也是版本库的一个快照。
+> 
 > Git有commit，为什么还要引入tag？
+> 
 > “请把上周一的那个版本打包发布，commit号是6a5819e...”
+> 
 > 如果换一个办法：
+> 
 > “请把上周一的那个版本打包发布，版本号是v1.2”
+> 
 > “好的，按照tag v1.2查找commit就行！”
+> 
 > 所以，tag就是一个让人容易记住的有意义的名字，它跟某个commit绑在一起。
+> 
 > ——[廖雪峰Git教程-标签管理](https://www.liaoxuefeng.com/wiki/896043488029600/900788941487552)
 
 ### 在本地的commit上添加标签
@@ -921,3 +929,47 @@ B. 撤销/回退某个`commit`所做的更改
 〇 （开源协议）
 
 MIT协议中有一句话`THE SOFTWARE IS PROVIDED "XX XX"`，浏览文章[从MIT协议谈契约精神](https://mp.weixin.qq.com/s/WyBZpChPA5xLo90rBHi8Mw)，回答`"XX XX"`代表的英文单词是？它的中文意思是？
+
+## Answer
+
+〇（Git基础）
+
+版本
+
+〇（路径的理解）
+
+../Swift_learning/help.md
+
+〇（Finder操作）
+
+⇧⌘.
+
+〇 （终端常用命令与注意事项）使用终端在当前路径下创建一个名为“learning git.md”的文本文件的命令为：
+
+touch "learning git.md" 或 touch learning\ git.md 或 touch 'learning git.md'
+
+〇（查看帮助文档的方式、命令的参数）
+
+man git 或 git --help
+
+git --help restore 或 git restore --help
+
+concatenate
+
+在英文输入方式下按q
+
+〇 （Git版本回退）
+
+A B
+
+〇 （Git使用注意）
+
+.gitignore
+
+〇 （Git进阶操作）
+
+合并多次commit为一次commit
+
+〇 （开源协议）
+
+AS IS 中文意思：按照原样的

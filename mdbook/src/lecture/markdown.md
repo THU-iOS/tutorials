@@ -28,6 +28,7 @@
     - [其他GitHub支持的语法](#其他github支持的语法)
     - [对文件路径的理解](#对文件路径的理解)
     - [对url资源的理解](#对url资源的理解)
+    - [添加目录](#添加目录)
     - [其他一些注意事项](#其他一些注意事项)
   - [Markdown工具介绍](#markdown工具介绍)
     - [macOS](#macos)
@@ -41,6 +42,7 @@
   - [Markdown的发布](#markdown的发布)
   - [文字编辑效率up技巧](#文字编辑效率up技巧)
 - [Homework](#homework)
+  - [Answer](#answer)
 
 
 **说明**：所讲的内容包括但不限于：使用`markdown`的原因、`markdown`基础语法、对`markdown`中路径和互联网资源的理解、`markdown`编写工具、导出、发布……
@@ -325,6 +327,11 @@ Content in the first column | Content in the second column
 
 有的时候，图片和代码相比起来，是个庞然大物（`1KB` vs `1MB`），这时我们不希望将图片加入到项目中（指不希望项目的体积很大，别人从`GitHub`上下载项目时花的时间过久），可是在项目说明中还需要加入图片进行说明，这时怎么办呢？最简单的，将图片压缩一下（`1MB->100KB`）扔进项目文件夹，这是最省心的…但要是图比较多，一般来说，我们会选择某些厂商的对象存储服务，将这些图片资源放到比如阿里云的服务器上，然后这个服务把图片的网络链接给你，你就可以在`markdown`中使用这个链接了。如果没有那么正式，那么这种服务叫做图床。比如我一直在用的[聚合图床](https://www.superbed.cn)，你把图片丢进去，它帮你将图片转为一个链接。但是使用这种服务也有需要注意的地方，如果运营图床的工作室哪天跑路了，你放进去的图片可能就没了。
 
+### 添加目录
+不少平台都支持使用`[toc]`来添加目录。你只需要输入`[toc]`，平台就会帮你自动渲染生成目录。
+
+但也有一些平台不支持这样，这时你需要使用VS Code中的`Markdown All in One`插件，使用这个插件提供的`自动生成目录`功能来添加目录。
+
 ### 其他一些注意事项
 有的时候你在`markdown`明明换行了，可是上传到`GitHub`上面一看，文字都粘在一起了。这是为什么呢？
 
@@ -449,3 +456,31 @@ mdbook server
 〇 （其他markdown语法）
 
 阅览`Github`支持的`markdown`语法[GitHub Guides | Mastering Markdown](https://guides.github.com/features/mastering-markdown/)，使用删除线语法在右边的文字中只添加符号来表示“Google是你最好的朋友”）：`Baidu Google is your best friend.`（提示：`crossed out`）
+
+## Answer
+〇 （markdown语法：粗体/斜体）
+
+用`markdown`写出带格式的文字：`Hello, world!`其中`Hello`用**粗体**，`world`用*斜体*。
+
+```
+**Hello**/__Hello__ 和 _word_/*world* 的任意组合
+```
+
+〇 （markdown语法：表格）
+
+参考：
+```
+Monday | Tuesday | Wednesday | Thursday | Friday
+- | - | - | - | -
+ | | Technical Drawing | | Signal and System
+```
+
+〇 （markdown图片插入）
+
+链接 相对路径
+
+〇 （其他markdown语法）
+
+```
+~~Baidu~~ Google is your best friend.
+```
