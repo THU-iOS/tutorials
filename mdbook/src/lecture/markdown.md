@@ -44,7 +44,9 @@
 
 
 **说明**：所讲的内容包括但不限于：使用`markdown`的原因、`markdown`基础语法、对`markdown`中路径和互联网资源的理解、`markdown`编写工具、导出、发布……
+
 **面向对象**：需要进行合作编程开发的同学（主要）；没有使用过`markdown`风格写过文字的同学。教程以使用`macOS`的同学为主。
+
 **Lecture特色**：不仅仅讲`markdown`本身，会从`markdown`延伸出去，有一些扩展的内容
 
 # 表达与说明的方式
@@ -132,9 +134,11 @@ _You **can** combine them_
 ```
 
 *This text will be italic*
+
 _This will also be italic_
 
 **This text will be bold**
+
 __This will also be bold__
 
 _You **can** combine them_
@@ -198,6 +202,7 @@ https://github.com
 [GitHub Official Site](https://github.com)
 
 https://github.com
+
 <https://github.com>
 
 #### Images 图片
@@ -222,9 +227,11 @@ https://github.com
 用一对三个反撇\`\`\`包裹，在最开始三个反撇后可以加代码的语言名称或简写以在渲染时获得高亮支持。
 
 \`\`\`swift
+
 var natural_numbers: Array<Int> = [0,1,2,3]
 
 print(natural_numbers.capacity)
+
 \`\`\`
 
 ```swift
@@ -247,8 +254,8 @@ As Tim Cook said:
 
 > Fearlessness means taking the frst step, 
 > even if you don't know where it will take you.
-
-——Tim Cook's Commencement Address at Duke University, 2018
+> 
+> ——Tim Cook's Commencement Address at Duke University, 2018
 
 我一般会用它来在文章开头写一下文档的更新日期和作者。
 
@@ -424,7 +431,7 @@ mdbook server
 
 〇 按住⌥：矩形区域选中
 
-〇 ⌥⌫、⌘⌫；fn⌫：删除词、删除到行首；向后删除 delete
+〇 ⌥⌫、⌘⌫；fn⌫：删除词、删除到行首；向后删除 delete；⌘X也是一种删除的方式
 
 # Homework
 〇 （markdown语法：粗体/斜体）
