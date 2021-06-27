@@ -7,7 +7,7 @@ language = "zh-cn"
 multilingual = false
 
 [output.html]
-default-theme = "Ayu"
+default-theme = "Light"
 preferred-dark-theme = "Ayu"
 no-section-label = true
 git-repository-url = "https://github.com/THU-iOS/tutorial"
