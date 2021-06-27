@@ -67,7 +67,7 @@ WWDC19 Platforms State of the Union https://developer.apple.com/wwdc19/103
 
 课程视频 中英字幕：<https://www.bilibili.com/video/BV1fy4y1u7hX>
 
-课程清华云盘链接（包含 YouTube视频英文字幕 和 B站中英硬字幕搬运）：
+课程清华云盘链接（包含 YouTube视频英文字幕 和 B站中英硬字幕搬运）：<https://cloud.tsinghua.edu.cn/d/bd289554fd0b4f9eb920/>
 
 非常系统性的`Swift+SwiftUI`教程！老师已经开了很多年的iOS开发课程了。暑期我们希望大家能完成前六课的学习（六节课的内容还是蛮多的哦，希望大家认真对待），更希望大家看完前六课之后也继续学习后面的课程。希望这门课程能让你入门iOS开发！
 
@@ -138,6 +138,7 @@ Discussion of what is perhaps the most important type in Swift: a protocol.  The
 第4讲：移动应用设计流程
 
 第5讲：iOS 人机交互基础
+
 第6讲：iOS交互设计实践（一）
 
 第7讲：iOS交互设计实践（二）
@@ -216,4 +217,5 @@ Swift5.1新特性 SwiftUI初步了解：<https://www.bilibili.com/video/BV1gJ411
 在之后的开发过程中，一件重要的事情是团队成员间的代码协作，社团之前也有过版本控制工具Git的相关培训，以后打算进行团队开发、还不了解版本控制的同学可以进行查看。[【教程】Git基础与进阶](https://www.bilibili.com/video/BV1eh411v7gt)
 
 # 附
+
 全部课程的清华云盘链接：<https://cloud.tsinghua.edu.cn/d/01f70b980e8946c3a8b7/>
