@@ -3,7 +3,6 @@
 > Written by 杨希杰 on 210324
 
 - [iOS网络服务应用尝试](#ios网络服务应用尝试)
-  - [UI](#ui)
   - [GraphQL](#graphql)
     - [Introduction](#introduction)
     - [Resources](#resources)
@@ -17,11 +16,10 @@
   - [Hasura Tutorials](#hasura-tutorials)
   - [Sample Apps](#sample-apps)
 
-## UI
-SwiftUI
-
 ## GraphQL
+
 ### Introduction
+
 一种前后端数据请求/交互的风格/标准/规范。是有着大公司做靠山、较新的查询语言规范，是一种基于图的查询语言。对比原有的REST请求风格，GraphQL能够让你每次都获取到不多不少的数据，结合社区的工具，几乎可以省掉后端的开发团队，让你的项目开发效率大大提升。
 
 > GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data. GraphQL provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need and nothing more, makes it easier to evolve APIs over time, and enables powerful developer tools.
@@ -31,6 +29,7 @@ SwiftUI
 > **GraphQL clients** can help you handle queries, mutations, and subscriptions to a **GraphQL server**. They use the underlying structure of a GraphQL API to automate certain processes. This includes batching, UI updates, build-time schema validation, and more.
 
 ### Resources
+
 [GraphQL](https://graphql.org)
 * GraphQL官网
 
@@ -58,6 +57,7 @@ Apollo is the industry-standard GraphQL implementation, providing the data graph
 * [GitHub | Apollo Client | iOS](https://github.com/apollographql/apollo-ios)
 
 ## GraphQL Server｜Hasura + Databse
+
 `GraphQL Server`处理前端从`GraphQL Client`发送的`GraphQL请求`，在数据库中获取相应的数据并返回到前端/客户端。
 
 这里`Hasura`相当于一个控制台，帮你在中间操作数据库；同时`Hasura`也提供可视化的控制台，让数据库的管理变得方便。
@@ -96,9 +96,11 @@ Apollo is the industry-standard GraphQL implementation, providing the data graph
     * 需要将数据库的地址或服务端口交给Hasura
 
 ## 对象存储服务
+
 图片和视频等资源存储在哪里？数据库里？服务器的文件路径下？云服务厂商提供的对象存储服务上？
 
 ## 登录验证
+
 token、jwt需要去了解一下，密码加盐如何前后端中分别实现？
 
 # Hasura Tutorial
@@ -108,15 +110,18 @@ token、jwt需要去了解一下，密码加盐如何前后端中分别实现？
     * 所有教程代码的存放仓库
 
 ## Introduction to GraphQL
+
 [Hasura Tutorial｜GraphQL intro](https://hasura.io/learn/graphql/intro-graphql/introduction/)
 * **IMPORTANT**
 * `GraphQL`简介，包括：`GraphQL`是什么，`GraphQL`与`REST`的区别，`GraphQL`中的核心概念和术语，`GraphQL`三种请求数据的方式，`GraphQL Clients`和`GraphQL Servers`
 
 ## Frontend GraphQL Tutorial
+
 [Hasura Tutorial｜GraphQL Client with iOS](https://hasura.io/learn/graphql/ios/introduction/)
 * **IMPORTANT**
 
 ## Hasura Tutorials
+
 [Hasura Tutorial｜Hasura Basics](https://hasura.io/learn/graphql/hasura/introduction/)
 * **IMPORTANT**
 
