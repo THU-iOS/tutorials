@@ -19,42 +19,64 @@
 
 **在这之前**，我们推荐没有编程经验的同学先学习[浙江大学 Swift创新导论](https://www.icourse163.org/course/ZJU-1450024180)前三周课程中与`Swift`相关的部分，掌握编写程序的基本方法。如果有同学有其他语言编程经验，但希望提前学习`Swift`（Stanford的课程也会教你如何写`Swift`），可以参考[Aimls Swift编程基础](https://www.bilibili.com/video/BV144411C7Gg)对`Swift`有一个提前的了解。
 
-具体的课程安排见下，具体的课程内容见另一文档。
+具体的时间安排见下，具体的课程内容见[Training Details](https://thu-ios.github.io/tutorials/article/Training_2021_details.html)。
 
 ## Schedule
 
 **〇 7月13日（周二，小学期第三周）**
 
-✡ 学习Swift语法
+**✡** 学习Swift语法
 
-✡ WWDC20 Introduction to SwiftUI https://developer.apple.com/wwdc20/10119
+**✡** WWDC20 Introduction to SwiftUI
+
+<https://developer.apple.com/wwdc20/10119>
 
 **〇 7月14日（周三，小学期第三周）**
 
-✡ Stanford cs193p Lecture 1 Getting Started with SwiftUI
+**✡** Stanford cs193p Lecture 1 Getting Started with SwiftUI
 
-✡ 熟悉Swift语法
+<https://youtu.be/bqu6BquVi2M>
+
+**✡** 熟悉Swift语法
 
 **〇 7月15日（周四，小学期第三周）**
 
-✡ Stanford cs193p Lecture 2 Learning More about SwiftUI, Reading Assignment 1, Programming Assignment 1
+**✡** Stanford cs193p Lecture 2 Learning More about SwiftUI, Reading Assignment 1, Programming Assignment 1 
+
+<https://youtu.be/3lahkdHEhW8>
 
 **〇 7月16日（周五，小学期第三周）**
 
-✡ Stanford cs193p Lecture 3 MVVM
+**✡** Stanford cs193p Lecture 3 MVVM 
 
-✡ WWDC20 App essentials in SwiftUI https://developer.apple.com/wwdc20/10037
+<https://youtu.be/--qKOhdgJAs>
+
+**✡** WWDC20 App essentials in SwiftUI 
+
+<https://developer.apple.com/wwdc20/10037>
 
 **〇 7月17日（周六，小学期第三周）**
 
-✡ Stanford cs193p Lecture 4 More MVVM enum Optionals, Reading Assignment 2, Programming Assignment 2
+**✡** Stanford cs193p Lecture 4 More MVVM enum Optionals, Reading Assignment 2, Programming Assignment 2 
+
+<https://youtu.be/oWZOFSYS5GE>
 
 **〇 7月19日（周一，小学期第四周）**
 
-✡ Stanford cs193p Lecture 5 Properties Layout @ViewBuilder
+**✡** Stanford cs193p Lecture 5 Properties Layout @ViewBuilder 
 
-✡ WWDC20 Data Essentials in SwiftUI https://developer.apple.com/wwdc20/10040
+<https://www.youtube.com/watch?v=ayQl_F_uMS4>
+
+**✡** WWDC20 Data Essentials in SwiftUI 
+
+<https://developer.apple.com/wwdc20/10040>
 
 **〇 7月20日（周二，小学期第四周）**
 
-✡ Stanford cs193p Lecture 6 Protocols Shapes, Reading Assignment 3, Programming Assignment 3
+**✡** Stanford cs193p Lecture 6 Protocols Shapes, Reading Assignment 3, Programming Assignment 3 
+
+<https://www.youtube.com/watch?v=Og9gXZpbKWo>
+
+**Notice** Stanford cs193p主页 <https://cs193p.sites.stanford.edu>
+
+**Notice** Stanford课程链接点不开的同学，开发组的同学帮大家把视频和作业都下载搬运到了清华云盘，大家可以查看在清华云盘查看该课程（包含 `YouTube视频英文字幕` 和 `B站中英硬字幕搬运`）：<https://cloud.tsinghua.edu.cn/d/bd289554fd0b4f9eb920/>

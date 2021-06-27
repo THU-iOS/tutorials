@@ -20,28 +20,28 @@
 
 〇 推荐大家先查看`WWDC20`的`Introduction to SwiftUI`，通过官方的`三明治App`的例子对`SwiftUI`有一个简单的了解。
 
-✡ WWDC20 Introduction to SwiftUI https://developer.apple.com/wwdc20/10119
+✡ WWDC20 Introduction to SwiftUI <https://developer.apple.com/wwdc20/10119>
 
 〇 在学习`Stanford课程`的过程中，可以参考下面两个`WWDC20`的session，对SwiftUI里面的`App Scene View`和`@State @ObservedObject`有更深入的了解，从而更好的管理自己的`App层次`和`App中的数据流动`。
 
-✡ WWDC20 App essentials in SwiftUI https://developer.apple.com/wwdc20/10037
+✡ WWDC20 App essentials in SwiftUI <https://developer.apple.com/wwdc20/10037>
 
-✡ WWDC20 Data Essentials in SwiftUI https://developer.apple.com/wwdc20/10040
+✡ WWDC20 Data Essentials in SwiftUI <https://developer.apple.com/wwdc20/10040>
 
 〇 通过下面这几个session，你可以看到每年苹果对`Swift`和`SwiftUI`的更新。`2019`年是Swift大版本`Swift5.0`推出的第一年，也是`SwiftUI`元年，再往前的WWDC和Swift与SwiftUI关系不大。
 
 注：`WWDC21`的内容，在今年秋季、各平台新系统发布才能正式运用。感兴趣的同学可以
 提前了解，但请注意没有办法在这个暑假使用。
 
-WWDC21 What's new in Swift https://developer.apple.com/wwdc21/10192
+WWDC21 What's new in Swift <https://developer.apple.com/wwdc21/10192>
 
-WWDC20 What's new in Swift https://developer.apple.com/wwdc20/10170
+WWDC20 What's new in Swift <https://developer.apple.com/wwdc20/10170>
 
-WWDC19 What's new in Swift https://developer.apple.com/wwdc19/402 
+WWDC19 What's new in Swift <https://developer.apple.com/wwdc19/402>
 
-WWDC21 What's new in SwiftUI https://developer.apple.com/wwdc21/10018
+WWDC21 What's new in SwiftUI <https://developer.apple.com/wwdc21/10018>
 
-WWDC20 What's new in SwiftUI https://developer.apple.com/wwdc20/10041
+WWDC20 What's new in SwiftUI <https://developer.apple.com/wwdc20/10041>
 
 点进去之后，看完这些视频，可能会发现这些视频下面都会有一些相关的推荐，大家感兴趣也可以对`WWDC`推出的新内容做进一步的了解。
 
@@ -49,11 +49,11 @@ WWDC20 What's new in SwiftUI https://developer.apple.com/wwdc20/10041
 
 大家如果想感受一下`SwiftUI`刚刚发布的时候大家的热情，可以看：
 
-WWDC19 Keynote https://developer.apple.com/wwdc19/101 的2h6min34s - 2h14min22s
+WWDC19 Keynote <https://developer.apple.com/wwdc19/101> 的2h6min34s - 2h14min22s
 
 还有下面的视频，前二十分钟对新推出的`SwiftUI`也有详细的介绍，感兴趣的同学也可以看一下：
 
-WWDC19 Platforms State of the Union https://developer.apple.com/wwdc19/103
+WWDC19 Platforms State of the Union <https://developer.apple.com/wwdc19/103>
 
 〇 另外，如果想跟进苹果最新发布的技术，每年`WWDC`的`Keynote`和`Platforms State of the Union`都可以关注一下，对设计和App开发感兴趣，每年的`Apple Design Awards`也可以进行关注；感兴趣的相关session也可以自己抽时间查看。
 
@@ -99,21 +99,21 @@ Discussion of what is perhaps the most important type in Swift: a protocol.  The
 
 ### Advanced
 
-**Lecture 7 ViewModifier Animation**
+Lecture 7 ViewModifier Animation
 
-**Lecture 8 Animation Demo**
+Lecture 8 Animation Demo
 
-**Lecture 9 EmojiArt Drag/Drop**
+Lecture 9 EmojiArt Drag/Drop
 
-**Lecture 10 Gestures**
+Lecture 10 Gestures
 
-**Lecture 11 Persistence Error Handling**
+Lecture 11 Persistence Error Handling
 
-**Lecture 12 Binding Sheet Navigation EditMode**
+Lecture 12 Binding Sheet Navigation EditMode
 
-**Lecture 13 Publisher More Persistence**
+Lecture 13 Publisher More Persistence
 
-**Lecture 14 Document Architecture**
+Lecture 14 Document Architecture
 
 ## 浙江大学 - Swift创新导论
 
