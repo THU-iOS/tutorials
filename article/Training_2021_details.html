@@ -1,0 +1,361 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn" class="sidebar-visible no-js ayu">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Training Details 2021, July - Tutorial</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="Tutorials for THU iOS Club">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="../favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="../favicon.png">
+        
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "ayu" : "ayu";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('ayu')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../foreword/site_info.html">Introduction</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="../article/Traning_2021_July.html">Training 2021, July</a></li><li class="chapter-item expanded affix "><a href="../article/Training_2021_details.html" class="active">Training Details 2021, July</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="../article/Tools.html">Developing Tools</a></li><li class="chapter-item expanded affix "><a href="../article/iOS_servise_app.html">SaaS Framework</a></li><li class="spacer"></li><li class="chapter-item expanded ">Lecture</li><li class="chapter-item expanded affix "><a href="../lecture/markdown.html">Markdown</a></li><li class="chapter-item expanded affix "><a href="../lecture/git.html">Git</a></li><li class="chapter-item expanded affix "><a href="../lecture/git-demos.html">Git Demos</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="../postscript/site_build.html">About the Site</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu (default)</button></li>
+                        </ul>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Tutorial</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        <a href="https://github.com/THU-iOS/tutorial" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#training-details-2021-july" id="training-details-2021-july">Training Details 2021, July</a></h1>
+<ul>
+<li><a href="#training-details-2021-july">Training Details 2021, July</a>
+<ul>
+<li><a href="#wwdc">WWDC</a></li>
+<li><a href="#stanford-cs193p---developing-apps-for-ios">Stanford CS193p - Developing Apps for iOS</a>
+<ul>
+<li><a href="#basic">Basic</a></li>
+<li><a href="#advanced">Advanced</a></li>
+</ul>
+</li>
+<li><a href="#%E6%B5%99%E6%B1%9F%E5%A4%A7%E5%AD%A6---swift%E5%88%9B%E6%96%B0%E5%AF%BC%E8%AE%BA">浙江大学 - Swift创新导论</a>
+<ul>
+<li><a href="#%E7%AC%AC%E4%B8%80%E5%91%A8">第一周</a></li>
+<li><a href="#%E7%AC%AC%E4%BA%8C%E5%91%A8">第二周</a></li>
+<li><a href="#%E7%AC%AC%E4%B8%89%E5%91%A8">第三周</a></li>
+</ul>
+</li>
+<li><a href="#aimls---swift%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80">Aimls - Swift编程基础</a></li>
+<li><a href="#designcode---swiftui-ios">designcode - SwiftUI iOS</a></li>
+<li><a href="#ios-club---markdown--git">iOS Club - Markdown &amp; Git</a></li>
+</ul>
+</li>
+<li><a href="#%E9%99%84">附</a></li>
+</ul>
+<h2><a class="header" href="#wwdc" id="wwdc">WWDC</a></h2>
+<p>〇 <code>WWDC</code>可以说是每年<code>Apple</code>发布新技术的盛会。作为开发者，我们不仅可以在其中找到<code>Apple</code>关于新技术的介绍，也可以看到很多<code>Apple</code>为初学者准备的教程。大家只需要在<code>Mac</code>或其他设备上下载<code>Developer.app</code>，就可以看到每年<code>WWDC</code>的全部内容。我们这次主要关注与<code>SwiftUI</code>相关的内容</p>
+<p>〇 推荐大家先查看<code>WWDC20</code>的<code>Introduction to SwiftUI</code>，通过官方的<code>三明治App</code>的例子对<code>SwiftUI</code>有一个简单的了解。</p>
+<p>✡ WWDC20 Introduction to SwiftUI https://developer.apple.com/wwdc20/10119</p>
+<p>〇 在学习<code>Stanford课程</code>的过程中，可以参考下面两个<code>WWDC20</code>的session，对SwiftUI里面的<code>App Scene View</code>和<code>@State @ObservedObject</code>有更深入的了解，从而更好的管理自己的<code>App层次</code>和<code>App中的数据流动</code>。</p>
+<p>✡ WWDC20 App essentials in SwiftUI https://developer.apple.com/wwdc20/10037</p>
+<p>✡ WWDC20 Data Essentials in SwiftUI https://developer.apple.com/wwdc20/10040</p>
+<p>〇 通过下面这几个session，你可以看到每年苹果对<code>Swift</code>和<code>SwiftUI</code>的更新。<code>2019</code>年是Swift大版本<code>Swift5.0</code>推出的第一年，也是<code>SwiftUI</code>元年，再往前的WWDC和Swift与SwiftUI关系不大。</p>
+<p>注：<code>WWDC21</code>的内容，在今年秋季、各平台新系统发布才能正式运用。感兴趣的同学可以
+提前了解，但请注意没有办法在这个暑假使用。</p>
+<p>WWDC21 What's new in Swift https://developer.apple.com/wwdc21/10192</p>
+<p>WWDC20 What's new in Swift https://developer.apple.com/wwdc20/10170</p>
+<p>WWDC19 What's new in Swift https://developer.apple.com/wwdc19/402 </p>
+<p>WWDC21 What's new in SwiftUI https://developer.apple.com/wwdc21/10018</p>
+<p>WWDC20 What's new in SwiftUI https://developer.apple.com/wwdc20/10041</p>
+<p>点进去之后，看完这些视频，可能会发现这些视频下面都会有一些相关的推荐，大家感兴趣也可以对<code>WWDC</code>推出的新内容做进一步的了解。</p>
+<p>〇 还有一些<code>WWDC19</code>的session，但这些视频已经<strong>过时</strong>，而且苹果在<code>WWDC20</code>上对这些视频进行了更新，也就是在上面列出来的那些；所以虽然<code>WWDC19</code>对于<code>Swift</code>和<code>SwiftUI</code>来说很重要，但我们现在只需要看新的session就好。</p>
+<p>大家如果想感受一下<code>SwiftUI</code>刚刚发布的时候大家的热情，可以看：</p>
+<p>WWDC19 Keynote https://developer.apple.com/wwdc19/101 的2h6min34s - 2h14min22s</p>
+<p>还有下面的视频，前二十分钟对新推出的<code>SwiftUI</code>也有详细的介绍，感兴趣的同学也可以看一下：</p>
+<p>WWDC19 Platforms State of the Union https://developer.apple.com/wwdc19/103</p>
+<p>〇 另外，如果想跟进苹果最新发布的技术，每年<code>WWDC</code>的<code>Keynote</code>和<code>Platforms State of the Union</code>都可以关注一下，对设计和App开发感兴趣，每年的<code>Apple Design Awards</code>也可以进行关注；感兴趣的相关session也可以自己抽时间查看。</p>
+<h2><a class="header" href="#stanford-cs193p---developing-apps-for-ios" id="stanford-cs193p---developing-apps-for-ios">Stanford CS193p - Developing Apps for iOS</a></h2>
+<p>英文课程 Swift SwiftUI App设计思维</p>
+<p>课程网址：<a href="https://cs193p.sites.stanford.edu">https://cs193p.sites.stanford.edu</a></p>
+<p>课程视频（YouTube English）：<a href="https://youtube.com/playlist?list=PLpGHT1n4-mAsxuRxVPv7kj4-dQYoC3VVu">https://youtube.com/playlist?list=PLpGHT1n4-mAsxuRxVPv7kj4-dQYoC3VVu</a></p>
+<p>课程视频 中英字幕：<a href="https://www.bilibili.com/video/BV1fy4y1u7hX">https://www.bilibili.com/video/BV1fy4y1u7hX</a></p>
+<p>课程清华云盘链接（包含 YouTube视频英文字幕 和 B站中英硬字幕搬运）：</p>
+<p>非常系统性的<code>Swift+SwiftUI</code>教程！老师已经开了很多年的iOS开发课程了。暑期我们希望大家能完成前六课的学习（六节课的内容还是蛮多的哦，希望大家认真对待），更希望大家看完前六课之后也继续学习后面的课程。希望这门课程能让你入门iOS开发！</p>
+<h3><a class="header" href="#basic" id="basic">Basic</a></h3>
+<p><strong>Lecture 1 Getting Started with SwiftUI</strong></p>
+<p>The first lecture jumps right into building the first application of the quarter: a card-matching game called Memorize.  It will be the foundation for the first few weeks of course material.</p>
+<p><strong>Lecture 2 Learning More about SwiftUI</strong></p>
+<p>Development on Memorize continues.  Creating reusable components (a Card in the game) and combining them to make more complex user-interfaces.</p>
+<p><strong>Lecture 3 MVVM</strong></p>
+<p>Conceptual overview of the architectural paradigm underlying the development of applications for iOS using SwiftUI (known as MVVM) and an explanation of a fundamental component of understanding the Swift programming language: its type system.  Then both of these are applied to the Memorize application started in the first two lectures.</p>
+<p><strong>Lecture 4 More MVVM enum Optionals</strong></p>
+<p>The MVVM architecture is fully applied to Memorize.  The important Swift concepts of enums and Optionals are covered and used to finish off the game logic of the Memorize game.</p>
+<p><strong>Lecture 5 Properties Layout @ViewBuilder</strong></p>
+<p>Explore property observers, computed properties, @State and @ViewBuilder.  The mechanisms behind how Views are layed out on screen are examined followed by a demo which chooses a better font for each card in Memorize depending on the space available.  Along the way, apply better access control to Memorize's internal API.</p>
+<p><strong>Lecture 6 Protocols Shapes</strong></p>
+<p>Discussion of what is perhaps the most important type in Swift: a protocol.  The demo combines the concepts of generics and protocols to make the cards better use the space available on screen.  Finally the Shape protocol is explained and the pie-shaped countdown timer is added to Memorize (but not yet animated).</p>
+<h3><a class="header" href="#advanced" id="advanced">Advanced</a></h3>
+<p><strong>Lecture 7 ViewModifier Animation</strong></p>
+<p><strong>Lecture 8 Animation Demo</strong></p>
+<p><strong>Lecture 9 EmojiArt Drag/Drop</strong></p>
+<p><strong>Lecture 10 Gestures</strong></p>
+<p><strong>Lecture 11 Persistence Error Handling</strong></p>
+<p><strong>Lecture 12 Binding Sheet Navigation EditMode</strong></p>
+<p><strong>Lecture 13 Publisher More Persistence</strong></p>
+<p><strong>Lecture 14 Document Architecture</strong></p>
+<h2><a class="header" href="#浙江大学---swift创新导论" id="浙江大学---swift创新导论">浙江大学 - Swift创新导论</a></h2>
+<p>中文课程 Swift语法 UIKit 项目实战</p>
+<p>链接：<a href="https://www.icourse163.org/course/ZJU-1450024180">https://www.icourse163.org/course/ZJU-1450024180</a></p>
+<p>前三周课程清华云盘链接：<a href="https://cloud.tsinghua.edu.cn/d/2ddcf31a51cf4a48b690/">https://cloud.tsinghua.edu.cn/d/2ddcf31a51cf4a48b690/</a></p>
+<p><strong>前三周的教程</strong>可以让没有编程经验的同学对<code>Swift</code>这门编程语言、<strong>编程思维</strong>和<code>iOS应用开发</code>有一个简单的了解。</p>
+<p>后面的课程<strong>并不推荐</strong>大家学习，因为并没有使用Apple最新的SwiftUI框架进行教学；但是有一些很好的例子能够培养大家的创新思维，感兴趣的同学也可以看看后面几周中一些实际的案例。</p>
+<h3><a class="header" href="#第一周" id="第一周">第一周</a></h3>
+<p>第1讲：课程概述</p>
+<p>第2讲：Swift浅析</p>
+<p>第3讲：Swift编程基础知识</p>
+<p>第4讲：移动应用设计流程</p>
+<p>第5讲：iOS 人机交互基础
+第6讲：iOS交互设计实践（一）</p>
+<p>第7讲：iOS交互设计实践（二）</p>
+<p>第8讲：常量、变量、函数</p>
+<p>第9讲：数组与字典</p>
+<p>第10讲：控制流（Control Flow）（一）</p>
+<p>第11讲：控制流（Control Flow）（二）</p>
+<h3><a class="header" href="#第二周" id="第二周">第二周</a></h3>
+<p>第12讲：函数（Functions）和闭包（Closures）（一）</p>
+<p>第13讲：函数（Functions）和闭包（Closures）（二）</p>
+<p>第14讲：Playground 实践应用（一）</p>
+<p>第15讲：Playground 实践应用（二）</p>
+<p>第16讲：对象（Objects）和类（Classes）（一）</p>
+<h3><a class="header" href="#第三周" id="第三周">第三周</a></h3>
+<p>第17讲：对象（Objects）和类（Classes）（二）</p>
+<p>第18讲：枚举（Enumeration）和结构（Structures）（一）</p>
+<p>第19讲：枚举（Enumeration）和结构（Structures）（二）</p>
+<p>第20讲：协议（Protocols）和拓展（Extensions）（一）</p>
+<p>第21讲：协议（Protocols）和拓展（Extensions）（二）</p>
+<p>第22讲：错误处理（Error handling）（一）</p>
+<p>第23讲：错误处理（Error handling）（二）</p>
+<h2><a class="header" href="#aimls---swift编程基础" id="aimls---swift编程基础">Aimls - Swift编程基础</a></h2>
+<p>中文教程 Swift语法</p>
+<p>Swift5.0语法讲解 链接：<a href="https://www.bilibili.com/video/BV144411C7Gg">https://www.bilibili.com/video/BV144411C7Gg</a></p>
+<p>Swift5.1新特性 SwiftUI初步了解：<a href="https://www.bilibili.com/video/BV1gJ411M72p">https://www.bilibili.com/video/BV1gJ411M72p</a></p>
+<p>全部课程知识点整理总结：<a href="https://www.bilibili.com/video/BV1jE411y7cw">https://www.bilibili.com/video/BV1jE411y7cw</a></p>
+<p>教程云盘链接：<a href="https://cloud.tsinghua.edu.cn/d/bba8530022af47de9e0b/">https://cloud.tsinghua.edu.cn/d/bba8530022af47de9e0b/</a></p>
+<p>学习Swift编程语法的教程。Stanford的教程中也会教你如何使用Swift，但其中主要是靠你自学，可能会有些累。<strong>有编程基础的同学</strong>可以二倍速观看上面的Swift教程，<strong>对Swift有一个简单的理解</strong>。为什么要用二倍速呢？只要学过一门编程语言，学习其他编程语言就会特别快。推荐大家在学习过程中<strong>做好笔记</strong>。</p>
+<h2><a class="header" href="#designcode---swiftui-ios" id="designcode---swiftui-ios">designcode - SwiftUI iOS</a></h2>
+<p>英文教程 较高质量的付费教程 不做要求 想提升的同学可以看（教程看得越多学到的东西越多）</p>
+<p>教程清华云盘链接：<a href="https://cloud.tsinghua.edu.cn/d/65cd3bfc68844bd68356/">https://cloud.tsinghua.edu.cn/d/65cd3bfc68844bd68356/</a></p>
+<p><a href="https://designcode.io">designcode.io</a></p>
+<ul>
+<li><a href="https://designcode.io/swiftui-ios14">designcode | SwiftUI 2 iOS14</a>
+<ul>
+<li><a href="https://www.bilibili.com/video/BV1fT4y157zK">Bilibili搬运｜中文字幕</a></li>
+</ul>
+</li>
+<li><a href="https://designcode.io/swiftui">designcode | SwiftUI iOS13 Part1</a>
+<ul>
+<li><a href="https://www.bilibili.com/video/BV1X7411R73g">Bilibili搬运｜中文字幕</a></li>
+</ul>
+</li>
+<li><a href="https://designcode.io/swiftui2">designcode | SwiftUI iOS13 Part2</a>
+<ul>
+<li><a href="https://www.bilibili.com/video/BV1X7411R73g">Bilibili搬运｜中文字幕</a></li>
+</ul>
+</li>
+<li><a href="https://designcode.io/swiftui3">designcode | SwiftUI iOS13 Part3</a>
+<ul>
+<li><a href="https://www.acfun.cn/v/ac15856717">Acfun搬运｜中文字幕</a></li>
+</ul>
+</li>
+</ul>
+<h2><a class="header" href="#ios-club---markdown--git" id="ios-club---markdown--git">iOS Club - Markdown &amp; Git</a></h2>
+<p>大家在学习的过程中可以使用Markdown来整理笔记。社团之前有Markdown的培训，已经上传至B站，不了解Markdown的同学可以进行查看。<a href="https://www.bilibili.com/video/BV1jV411j7mz">【教程】面向开发的Markdown学习</a></p>
+<p>在之后的开发过程中，一件重要的事情是团队成员间的代码协作，社团之前也有过版本控制工具Git的相关培训，以后打算进行团队开发、还不了解版本控制的同学可以进行查看。<a href="https://www.bilibili.com/video/BV1eh411v7gt">【教程】Git基础与进阶</a></p>
+<h1><a class="header" href="#附" id="附">附</a></h1>
+<p>全部课程的清华云盘链接：<a href="https://cloud.tsinghua.edu.cn/d/01f70b980e8946c3a8b7/">https://cloud.tsinghua.edu.cn/d/01f70b980e8946c3a8b7/</a></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../article/Traning_2021_July.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../article/Tools.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../article/Traning_2021_July.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../article/Tools.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
