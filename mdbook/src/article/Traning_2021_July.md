@@ -27,56 +27,40 @@
 
 **✡** 学习Swift语法
 
-**✡** WWDC20 Introduction to SwiftUI
-
-<https://developer.apple.com/wwdc20/10119>
+**✡** [WWDC20 Introduction to SwiftUI](https://developer.apple.com/wwdc20/10119)
 
 **〇 7月14日（周三，小学期第三周）**
 
-**✡** Stanford cs193p Lecture 1 Getting Started with SwiftUI
-
-<https://youtu.be/bqu6BquVi2M>
-
 **✡** 熟悉Swift语法
+
+**✡** [Stanford cs193p Lecture 1 Getting Started with SwiftUI](https://youtu.be/bqu6BquVi2M)
 
 **〇 7月15日（周四，小学期第三周）**
 
-**✡** Stanford cs193p Lecture 2 Learning More about SwiftUI, Reading Assignment 1, Programming Assignment 1 
-
-<https://youtu.be/3lahkdHEhW8>
+**✡** [Stanford cs193p Lecture 2 Learning More about SwiftUI, Reading Assignment 1, Programming Assignment 1](https://youtu.be/3lahkdHEhW8)
 
 **〇 7月16日（周五，小学期第三周）**
 
-**✡** Stanford cs193p Lecture 3 MVVM 
+**✡** [Stanford cs193p Lecture 3 MVVM](https://youtu.be/--qKOhdgJAs)
 
-<https://youtu.be/--qKOhdgJAs>
-
-**✡** WWDC20 App essentials in SwiftUI 
-
-<https://developer.apple.com/wwdc20/10037>
+**✡** [WWDC20 App essentials in SwiftUI](https://developer.apple.com/wwdc20/10037)
 
 **〇 7月17日（周六，小学期第三周）**
 
-**✡** Stanford cs193p Lecture 4 More MVVM enum Optionals, Reading Assignment 2, Programming Assignment 2 
-
-<https://youtu.be/oWZOFSYS5GE>
+**✡** [Stanford cs193p Lecture 4 More MVVM enum Optionals, Reading Assignment 2, Programming Assignment 2](https://youtu.be/oWZOFSYS5GE)
 
 **〇 7月19日（周一，小学期第四周）**
 
-**✡** Stanford cs193p Lecture 5 Properties Layout @ViewBuilder 
+**✡** [Stanford cs193p Lecture 5 Properties Layout @ViewBuilder](https://www.youtube.com/watch?v=ayQl_F_uMS4)
 
-<https://www.youtube.com/watch?v=ayQl_F_uMS4>
-
-**✡** WWDC20 Data Essentials in SwiftUI 
-
-<https://developer.apple.com/wwdc20/10040>
+**✡** [WWDC20 Data Essentials in SwiftUI](https://developer.apple.com/wwdc20/10040)
 
 **〇 7月20日（周二，小学期第四周）**
 
-**✡** Stanford cs193p Lecture 6 Protocols Shapes, Reading Assignment 3, Programming Assignment 3 
+**✡** [Stanford cs193p Lecture 6 Protocols Shapes, Reading Assignment 3, Programming Assignment 3](https://www.youtube.com/watch?v=Og9gXZpbKWo)
 
-<https://www.youtube.com/watch?v=Og9gXZpbKWo>
+- - -
 
-**Notice** Stanford cs193p主页 <https://cs193p.sites.stanford.edu>
+**Notice** [Stanford cs193p主页](https://cs193p.sites.stanford.edu)
 
 **Notice** Stanford课程链接点不开的同学，开发组的同学帮大家把视频和作业都下载搬运到了清华云盘，大家可以查看在清华云盘查看该课程（包含 `YouTube视频英文字幕` 和 `B站中英硬字幕搬运`）：<https://cloud.tsinghua.edu.cn/d/bd289554fd0b4f9eb920/>
