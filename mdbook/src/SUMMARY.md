@@ -4,7 +4,11 @@
 
 ---
 
-[Swift/SwiftUI](./article/Swift_SwiftUI.md)
+[Training 2021, July](article/Traning_2021_July.md)
+
+[Training Details 2021, July](article/Training_2021_details.md)
+
+---
 
 [Developing Tools](./article/Tools.md)
 
