@@ -5,6 +5,8 @@
 > First version on 210518
 > 
 > Author: [杨希杰 Yang Xijie](https://github.com/Yang-Xijie)
+> 
+> Bilibili视频教程: https://www.bilibili.com/video/BV1eh411v7gt
 
 - [Git讲座](#git讲座)
 - [为什么要用Git](#为什么要用git)

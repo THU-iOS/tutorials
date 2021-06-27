@@ -5,6 +5,8 @@
 > First version on 210504
 > 
 > Author: [杨希杰 Yang Xijie](https://github.com/Yang-Xijie)
+> 
+> Bilibili视频教程：https://www.bilibili.com/video/BV1jV411j7mz
 
 
 - [面向开发的Markdown学习](#面向开发的markdown学习)
