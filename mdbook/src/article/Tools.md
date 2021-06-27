@@ -3,11 +3,12 @@
 > Written by 杨希杰 on 210324
 
 - [Tools](#tools)
+  - [Swift Formatter](#swift-formatter)
   - [Google](#google)
   - [Git](#git)
   - [Linux](#linux)
   - [GitHub](#github)
-  - [markdown](#markdown)
+  - [Markdown](#markdown)
   - [VS Code](#vs-code)
   - [虚拟机](#虚拟机)
   - [Lookin](#lookin)
@@ -15,11 +16,20 @@
   - [Postman](#postman)
 - [Other](#other)
 
+## Swift Formatter
+
+[Xcode Extension｜Swift Format Tool](https://github.com/nicklockwood/SwiftFormat)
+* 格式化`Swift`代码的`Xcode`插件。结合`Xcode`自带的快捷键设定可以实现快捷键格式代码的功能
+
 ## Google
+
 当你开始开发应用之后，百度一定会无法满足你的需求。这时就要去请教你最好的朋友`Google`了。
 
 ## Git
+
 项目代码版本管理工具：[Git Official Site](https://git-scm.com)
+
+iOS Club 教程：[Git基础与进阶](https://www.bilibili.com/video/BV1eh411v7gt)
 
 [廖雪峰｜Git教程](https://www.liaoxuefeng.com/wiki/896043488029600)
 * **✡ RECOMMENDED ✡**
@@ -43,15 +53,20 @@
 * 一般没有必要看
 
 ## Linux
+
 开源类Unix操作系统，目前服务器安装的系统主要是`Linux`。如果要使用网络传输数据，那么跑在`Linux`上的服务器是必须的。
 
 [菜鸟教程｜Linux](https://www.runoob.com/linux/linux-tutorial.html)
 
 ## GitHub
+
 世界范围的代码托管平台。
 
-## markdown
+## Markdown
+
 一种轻量的格式文本编辑风格。与word等富文本编辑不同，markdown采用一些标记来表示文本格式。一般使用markdown编辑的文本文件后缀为`.md`，进行渲染可以得到格式文本。
+
+iOS Club 教程：[面向开发的Markdown学习](https://www.bilibili.com/video/BV1jV411j7mz)
 
 markdown编辑器推荐：
 
@@ -60,27 +75,33 @@ markdown编辑器推荐：
 * `VS Code`安装Markdown插件
 
 ## VS Code
+
 非常受世界开发者欢迎的轻量文本编辑器。
 
 ## 虚拟机
+
 通过软件模拟硬件的方式实现在不同的硬件上运行不兼容的系统。
 
 `iOS`开发主要使用`Mac`进行开发，需要使用`Xcode`，如果在学习阶段**没有**`Mac`可以参考清华云盘上的资源（`Groups/iOS-Club-THU/iOS-Club/培训Training`）安装虚拟机。在项目开发中如果没有`Mac`可以从社团借用。
 
 ## Lookin
+
 `iOS`的`UI调试`工具
 
 [Lookin官网](https://lookin.work)
 
 ## CocoaPods
+
 项目引入库管理
 
 [CocoaPods简介](https://www.jianshu.com/p/93c4cd8390d3)
 
 ## Postman
+
 测试HTTP请求
 
 # Other
+
 [Apple Developer](https://developer.apple.com)
 
 [GitHub｜EESAST training2020](https://github.com/eesast/training2020)
@@ -110,3 +131,4 @@ markdown编辑器推荐：
 * [GitHub｜提问的智慧 简体中文版](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md)
 * 提问的时候总是惹别人生气、或者别人根本不理你？可能是你的提问方式出了点问题。提问的智慧教你如何在信息时代优雅的向别人提问！
 
+[VPN in China](https://github.com/vpncn/vpncn.github.io)
