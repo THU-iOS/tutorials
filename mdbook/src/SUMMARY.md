@@ -24,7 +24,7 @@
 
 [Git Demos](./lecture/git-demos.md)
 
-[Stanford CS193p](./lecture/Stanford CS193p L1-L6 观前引导.md)
+[Stanford CS193p](./lecture/Stanford_cs193p_L1-L6.md)
 
 ---
 
