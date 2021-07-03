@@ -95,7 +95,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="foreword/site_info.html">Introduction</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="article/Traning_2021_July.html">Training 2021, July</a></li><li class="chapter-item expanded affix "><a href="article/Training_2021_details.html">Training Details 2021, July</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="article/Tools.html">Developing Tools</a></li><li class="chapter-item expanded affix "><a href="article/iOS_servise_app.html">SaaS Framework</a></li><li class="spacer"></li><li class="chapter-item expanded ">Lecture</li><li class="chapter-item expanded affix "><a href="lecture/markdown.html">Markdown</a></li><li class="chapter-item expanded affix "><a href="lecture/git.html">Git</a></li><li class="chapter-item expanded affix "><a href="lecture/git-demos.html">Git Demos</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="postscript/site_build.html">About the Site</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="foreword/site_info.html">Introduction</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="article/Traning_2021_July.html">Training 2021, July</a></li><li class="chapter-item expanded affix "><a href="article/Training_2021_details.html">Training Details 2021, July</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="article/Tools.html">Developing Tools</a></li><li class="chapter-item expanded affix "><a href="article/iOS_servise_app.html">SaaS Framework</a></li><li class="spacer"></li><li class="chapter-item expanded ">Lecture</li><li class="chapter-item expanded affix "><a href="lecture/markdown.html">Markdown</a></li><li class="chapter-item expanded affix "><a href="lecture/git.html">Git</a></li><li class="chapter-item expanded affix "><a href="lecture/git-demos.html">Git Demos</a></li><li class="chapter-item expanded affix "><a href="lecture/Stanford_cs193p_L1-L6.html">Stanford CS193p</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="postscript/site_build.html">About the Site</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -1961,6 +1961,209 @@ Date:   Fri May 21 18:30:57 2021 +0800
 <p>同上述<code>在sayHello分支上写代码</code>的内容，之后也是回到<code>main分支</code>进行合并</p>
 <h2><a class="header" href="#向github上的开源项目提交代码" id="向github上的开源项目提交代码">向GitHub上的开源项目提交代码</a></h2>
 <p>TODO</p>
+<h2><a class="header" href="#stanford-cs193p-l1-l6-观前引导" id="stanford-cs193p-l1-l6-观前引导">Stanford CS193p L1-L6 观前引导</a></h2>
+<h3><a class="header" href="#lecture1-getting-started-with-swiftui" id="lecture1-getting-started-with-swiftui">Lecture1 Getting started with SwiftUI</a></h3>
+<blockquote>
+<p>介绍Xcode、SwiftUI的最基础界面编写。</p>
+</blockquote>
+<h4><a class="header" href="#重点" id="重点">重点：</a></h4>
+<ul>
+<li>
+<p>弄清楚下列代码中每个关键字的含义与作用</p>
+<pre><code class="language-swift">import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        Text(&quot;Hello, world!&quot;)
+            .padding()
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
+</code></pre>
+</li>
+<li>
+<p>弄清楚文件界面中每个文件的作用</p>
+</li>
+</ul>
+<h4><a class="header" href="#作业" id="作业">作业：</a></h4>
+<p>1.为什么要body的类型为some View？</p>
+<p>答案：因为body得到的可能不是严格的View类型。</p>
+<p>2.使用SwiftUI编写App时，整个程序的入口是哪个文件(类似于C中main函数)？</p>
+<p>答案：文件名为：<code> AppName+App.swift</code></p>
+<p>代码为</p>
+<pre><code class="language-swift">import SwiftUI
+
+@main
+struct lecture1App: App {
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+    }
+}
+</code></pre>
+<h3><a class="header" href="#lecture2-learning-more-about-swiftui" id="lecture2-learning-more-about-swiftui">Lecture2 Learning more about SwiftUI</a></h3>
+<blockquote>
+<p>本节课将更进一步地介绍一些SwiftUI的设计模式，包括View、ZStack等组件的互相嵌套，还讲了数组、Foreach、按钮的用法。</p>
+</blockquote>
+<h4><a class="header" href="#重点-1" id="重点-1">重点：</a></h4>
+<h5><a class="header" href="#函数相关" id="函数相关">函数相关</a></h5>
+<ul>
+<li>
+<p>函数的最后一个参量可写在括号外：</p>
+<pre><code class="language-swift">Button(action: {
+  
+},label:{Text(&quot;s&quot;)})
+
+Button(action: {}) {
+  Text(&quot;s&quot;)
+}
+</code></pre>
+<p>两者等价，这在实际使用时会更加简洁。</p>
+</li>
+</ul>
+<h5><a class="header" href="#界面相关" id="界面相关">界面相关</a></h5>
+<ul>
+<li>LazyGrid的用法</li>
+<li>ScrollView的用法</li>
+</ul>
+<h5><a class="header" href="#spcaer" id="spcaer">Spcaer()</a></h5>
+<ul>
+<li>一种设计样式，能尽可能的扩充空间</li>
+</ul>
+<h5><a class="header" href="#state" id="state">@State</a></h5>
+<ul>
+<li>变量修饰符，能在该值改变时同步对页面进行更新</li>
+</ul>
+<h4><a class="header" href="#作业-1" id="作业-1">作业：</a></h4>
+<p>照着课上的代码自己写一遍，做一些修改，最好能写到手机上体验一下</p>
+<h3><a class="header" href="#lecture3-mvvm-and-the-swift-type-system" id="lecture3-mvvm-and-the-swift-type-system">Lecture3 MVVM and the swift type system</a></h3>
+<blockquote>
+<p>本节课介绍在SwiftUI设计理念中极为重要的MVVM(Model-View-ViewModel)模式，同时介绍除VIew界面外，其他两个界面：Model，ViewModel的写法。</p>
+</blockquote>
+<h4><a class="header" href="#重点-2" id="重点-2">重点：</a></h4>
+<h5><a class="header" href="#mvvm设计范例" id="mvvm设计范例">MVVM设计范例</a></h5>
+<ul>
+<li>Model-&gt;ViewModel-&gt;View，有点类似于C++设计中，底层+界面控制+界面的逻辑。</li>
+</ul>
+<h5><a class="header" href="#struct与class的区别与联系" id="struct与class的区别与联系"><code>struct</code>与<code>class</code>的区别与联系</a></h5>
+<ul>
+<li>前者是面向过程的结构体，后者是面向对象的结构体</li>
+<li>其他区别见课程</li>
+</ul>
+<h4><a class="header" href="#作业-2" id="作业-2">作业：</a></h4>
+<ol>
+<li>
+<p>跟着老师把代码敲一遍，理清MVVM之间的关系。</p>
+</li>
+<li>
+<p>View界面是面向过程的还是面向对象的？</p>
+<p>答：面向过程。</p>
+</li>
+</ol>
+<h3><a class="header" href="#lecture-4-more-mvvm-enum-optionals" id="lecture-4-more-mvvm-enum-optionals">Lecture 4 More MVVM enum Optionals</a></h3>
+<blockquote>
+<p>在这一讲中， 前面提到的 MVVM 模型将被完整地应用到游戏 Memorize 的编写中。enums 和 Optionals 这两个 Swift 编程中的关键概念将被介绍并用于完善游戏 Memorize 的逻辑部分。</p>
+</blockquote>
+<h5><a class="header" href="#enum" id="enum">enum</a></h5>
+<ul>
+<li>
+<p>Another variety of data structure in addition to <code>struct</code> and <code>class</code></p>
+</li>
+<li>
+<p>Associated Data</p>
+</li>
+<li>
+<p>Setting the value of an enum</p>
+</li>
+<li>
+<p>Checking an enum's state</p>
+</li>
+<li>
+<p><code>break</code> statement &amp; <code>default</code> statement</p>
+</li>
+<li>
+<p>Methods yes, (stored) Properties no</p>
+</li>
+<li>
+<p>Getting all the cases of an enumeration</p>
+</li>
+</ul>
+<h5><a class="header" href="#optionals" id="optionals">Optionals</a></h5>
+<ul>
+<li>
+<p>An Optimal is just an enum</p>
+</li>
+<li>
+<p>We use Optional at any time we have a value that can sometimes be 'not set' or 'unspecified' or 'undetermined'</p>
+</li>
+</ul>
+<h4><a class="header" href="#lecture-5-properties-layout-viewbuilder" id="lecture-5-properties-layout-viewbuilder">Lecture 5 Properties Layout @ViewBuilder</a></h4>
+<blockquote>
+<p>在这一讲中，将介绍 property observers，computed properties，@State 和 @ViewBuilder。我们也将继续完善游戏 Memorize，并通过一个在给定空间中为卡片选取合适字体大小的例子揭示 Views 在屏幕上的布局方式的背后机制。在这一过程中，我们对游戏 Memorize 内部 API 实现了更好的访问控制。</p>
+</blockquote>
+<h5><a class="header" href="#swift-demo-warmup" id="swift-demo-warmup">Swift Demo Warmup</a></h5>
+<ul>
+<li>Access Control</li>
+</ul>
+<h5><a class="header" href="#viewbuilder" id="viewbuilder">@ViewBuilder</a></h5>
+<ul>
+<li>What exactly is that argument to <code>ZStack</code>, <code>Foreach</code>, <code>GeometryReader</code>, etc?</li>
+</ul>
+<h5><a class="header" href="#shape" id="shape">Shape</a></h5>
+<ul>
+<li>What if I want to draw my own View rather than constract it from other Views?</li>
+</ul>
+<h5><a class="header" href="#animation" id="animation">Animation</a></h5>
+<ul>
+<li>
+<p>Mobile app UIs look pretty bad without animation.</p>
+</li>
+<li>
+<p>Luckily, in SwiftUI, animation (almost) comes for free!</p>
+</li>
+</ul>
+<h5><a class="header" href="#viewmodifier" id="viewmodifier">ViewModifier</a></h5>
+<ul>
+<li>What exactly are functions like <code>foregroundColor</code>, <code>font</code>, <code>padding</code>, etc. doing?</li>
+</ul>
+<h4><a class="header" href="#lecture-6-protocols-shapes" id="lecture-6-protocols-shapes">Lecture 6 Protocols Shapes</a></h4>
+<blockquote>
+<p>在这一讲中，我们将讨论 Swift 编程中最重要的类型 —— protocol。为了使游戏 Memorize 中的卡片可以更好地使用屏幕上的给定空间，我们将结合使用 generic 和 protocol 两种概念。最后，我们使用名为 Shape 的 protocol 将一个饼状计时器加到游戏 Memorize 中。</p>
+</blockquote>
+<h5><a class="header" href="#property-observers" id="property-observers">Property Observers</a></h5>
+<ul>
+<li>&quot;Watching&quot; a var and reacting to changes</li>
+</ul>
+<h5><a class="header" href="#state-1" id="state-1">@State</a></h5>
+<ul>
+<li>
+<p>State that is entirely localized inside a View</p>
+</li>
+<li>
+<p>Only used for temporary state like presentation of alerts or editing things or animation</p>
+</li>
+</ul>
+<h5><a class="header" href="#animation-1" id="animation-1">Animation</a></h5>
+<ul>
+<li>
+<p>Implicit vs. Explicit Animation</p>
+</li>
+<li>
+<p>Animation Views (via their ViewModifiers which can implement the Animatable protocol)</p>
+</li>
+<li>
+<p>Transitions (animating the appearance/dissppearance of Views by specifying ViewModifiers)</p>
+</li>
+<li>
+<p>Animating Shapes (via the Animatable protocol)</p>
+</li>
+</ul>
 <h1><a class="header" href="#build-this-site" id="build-this-site">Build This Site</a></h1>
 <ul>
 <li><a href="postscript/site_build.html#build-this-site">Build This Site</a>
