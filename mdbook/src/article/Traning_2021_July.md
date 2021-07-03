@@ -4,6 +4,7 @@
 - [Introduction](#introduction)
 - [Arrangement](#arrangement)
   - [Schedule](#schedule)
+  - [答疑安排](#答疑安排)
 
 # Introduction
 
@@ -64,3 +65,11 @@
 **Notice** [Stanford cs193p主页](https://cs193p.sites.stanford.edu)
 
 **Notice** Stanford课程链接点不开的同学，开发组的同学帮大家把视频和作业都下载搬运到了清华云盘，大家可以查看在清华云盘查看该课程（包含 `YouTube视频英文字幕` 和 `B站中英硬字幕搬运`）：<https://cloud.tsinghua.edu.cn/d/bd289554fd0b4f9eb920/>
+
+## 答疑安排
+
+7月13日（周二，小学期第三周）～ 7月20日（周二，小学期第四周）
+
+地点：微信交流群`Swift SwiftUI 答疑`
+
+点击查看[入群二维码](https://docs.qq.com/doc/DS2FEdU9Ma0pyUWZq)
