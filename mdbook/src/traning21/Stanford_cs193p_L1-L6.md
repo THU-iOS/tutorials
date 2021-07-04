@@ -1,7 +1,6 @@
-
-
 ## Stanford CS193p L1-L6 观前引导
 
+> Author: 王可 王拓为
 
 ### Lecture1 Getting started with SwiftUI
 
