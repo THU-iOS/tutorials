@@ -22,11 +22,126 @@
 
 ✡ WWDC20 Introduction to SwiftUI <https://developer.apple.com/wwdc20/10119>
 
+这个talk介绍了swiftUI的基本特性。打开Xcode，编辑器的左侧显示了代码，右侧显示了一个带有该代码可视化表示的画布。在 SwiftUI 中，视图定义只是 Swift 代码，这意味着画布和代码编辑器只是查看和编辑相同代码的不同方式。如果在画布中选择某些内容，该选择也会反映在代码中。如果更改代码中的某些内容这种变化也反映在画布上。
+
+操作演示：
+
++ 文本旁边添加一个图像
++ 更改为字体
++ 添加圆角矩形
++ NavigationView 支持在应用程序的不同部分之间导航
++ NavigationLink 接收要推送的目的地
++ ……
+
+SwiftUI 中的视图非常轻巧。提取子视图几乎没有运行时开销。 SwiftUI 中的视图和传统 UI 框架中的视图完成相同的主要角色：它们定义了一个 UI。UI 编程中同步多线程代码很难。但是swiftUI淡化了它的难度。最重要的是能够在所有 Apple 平台之间使用相同的视图代码、模型代码和应用程序代码。也可以对特定平台进行改进。
+
 〇 在学习`Stanford课程`的过程中，可以参考下面两个`WWDC20`的session，对SwiftUI里面的`App Scene View`和`@State @ObservedObject`有更深入的了解，从而更好的管理自己的`App层次`和`App中的数据流动`。
 
 ✡ WWDC20 App essentials in SwiftUI <https://developer.apple.com/wwdc20/10037>
 
+今年`SwiftUI`拓展了使用用于声明场景和应用程序的新 `API` 。可以仅使用 `SwiftUI` 构建整个应用程序。这个talk介绍了 `SwiftUI` 的场景架构，并展示如何自定义应用程序中的场景，简要概述了可用于自定义应用程序的不同 API，以及可以从哪里了解更多信息。
+
+今年新增了 `DocumentGroup` 场景类型，它自动管理打开、编辑和保存基于文档的场景。更多信息在“在 SwiftUI 中构建基于文档的应用程序” session。
+
 ✡ WWDC20 Data Essentials in SwiftUI <https://developer.apple.com/wwdc20/10040>
+
+【Instantiate a Model Object in a View】
+
+Connect `data to show in views` with `data defined in Model`.
+
+Model class:
+
+```swift
+class Book: ObservableObject {
+	/// @Published: Once title changed, Views related with Book refreshed.
+	/// @Published works when this class is an ObservableObject
+    @Published var title = "Great Expectations" 
+}
+```
+
+SwiftUI codes:
+
+```swift
+struct LibraryView: View {
+    @StateObject var book = Book() // Book is a class conforming to ObservableObject. Only instantiating uses `@StateObject`
+    
+    var body: some View {
+        BookView(book: book)
+    }
+}
+
+struct BookView: View {
+    @ObservedObject var book: Book // Here book is not an instance of Model. So yse @ObservedObject
+
+    // ...
+}
+```
+
+【Share an Object Throughout the App】
+
+Save your time to pass arguments again and again if there are plenty of layers.
+
+```swift
+@main
+struct BookReader: App {
+    @StateObject var library = Library() // initiate ObservableObject with `@StateObject`
+    
+    var body: some Scene {
+        WindowGroup {
+            LibraryView()
+                .environmentObject(library) // Here pass `library` to all sub-views of LibraryView().
+        }
+    }
+}
+```
+
+```swift
+struct LibraryView: View {
+    @EnvironmentObject var library: Library // Get that EnvironmentObject
+    
+    // ...
+}
+```
+
+【Manage Mutable Values】
+
+〇 当层View中需要更改的值定义为`@State var`(因为要保存这个值，而不是每次refresh UI的时候值都回到初始值)
+〇 当层View使用的不可更改的值，定义该值为`let`
+
+
+〇 当层View需要给下层View传值、且下层View只是使用而不改变该值，下层View中定义该值为`var`
+〇 当层View需要给下层View传值、且下层View会改变该值，下层View中定义该值为`@Binding var`，确保下层View改的是当层View值的引用（改的是同一个）；当层View传递时写`$foo`
+
+〇 某值只有当层和subView用，加`private`，上层View无法访问到该量
+    
+```swift
+struct PlayerView: View {
+    let episode: Episode
+    @State private var isPlaying: Bool = false
+    
+    var body: some View {
+        VStack {
+            Text(episode.title)
+            Text(episode.showTitle)
+            PlayButton(isPlaying: $isPlaying) // Pass a binding.
+        }
+    }
+}
+```
+
+```swift
+struct PlayButton: View {
+    @Binding var isPlaying: Bool
+    
+    var body: some View {
+        Button(action: {
+            self.isPlaying.toggle() // change isPlaying in sub-view. So use @Binding
+        }) {
+            Image(systemName: isPlaying ? "pause.circle" : "play.circle")
+        }
+    }
+}
+```
 
 〇 通过下面这几个session，你可以看到每年苹果对`Swift`和`SwiftUI`的更新。`2019`年是Swift大版本`Swift5.0`推出的第一年，也是`SwiftUI`元年，再往前的WWDC和Swift与SwiftUI关系不大。
 
