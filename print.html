@@ -95,7 +95,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="foreword/site_info.html">Introduction</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="traning21/Traning_2021_July.html">Training 2021</a></li><li class="chapter-item expanded affix "><a href="traning21/Training_2021_details.html">Training 2021 Details</a></li><li class="chapter-item expanded affix "><a href="traning21/Stanford_cs193p_L1-L6.html">Stanford CS193p Learning</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="article/Tools.html">Developing Tools</a></li><li class="chapter-item expanded affix "><a href="article/iOS_servise_app.html">SaaS Framework</a></li><li class="spacer"></li><li class="chapter-item expanded ">Lecture</li><li class="chapter-item expanded affix "><a href="lecture/markdown.html">Markdown</a></li><li class="chapter-item expanded affix "><a href="lecture/git.html">Git</a></li><li class="chapter-item expanded affix "><a href="lecture/git-demos.html">Git Demos</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="postscript/site_build.html">About the Site</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="foreword/site_info.html">Introduction</a></li><li class="spacer"></li><li class="chapter-item expanded ">Lecture</li><li class="chapter-item expanded affix "><a href="lecture/markdown.html">Markdown</a></li><li class="chapter-item expanded affix "><a href="lecture/git.html">Git</a></li><li class="chapter-item expanded affix "><a href="lecture/git-demos.html">Git demos</a></li><li class="chapter-item expanded affix ">Swift</li><li class="chapter-item expanded affix "><a href="lecture/swift-hw.html">Swift homework</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="traning21/Traning_2021_July.html">Training 2021</a></li><li class="chapter-item expanded affix "><a href="traning21/Training_2021_details.html">Training 2021 Details</a></li><li class="chapter-item expanded affix "><a href="traning21/Stanford_cs193p_L1-L6.html">Stanford CS193p Learning</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="article/Tools.html">Developing Tools</a></li><li class="chapter-item expanded affix "><a href="article/iOS_servise_app.html">SaaS Framework</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="postscript/site_build.html">About the Site</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -154,776 +154,6 @@
 <p><code>THU iOS Club</code> 的文档 / 教程 / 资源</p>
 <p>点击左上方 <code>菜单图标</code> 调出文章列表，点击右上方 <code>GitHub图标</code> 前往仓库</p>
 <p>如果有想分享的技术文章 / 资源，欢迎随时提 <code>Pull Request</code>！</p>
-<h1><a class="header" href="#training-july-2021" id="training-july-2021">Training July, 2021</a></h1>
-<ul>
-<li><a href="traning21/Traning_2021_July.html#training-july-2021">Training July, 2021</a></li>
-<li><a href="traning21/Traning_2021_July.html#introduction">Introduction</a></li>
-<li><a href="traning21/Traning_2021_July.html#arrangement">Arrangement</a>
-<ul>
-<li><a href="traning21/Traning_2021_July.html#schedule">Schedule</a></li>
-<li><a href="traning21/Traning_2021_July.html#%E7%AD%94%E7%96%91%E5%AE%89%E6%8E%92">答疑安排</a></li>
-</ul>
-</li>
-</ul>
-<h1><a class="header" href="#introduction" id="introduction">Introduction</a></h1>
-<p>在当今信息化时代，生活中的很多事情都已经可以用一款App来搞定。开发App，有很多需要涉及的内容：比如代码如何编写、用户界面如何设计、应用如何迭代更新、如何找到现在市场需要的应用……其中最重要的可能是各种设计，但最基础的还是<strong>编写代码</strong>。</p>
-<p>这个暑假，我们主要学习的是<code>Swift</code>和<code>SwiftUI</code>。苹果几年前推出了自己的编程语言<code>Swift</code>，使用这门全新的、现代的编程语言让我们的开发过程变得高效容易。苹果也推出了全新的声明式UI框架<code>SwiftUI</code>，让短短几行代码即可变成屏幕上的用户界面。</p>
-<p>这次暑培，主要是让大家熟练掌握<code>Swift</code>这门编程语言，使用<code>Swift</code>和<code>SwiftUI</code>来构建用户界面，为大家之后的实际参与开发打基础。在学习过程中，也希望大家能对App构建的过程、App设计的思路有一些简单的认识。</p>
-<h1><a class="header" href="#arrangement" id="arrangement">Arrangement</a></h1>
-<p>组织社团开发组的同学、社团内对iOS开发有兴趣的同学从【7月13日（周二 小学期第三周周二）】开始，通过查看<code>WWDC</code>与<code>SwiftUI</code>相关的教程、学习<a href="https://cs193p.sites.stanford.edu">Stanford CS193p - Developing Apps for iOS</a>的前六课，掌握使用<code>SwiftUI</code>开发<code>iOS App</code>的核心知识。在这期间开发组的核心成员将安排答疑坊，有任何问题我们都可以一起讨论。</p>
-<p><strong>在这之前</strong>，我们推荐没有编程经验的同学先学习<a href="https://www.icourse163.org/course/ZJU-1450024180">浙江大学 Swift创新导论</a>前三周课程中与<code>Swift</code>相关的部分，掌握编写程序的基本方法。如果有同学有其他语言编程经验，但希望提前学习<code>Swift</code>（Stanford的课程也会教你如何写<code>Swift</code>），可以参考<a href="https://www.bilibili.com/video/BV144411C7Gg">Aimls Swift编程基础</a>对<code>Swift</code>有一个提前的了解。</p>
-<p>具体的时间安排见下，具体的课程内容见<a href="https://thu-ios.github.io/tutorials/article/Training_2021_details.html">Training Details</a>。</p>
-<h2><a class="header" href="#schedule" id="schedule">Schedule</a></h2>
-<p><strong>〇 7月13日（周二，小学期第三周）</strong></p>
-<p><strong>✡</strong> 学习Swift语法</p>
-<p><strong>✡</strong> <a href="https://developer.apple.com/wwdc20/10119">WWDC20 Introduction to SwiftUI</a></p>
-<p><strong>〇 7月14日（周三，小学期第三周）</strong></p>
-<p><strong>✡</strong> 熟悉Swift语法</p>
-<p><strong>✡</strong> <a href="https://youtu.be/bqu6BquVi2M">Stanford cs193p Lecture 1 Getting Started with SwiftUI</a></p>
-<p><strong>〇 7月15日（周四，小学期第三周）</strong></p>
-<p><strong>✡</strong> <a href="https://youtu.be/3lahkdHEhW8">Stanford cs193p Lecture 2 Learning More about SwiftUI, Reading Assignment 1, Programming Assignment 1</a></p>
-<p><strong>〇 7月16日（周五，小学期第三周）</strong></p>
-<p><strong>✡</strong> <a href="https://youtu.be/--qKOhdgJAs">Stanford cs193p Lecture 3 MVVM</a></p>
-<p><strong>✡</strong> <a href="https://developer.apple.com/wwdc20/10037">WWDC20 App essentials in SwiftUI</a></p>
-<p><strong>〇 7月17日（周六，小学期第三周）</strong></p>
-<p><strong>✡</strong> <a href="https://youtu.be/oWZOFSYS5GE">Stanford cs193p Lecture 4 More MVVM enum Optionals, Reading Assignment 2, Programming Assignment 2</a></p>
-<p><strong>〇 7月19日（周一，小学期第四周）</strong></p>
-<p><strong>✡</strong> <a href="https://www.youtube.com/watch?v=ayQl_F_uMS4">Stanford cs193p Lecture 5 Properties Layout @ViewBuilder</a></p>
-<p><strong>✡</strong> <a href="https://developer.apple.com/wwdc20/10040">WWDC20 Data Essentials in SwiftUI</a></p>
-<p><strong>〇 7月20日（周二，小学期第四周）</strong></p>
-<p><strong>✡</strong> <a href="https://www.youtube.com/watch?v=Og9gXZpbKWo">Stanford cs193p Lecture 6 Protocols Shapes, Reading Assignment 3, Programming Assignment 3</a></p>
-<hr />
-<p><strong>Notice</strong> <a href="https://cs193p.sites.stanford.edu">Stanford cs193p主页</a></p>
-<p><strong>Notice</strong> Stanford课程链接点不开的同学，开发组的同学帮大家把视频和作业都下载搬运到了清华云盘，大家可以查看在清华云盘查看该课程（包含 <code>YouTube视频英文字幕</code> 和 <code>B站中英硬字幕搬运</code>）：<a href="https://cloud.tsinghua.edu.cn/d/bd289554fd0b4f9eb920/">https://cloud.tsinghua.edu.cn/d/bd289554fd0b4f9eb920/</a></p>
-<h2><a class="header" href="#答疑安排" id="答疑安排">答疑安排</a></h2>
-<p>7月13日（周二，小学期第三周）～ 7月20日（周二，小学期第四周）</p>
-<p>地点：微信交流群<code>Swift SwiftUI 答疑</code></p>
-<p>点击查看<a href="https://docs.qq.com/doc/DS2FEdU9Ma0pyUWZq">入群二维码</a></p>
-<h1><a class="header" href="#training-details-2021-july" id="training-details-2021-july">Training Details 2021, July</a></h1>
-<ul>
-<li><a href="traning21/Training_2021_details.html#training-details-2021-july">Training Details 2021, July</a>
-<ul>
-<li><a href="traning21/Training_2021_details.html#wwdc">WWDC</a></li>
-<li><a href="traning21/Training_2021_details.html#stanford-cs193p---developing-apps-for-ios">Stanford CS193p - Developing Apps for iOS</a>
-<ul>
-<li><a href="traning21/Training_2021_details.html#basic">Basic</a></li>
-<li><a href="traning21/Training_2021_details.html#advanced">Advanced</a></li>
-</ul>
-</li>
-<li><a href="traning21/Training_2021_details.html#%E6%B5%99%E6%B1%9F%E5%A4%A7%E5%AD%A6---swift%E5%88%9B%E6%96%B0%E5%AF%BC%E8%AE%BA">浙江大学 - Swift创新导论</a>
-<ul>
-<li><a href="traning21/Training_2021_details.html#%E7%AC%AC%E4%B8%80%E5%91%A8">第一周</a></li>
-<li><a href="traning21/Training_2021_details.html#%E7%AC%AC%E4%BA%8C%E5%91%A8">第二周</a></li>
-<li><a href="traning21/Training_2021_details.html#%E7%AC%AC%E4%B8%89%E5%91%A8">第三周</a></li>
-</ul>
-</li>
-<li><a href="traning21/Training_2021_details.html#aimls---swift%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80">Aimls - Swift编程基础</a></li>
-<li><a href="traning21/Training_2021_details.html#designcode---swiftui-ios">designcode - SwiftUI iOS</a></li>
-<li><a href="traning21/Training_2021_details.html#ios-club---markdown--git">iOS Club - Markdown &amp; Git</a></li>
-</ul>
-</li>
-<li><a href="traning21/Training_2021_details.html#%E9%99%84">附</a></li>
-</ul>
-<h2><a class="header" href="#wwdc" id="wwdc">WWDC</a></h2>
-<p>〇 <code>WWDC</code>可以说是每年<code>Apple</code>发布新技术的盛会。作为开发者，我们不仅可以在其中找到<code>Apple</code>关于新技术的介绍，也可以看到很多<code>Apple</code>为初学者准备的教程。大家只需要在<code>Mac</code>或其他设备上下载<code>Developer.app</code>，就可以看到每年<code>WWDC</code>的全部内容。我们这次主要关注与<code>SwiftUI</code>相关的内容</p>
-<p>〇 推荐大家先查看<code>WWDC20</code>的<code>Introduction to SwiftUI</code>，通过官方的<code>三明治App</code>的例子对<code>SwiftUI</code>有一个简单的了解。</p>
-<p>✡ WWDC20 Introduction to SwiftUI <a href="https://developer.apple.com/wwdc20/10119">https://developer.apple.com/wwdc20/10119</a></p>
-<p>这个talk介绍了swiftUI的基本特性。打开Xcode，编辑器的左侧显示了代码，右侧显示了一个带有该代码可视化表示的画布。在 SwiftUI 中，视图定义只是 Swift 代码，这意味着画布和代码编辑器只是查看和编辑相同代码的不同方式。如果在画布中选择某些内容，该选择也会反映在代码中。如果更改代码中的某些内容这种变化也反映在画布上。</p>
-<p>操作演示：</p>
-<ul>
-<li>文本旁边添加一个图像</li>
-<li>更改为字体</li>
-<li>添加圆角矩形</li>
-<li>NavigationView 支持在应用程序的不同部分之间导航</li>
-<li>NavigationLink 接收要推送的目的地</li>
-<li>……</li>
-</ul>
-<p>SwiftUI 中的视图非常轻巧。提取子视图几乎没有运行时开销。 SwiftUI 中的视图和传统 UI 框架中的视图完成相同的主要角色：它们定义了一个 UI。UI 编程中同步多线程代码很难。但是swiftUI淡化了它的难度。最重要的是能够在所有 Apple 平台之间使用相同的视图代码、模型代码和应用程序代码。也可以对特定平台进行改进。</p>
-<p>〇 在学习<code>Stanford课程</code>的过程中，可以参考下面两个<code>WWDC20</code>的session，对SwiftUI里面的<code>App Scene View</code>和<code>@State @ObservedObject</code>有更深入的了解，从而更好的管理自己的<code>App层次</code>和<code>App中的数据流动</code>。</p>
-<p>✡ WWDC20 App essentials in SwiftUI <a href="https://developer.apple.com/wwdc20/10037">https://developer.apple.com/wwdc20/10037</a></p>
-<p>今年<code>SwiftUI</code>拓展了使用用于声明场景和应用程序的新 <code>API</code> 。可以仅使用 <code>SwiftUI</code> 构建整个应用程序。这个talk介绍了 <code>SwiftUI</code> 的场景架构，并展示如何自定义应用程序中的场景，简要概述了可用于自定义应用程序的不同 API，以及可以从哪里了解更多信息。</p>
-<p>今年新增了 <code>DocumentGroup</code> 场景类型，它自动管理打开、编辑和保存基于文档的场景。更多信息在“在 SwiftUI 中构建基于文档的应用程序” session。</p>
-<p>✡ WWDC20 Data Essentials in SwiftUI <a href="https://developer.apple.com/wwdc20/10040">https://developer.apple.com/wwdc20/10040</a></p>
-<p>【Instantiate a Model Object in a View】</p>
-<p>Connect <code>data to show in views</code> with <code>data defined in Model</code>.</p>
-<p>Model class:</p>
-<pre><code class="language-swift">class Book: ObservableObject {
-	/// @Published: Once title changed, Views related with Book refreshed.
-	/// @Published works when this class is an ObservableObject
-    @Published var title = &quot;Great Expectations&quot; 
-}
-</code></pre>
-<p>SwiftUI codes:</p>
-<pre><code class="language-swift">struct LibraryView: View {
-    @StateObject var book = Book() // Book is a class conforming to ObservableObject. Only instantiating uses `@StateObject`
-    
-    var body: some View {
-        BookView(book: book)
-    }
-}
-
-struct BookView: View {
-    @ObservedObject var book: Book // Here book is not an instance of Model. So yse @ObservedObject
-
-    // ...
-}
-</code></pre>
-<p>【Share an Object Throughout the App】</p>
-<p>Save your time to pass arguments again and again if there are plenty of layers.</p>
-<pre><code class="language-swift">@main
-struct BookReader: App {
-    @StateObject var library = Library() // initiate ObservableObject with `@StateObject`
-    
-    var body: some Scene {
-        WindowGroup {
-            LibraryView()
-                .environmentObject(library) // Here pass `library` to all sub-views of LibraryView().
-        }
-    }
-}
-</code></pre>
-<pre><code class="language-swift">struct LibraryView: View {
-    @EnvironmentObject var library: Library // Get that EnvironmentObject
-    
-    // ...
-}
-</code></pre>
-<p>【Manage Mutable Values】</p>
-<p>〇 当层View中需要更改的值定义为<code>@State var</code>(因为要保存这个值，而不是每次refresh UI的时候值都回到初始值)
-〇 当层View使用的不可更改的值，定义该值为<code>let</code></p>
-<p>〇 当层View需要给下层View传值、且下层View只是使用而不改变该值，下层View中定义该值为<code>var</code>
-〇 当层View需要给下层View传值、且下层View会改变该值，下层View中定义该值为<code>@Binding var</code>，确保下层View改的是当层View值的引用（改的是同一个）；当层View传递时写<code>$foo</code></p>
-<p>〇 某值只有当层和subView用，加<code>private</code>，上层View无法访问到该量</p>
-<pre><code class="language-swift">struct PlayerView: View {
-    let episode: Episode
-    @State private var isPlaying: Bool = false
-    
-    var body: some View {
-        VStack {
-            Text(episode.title)
-            Text(episode.showTitle)
-            PlayButton(isPlaying: $isPlaying) // Pass a binding.
-        }
-    }
-}
-</code></pre>
-<pre><code class="language-swift">struct PlayButton: View {
-    @Binding var isPlaying: Bool
-    
-    var body: some View {
-        Button(action: {
-            self.isPlaying.toggle() // change isPlaying in sub-view. So use @Binding
-        }) {
-            Image(systemName: isPlaying ? &quot;pause.circle&quot; : &quot;play.circle&quot;)
-        }
-    }
-}
-</code></pre>
-<p>〇 通过下面这几个session，你可以看到每年苹果对<code>Swift</code>和<code>SwiftUI</code>的更新。<code>2019</code>年是Swift大版本<code>Swift5.0</code>推出的第一年，也是<code>SwiftUI</code>元年，再往前的WWDC和Swift与SwiftUI关系不大。</p>
-<p>注：<code>WWDC21</code>的内容，在今年秋季、各平台新系统发布才能正式运用。感兴趣的同学可以
-提前了解，但请注意没有办法在这个暑假使用。</p>
-<p>WWDC21 What's new in Swift <a href="https://developer.apple.com/wwdc21/10192">https://developer.apple.com/wwdc21/10192</a></p>
-<p>WWDC20 What's new in Swift <a href="https://developer.apple.com/wwdc20/10170">https://developer.apple.com/wwdc20/10170</a></p>
-<p>WWDC19 What's new in Swift <a href="https://developer.apple.com/wwdc19/402">https://developer.apple.com/wwdc19/402</a></p>
-<p>WWDC21 What's new in SwiftUI <a href="https://developer.apple.com/wwdc21/10018">https://developer.apple.com/wwdc21/10018</a></p>
-<p>WWDC20 What's new in SwiftUI <a href="https://developer.apple.com/wwdc20/10041">https://developer.apple.com/wwdc20/10041</a></p>
-<p>点进去之后，看完这些视频，可能会发现这些视频下面都会有一些相关的推荐，大家感兴趣也可以对<code>WWDC</code>推出的新内容做进一步的了解。</p>
-<p>〇 还有一些<code>WWDC19</code>的session，但这些视频已经<strong>过时</strong>，而且苹果在<code>WWDC20</code>上对这些视频进行了更新，也就是在上面列出来的那些；所以虽然<code>WWDC19</code>对于<code>Swift</code>和<code>SwiftUI</code>来说很重要，但我们现在只需要看新的session就好。</p>
-<p>大家如果想感受一下<code>SwiftUI</code>刚刚发布的时候大家的热情，可以看：</p>
-<p>WWDC19 Keynote <a href="https://developer.apple.com/wwdc19/101">https://developer.apple.com/wwdc19/101</a> 的2h6min34s - 2h14min22s</p>
-<p>还有下面的视频，前二十分钟对新推出的<code>SwiftUI</code>也有详细的介绍，感兴趣的同学也可以看一下：</p>
-<p>WWDC19 Platforms State of the Union <a href="https://developer.apple.com/wwdc19/103">https://developer.apple.com/wwdc19/103</a></p>
-<p>〇 另外，如果想跟进苹果最新发布的技术，每年<code>WWDC</code>的<code>Keynote</code>和<code>Platforms State of the Union</code>都可以关注一下，对设计和App开发感兴趣，每年的<code>Apple Design Awards</code>也可以进行关注；感兴趣的相关session也可以自己抽时间查看。</p>
-<h2><a class="header" href="#stanford-cs193p---developing-apps-for-ios" id="stanford-cs193p---developing-apps-for-ios">Stanford CS193p - Developing Apps for iOS</a></h2>
-<p>英文课程 Swift SwiftUI App设计思维</p>
-<p>课程网址：<a href="https://cs193p.sites.stanford.edu">https://cs193p.sites.stanford.edu</a></p>
-<p>课程视频（YouTube English）：<a href="https://youtube.com/playlist?list=PLpGHT1n4-mAsxuRxVPv7kj4-dQYoC3VVu">https://youtube.com/playlist?list=PLpGHT1n4-mAsxuRxVPv7kj4-dQYoC3VVu</a></p>
-<p>课程视频 中英字幕：<a href="https://www.bilibili.com/video/BV1fy4y1u7hX">https://www.bilibili.com/video/BV1fy4y1u7hX</a></p>
-<p>课程清华云盘链接（包含 YouTube视频英文字幕 和 B站中英硬字幕搬运）：<a href="https://cloud.tsinghua.edu.cn/d/bd289554fd0b4f9eb920/">https://cloud.tsinghua.edu.cn/d/bd289554fd0b4f9eb920/</a></p>
-<p>非常系统性的<code>Swift+SwiftUI</code>教程！老师已经开了很多年的iOS开发课程了。暑期我们希望大家能完成前六课的学习（六节课的内容还是蛮多的哦，希望大家认真对待），更希望大家看完前六课之后也继续学习后面的课程。希望这门课程能让你入门iOS开发！</p>
-<h3><a class="header" href="#basic" id="basic">Basic</a></h3>
-<p><strong>Lecture 1 Getting Started with SwiftUI</strong></p>
-<p>The first lecture jumps right into building the first application of the quarter: a card-matching game called Memorize.  It will be the foundation for the first few weeks of course material.</p>
-<p><strong>Lecture 2 Learning More about SwiftUI</strong></p>
-<p>Development on Memorize continues.  Creating reusable components (a Card in the game) and combining them to make more complex user-interfaces.</p>
-<p><strong>Lecture 3 MVVM</strong></p>
-<p>Conceptual overview of the architectural paradigm underlying the development of applications for iOS using SwiftUI (known as MVVM) and an explanation of a fundamental component of understanding the Swift programming language: its type system.  Then both of these are applied to the Memorize application started in the first two lectures.</p>
-<p><strong>Lecture 4 More MVVM enum Optionals</strong></p>
-<p>The MVVM architecture is fully applied to Memorize.  The important Swift concepts of enums and Optionals are covered and used to finish off the game logic of the Memorize game.</p>
-<p><strong>Lecture 5 Properties Layout @ViewBuilder</strong></p>
-<p>Explore property observers, computed properties, @State and @ViewBuilder.  The mechanisms behind how Views are layed out on screen are examined followed by a demo which chooses a better font for each card in Memorize depending on the space available.  Along the way, apply better access control to Memorize's internal API.</p>
-<p><strong>Lecture 6 Protocols Shapes</strong></p>
-<p>Discussion of what is perhaps the most important type in Swift: a protocol.  The demo combines the concepts of generics and protocols to make the cards better use the space available on screen.  Finally the Shape protocol is explained and the pie-shaped countdown timer is added to Memorize (but not yet animated).</p>
-<h3><a class="header" href="#advanced" id="advanced">Advanced</a></h3>
-<p>Lecture 7 ViewModifier Animation</p>
-<p>Lecture 8 Animation Demo</p>
-<p>Lecture 9 EmojiArt Drag/Drop</p>
-<p>Lecture 10 Gestures</p>
-<p>Lecture 11 Persistence Error Handling</p>
-<p>Lecture 12 Binding Sheet Navigation EditMode</p>
-<p>Lecture 13 Publisher More Persistence</p>
-<p>Lecture 14 Document Architecture</p>
-<h2><a class="header" href="#浙江大学---swift创新导论" id="浙江大学---swift创新导论">浙江大学 - Swift创新导论</a></h2>
-<p>中文课程 Swift语法 UIKit 项目实战</p>
-<p>链接：<a href="https://www.icourse163.org/course/ZJU-1450024180">https://www.icourse163.org/course/ZJU-1450024180</a></p>
-<p>前三周课程清华云盘链接：<a href="https://cloud.tsinghua.edu.cn/d/2ddcf31a51cf4a48b690/">https://cloud.tsinghua.edu.cn/d/2ddcf31a51cf4a48b690/</a></p>
-<p><strong>前三周的教程</strong>可以让没有编程经验的同学对<code>Swift</code>这门编程语言、<strong>编程思维</strong>和<code>iOS应用开发</code>有一个简单的了解。</p>
-<p>后面的课程<strong>并不推荐</strong>大家学习，因为并没有使用Apple最新的SwiftUI框架进行教学；但是有一些很好的例子能够培养大家的创新思维，感兴趣的同学也可以看看后面几周中一些实际的案例。</p>
-<h3><a class="header" href="#第一周" id="第一周">第一周</a></h3>
-<p>第1讲：课程概述</p>
-<p>第2讲：Swift浅析</p>
-<p>第3讲：Swift编程基础知识</p>
-<p>第4讲：移动应用设计流程</p>
-<p>第5讲：iOS 人机交互基础</p>
-<p>第6讲：iOS交互设计实践（一）</p>
-<p>第7讲：iOS交互设计实践（二）</p>
-<p>第8讲：常量、变量、函数</p>
-<p>第9讲：数组与字典</p>
-<p>第10讲：控制流（Control Flow）（一）</p>
-<p>第11讲：控制流（Control Flow）（二）</p>
-<h3><a class="header" href="#第二周" id="第二周">第二周</a></h3>
-<p>第12讲：函数（Functions）和闭包（Closures）（一）</p>
-<p>第13讲：函数（Functions）和闭包（Closures）（二）</p>
-<p>第14讲：Playground 实践应用（一）</p>
-<p>第15讲：Playground 实践应用（二）</p>
-<p>第16讲：对象（Objects）和类（Classes）（一）</p>
-<h3><a class="header" href="#第三周" id="第三周">第三周</a></h3>
-<p>第17讲：对象（Objects）和类（Classes）（二）</p>
-<p>第18讲：枚举（Enumeration）和结构（Structures）（一）</p>
-<p>第19讲：枚举（Enumeration）和结构（Structures）（二）</p>
-<p>第20讲：协议（Protocols）和拓展（Extensions）（一）</p>
-<p>第21讲：协议（Protocols）和拓展（Extensions）（二）</p>
-<p>第22讲：错误处理（Error handling）（一）</p>
-<p>第23讲：错误处理（Error handling）（二）</p>
-<h2><a class="header" href="#aimls---swift编程基础" id="aimls---swift编程基础">Aimls - Swift编程基础</a></h2>
-<p>中文教程 Swift语法</p>
-<p>Swift5.0语法讲解 链接：<a href="https://www.bilibili.com/video/BV144411C7Gg">https://www.bilibili.com/video/BV144411C7Gg</a></p>
-<p>Swift5.1新特性 SwiftUI初步了解：<a href="https://www.bilibili.com/video/BV1gJ411M72p">https://www.bilibili.com/video/BV1gJ411M72p</a></p>
-<p>全部课程知识点整理总结：<a href="https://www.bilibili.com/video/BV1jE411y7cw">https://www.bilibili.com/video/BV1jE411y7cw</a></p>
-<p>教程云盘链接：<a href="https://cloud.tsinghua.edu.cn/d/bba8530022af47de9e0b/">https://cloud.tsinghua.edu.cn/d/bba8530022af47de9e0b/</a></p>
-<p>学习Swift编程语法的教程。Stanford的教程中也会教你如何使用Swift，但其中主要是靠你自学，可能会有些累。<strong>有编程基础的同学</strong>可以二倍速观看上面的Swift教程，<strong>对Swift有一个简单的理解</strong>。为什么要用二倍速呢？只要学过一门编程语言，学习其他编程语言就会特别快。推荐大家在学习过程中<strong>做好笔记</strong>。</p>
-<h2><a class="header" href="#designcode---swiftui-ios" id="designcode---swiftui-ios">designcode - SwiftUI iOS</a></h2>
-<p>英文教程 较高质量的付费教程 不做要求 想提升的同学可以看（教程看得越多学到的东西越多）</p>
-<p>教程清华云盘链接：<a href="https://cloud.tsinghua.edu.cn/d/65cd3bfc68844bd68356/">https://cloud.tsinghua.edu.cn/d/65cd3bfc68844bd68356/</a></p>
-<p><a href="https://designcode.io">designcode.io</a></p>
-<ul>
-<li><a href="https://designcode.io/swiftui-ios14">designcode | SwiftUI 2 iOS14</a>
-<ul>
-<li><a href="https://www.bilibili.com/video/BV1fT4y157zK">Bilibili搬运｜中文字幕</a></li>
-</ul>
-</li>
-<li><a href="https://designcode.io/swiftui">designcode | SwiftUI iOS13 Part1</a>
-<ul>
-<li><a href="https://www.bilibili.com/video/BV1X7411R73g">Bilibili搬运｜中文字幕</a></li>
-</ul>
-</li>
-<li><a href="https://designcode.io/swiftui2">designcode | SwiftUI iOS13 Part2</a>
-<ul>
-<li><a href="https://www.bilibili.com/video/BV1X7411R73g">Bilibili搬运｜中文字幕</a></li>
-</ul>
-</li>
-<li><a href="https://designcode.io/swiftui3">designcode | SwiftUI iOS13 Part3</a>
-<ul>
-<li><a href="https://www.acfun.cn/v/ac15856717">Acfun搬运｜中文字幕</a></li>
-</ul>
-</li>
-</ul>
-<h2><a class="header" href="#ios-club---markdown--git" id="ios-club---markdown--git">iOS Club - Markdown &amp; Git</a></h2>
-<p>大家在学习的过程中可以使用Markdown来整理笔记。社团之前有Markdown的培训，已经上传至B站，不了解Markdown的同学可以进行查看。<a href="https://www.bilibili.com/video/BV1jV411j7mz">【教程】面向开发的Markdown学习</a></p>
-<p>在之后的开发过程中，一件重要的事情是团队成员间的代码协作，社团之前也有过版本控制工具Git的相关培训，以后打算进行团队开发、还不了解版本控制的同学可以进行查看。<a href="https://www.bilibili.com/video/BV1eh411v7gt">【教程】Git基础与进阶</a></p>
-<h1><a class="header" href="#附" id="附">附</a></h1>
-<p>全部课程的清华云盘链接：<a href="https://cloud.tsinghua.edu.cn/d/01f70b980e8946c3a8b7/">https://cloud.tsinghua.edu.cn/d/01f70b980e8946c3a8b7/</a></p>
-<h2><a class="header" href="#stanford-cs193p-l1-l6-观前引导" id="stanford-cs193p-l1-l6-观前引导">Stanford CS193p L1-L6 观前引导</a></h2>
-<blockquote>
-<p>Author: 王可 王拓为</p>
-</blockquote>
-<h3><a class="header" href="#lecture1-getting-started-with-swiftui" id="lecture1-getting-started-with-swiftui">Lecture1 Getting started with SwiftUI</a></h3>
-<blockquote>
-<p>介绍Xcode、SwiftUI的最基础界面编写。</p>
-</blockquote>
-<h4><a class="header" href="#重点" id="重点">重点：</a></h4>
-<ul>
-<li>
-<p>弄清楚下列代码中每个关键字的含义与作用</p>
-<pre><code class="language-swift">import SwiftUI
-
-struct ContentView: View {
-    var body: some View {
-        Text(&quot;Hello, world!&quot;)
-            .padding()
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
-</code></pre>
-</li>
-<li>
-<p>弄清楚文件界面中每个文件的作用</p>
-</li>
-</ul>
-<h4><a class="header" href="#作业" id="作业">作业：</a></h4>
-<p>1.为什么要body的类型为some View？</p>
-<p>答案：因为body得到的可能不是严格的View类型。</p>
-<p>2.使用SwiftUI编写App时，整个程序的入口是哪个文件(类似于C中main函数)？</p>
-<p>答案：文件名为：<code> AppName+App.swift</code></p>
-<p>代码为</p>
-<pre><code class="language-swift">import SwiftUI
-
-@main
-struct lecture1App: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-    }
-}
-</code></pre>
-<h3><a class="header" href="#lecture2-learning-more-about-swiftui" id="lecture2-learning-more-about-swiftui">Lecture2 Learning more about SwiftUI</a></h3>
-<blockquote>
-<p>本节课将更进一步地介绍一些SwiftUI的设计模式，包括View、ZStack等组件的互相嵌套，还讲了数组、Foreach、按钮的用法。</p>
-</blockquote>
-<h4><a class="header" href="#重点-1" id="重点-1">重点：</a></h4>
-<h5><a class="header" href="#函数相关" id="函数相关">函数相关</a></h5>
-<ul>
-<li>
-<p>函数的最后一个参量可写在括号外：</p>
-<pre><code class="language-swift">Button(action: {
-  
-},label:{Text(&quot;s&quot;)})
-
-Button(action: {}) {
-  Text(&quot;s&quot;)
-}
-</code></pre>
-<p>两者等价，这在实际使用时会更加简洁。</p>
-</li>
-</ul>
-<h5><a class="header" href="#界面相关" id="界面相关">界面相关</a></h5>
-<ul>
-<li>LazyGrid的用法</li>
-<li>ScrollView的用法</li>
-</ul>
-<h5><a class="header" href="#spcaer" id="spcaer">Spcaer()</a></h5>
-<ul>
-<li>一种设计样式，能尽可能的扩充空间</li>
-</ul>
-<h5><a class="header" href="#state" id="state">@State</a></h5>
-<ul>
-<li>变量修饰符，能在该值改变时同步对页面进行更新</li>
-</ul>
-<h4><a class="header" href="#作业-1" id="作业-1">作业：</a></h4>
-<p>照着课上的代码自己写一遍，做一些修改，最好能写到手机上体验一下</p>
-<h3><a class="header" href="#lecture3-mvvm-and-the-swift-type-system" id="lecture3-mvvm-and-the-swift-type-system">Lecture3 MVVM and the swift type system</a></h3>
-<blockquote>
-<p>本节课介绍在SwiftUI设计理念中极为重要的MVVM(Model-View-ViewModel)模式，同时介绍除VIew界面外，其他两个界面：Model，ViewModel的写法。</p>
-</blockquote>
-<h4><a class="header" href="#重点-2" id="重点-2">重点：</a></h4>
-<h5><a class="header" href="#mvvm设计范例" id="mvvm设计范例">MVVM设计范例</a></h5>
-<ul>
-<li>Model-&gt;ViewModel-&gt;View，有点类似于C++设计中，底层+界面控制+界面的逻辑。</li>
-</ul>
-<h5><a class="header" href="#struct与class的区别与联系" id="struct与class的区别与联系"><code>struct</code>与<code>class</code>的区别与联系</a></h5>
-<ul>
-<li>前者是面向过程的结构体，后者是面向对象的结构体</li>
-<li>其他区别见课程</li>
-</ul>
-<h4><a class="header" href="#作业-2" id="作业-2">作业：</a></h4>
-<ol>
-<li>
-<p>跟着老师把代码敲一遍，理清MVVM之间的关系。</p>
-</li>
-<li>
-<p>View界面是面向过程的还是面向对象的？</p>
-<p>答：面向过程。</p>
-</li>
-</ol>
-<h3><a class="header" href="#lecture-4-more-mvvm-enum-optionals" id="lecture-4-more-mvvm-enum-optionals">Lecture 4 More MVVM enum Optionals</a></h3>
-<blockquote>
-<p>在这一讲中， 前面提到的 MVVM 模型将被完整地应用到游戏 Memorize 的编写中。enums 和 Optionals 这两个 Swift 编程中的关键概念将被介绍并用于完善游戏 Memorize 的逻辑部分。</p>
-</blockquote>
-<h5><a class="header" href="#enum" id="enum">enum</a></h5>
-<ul>
-<li>
-<p>Another variety of data structure in addition to <code>struct</code> and <code>class</code></p>
-</li>
-<li>
-<p>Associated Data</p>
-</li>
-<li>
-<p>Setting the value of an enum</p>
-</li>
-<li>
-<p>Checking an enum's state</p>
-</li>
-<li>
-<p><code>break</code> statement &amp; <code>default</code> statement</p>
-</li>
-<li>
-<p>Methods yes, (stored) Properties no</p>
-</li>
-<li>
-<p>Getting all the cases of an enumeration</p>
-</li>
-</ul>
-<h5><a class="header" href="#optionals" id="optionals">Optionals</a></h5>
-<ul>
-<li>
-<p>An Optimal is just an enum</p>
-</li>
-<li>
-<p>We use Optional at any time we have a value that can sometimes be 'not set' or 'unspecified' or 'undetermined'</p>
-</li>
-</ul>
-<h4><a class="header" href="#lecture-5-properties-layout-viewbuilder" id="lecture-5-properties-layout-viewbuilder">Lecture 5 Properties Layout @ViewBuilder</a></h4>
-<blockquote>
-<p>在这一讲中，将介绍 property observers，computed properties，@State 和 @ViewBuilder。我们也将继续完善游戏 Memorize，并通过一个在给定空间中为卡片选取合适字体大小的例子揭示 Views 在屏幕上的布局方式的背后机制。在这一过程中，我们对游戏 Memorize 内部 API 实现了更好的访问控制。</p>
-</blockquote>
-<h5><a class="header" href="#swift-demo-warmup" id="swift-demo-warmup">Swift Demo Warmup</a></h5>
-<ul>
-<li>Access Control</li>
-</ul>
-<h5><a class="header" href="#viewbuilder" id="viewbuilder">@ViewBuilder</a></h5>
-<ul>
-<li>What exactly is that argument to <code>ZStack</code>, <code>Foreach</code>, <code>GeometryReader</code>, etc?</li>
-</ul>
-<h5><a class="header" href="#shape" id="shape">Shape</a></h5>
-<ul>
-<li>What if I want to draw my own View rather than constract it from other Views?</li>
-</ul>
-<h5><a class="header" href="#animation" id="animation">Animation</a></h5>
-<ul>
-<li>
-<p>Mobile app UIs look pretty bad without animation.</p>
-</li>
-<li>
-<p>Luckily, in SwiftUI, animation (almost) comes for free!</p>
-</li>
-</ul>
-<h5><a class="header" href="#viewmodifier" id="viewmodifier">ViewModifier</a></h5>
-<ul>
-<li>What exactly are functions like <code>foregroundColor</code>, <code>font</code>, <code>padding</code>, etc. doing?</li>
-</ul>
-<h4><a class="header" href="#lecture-6-protocols-shapes" id="lecture-6-protocols-shapes">Lecture 6 Protocols Shapes</a></h4>
-<blockquote>
-<p>在这一讲中，我们将讨论 Swift 编程中最重要的类型 —— protocol。为了使游戏 Memorize 中的卡片可以更好地使用屏幕上的给定空间，我们将结合使用 generic 和 protocol 两种概念。最后，我们使用名为 Shape 的 protocol 将一个饼状计时器加到游戏 Memorize 中。</p>
-</blockquote>
-<h5><a class="header" href="#property-observers" id="property-observers">Property Observers</a></h5>
-<ul>
-<li>&quot;Watching&quot; a var and reacting to changes</li>
-</ul>
-<h5><a class="header" href="#state-1" id="state-1">@State</a></h5>
-<ul>
-<li>
-<p>State that is entirely localized inside a View</p>
-</li>
-<li>
-<p>Only used for temporary state like presentation of alerts or editing things or animation</p>
-</li>
-</ul>
-<h5><a class="header" href="#animation-1" id="animation-1">Animation</a></h5>
-<ul>
-<li>
-<p>Implicit vs. Explicit Animation</p>
-</li>
-<li>
-<p>Animation Views (via their ViewModifiers which can implement the Animatable protocol)</p>
-</li>
-<li>
-<p>Transitions (animating the appearance/dissppearance of Views by specifying ViewModifiers)</p>
-</li>
-<li>
-<p>Animating Shapes (via the Animatable protocol)</p>
-</li>
-</ul>
-<h1><a class="header" href="#tools" id="tools">Tools</a></h1>
-<blockquote>
-<p>Written by 杨希杰 on 210324</p>
-</blockquote>
-<ul>
-<li><a href="article/Tools.html#tools">Tools</a>
-<ul>
-<li><a href="article/Tools.html#swift-formatter">Swift Formatter</a></li>
-<li><a href="article/Tools.html#google">Google</a></li>
-<li><a href="article/Tools.html#git">Git</a></li>
-<li><a href="article/Tools.html#linux">Linux</a></li>
-<li><a href="article/Tools.html#github">GitHub</a></li>
-<li><a href="article/Tools.html#markdown">Markdown</a></li>
-<li><a href="article/Tools.html#vs-code">VS Code</a></li>
-<li><a href="article/Tools.html#%E8%99%9A%E6%8B%9F%E6%9C%BA">虚拟机</a></li>
-<li><a href="article/Tools.html#lookin">Lookin</a></li>
-<li><a href="article/Tools.html#cocoapods">CocoaPods</a></li>
-<li><a href="article/Tools.html#postman">Postman</a></li>
-</ul>
-</li>
-<li><a href="article/Tools.html#other">Other</a></li>
-</ul>
-<h2><a class="header" href="#swift-formatter" id="swift-formatter">Swift Formatter</a></h2>
-<p><a href="https://github.com/nicklockwood/SwiftFormat">Xcode Extension｜Swift Format Tool</a></p>
-<ul>
-<li>格式化<code>Swift</code>代码的<code>Xcode</code>插件。结合<code>Xcode</code>自带的快捷键设定可以实现快捷键格式代码的功能</li>
-</ul>
-<h2><a class="header" href="#google" id="google">Google</a></h2>
-<p>当你开始开发应用之后，百度一定会无法满足你的需求。这时就要去请教你最好的朋友<code>Google</code>了。</p>
-<h2><a class="header" href="#git" id="git">Git</a></h2>
-<p>项目代码版本管理工具：<a href="https://git-scm.com">Git Official Site</a></p>
-<p>iOS Club 教程：<a href="https://www.bilibili.com/video/BV1eh411v7gt">Git基础与进阶</a></p>
-<p><a href="https://www.liaoxuefeng.com/wiki/896043488029600">廖雪峰｜Git教程</a></p>
-<ul>
-<li><strong>✡ RECOMMENDED ✡</strong></li>
-<li>非常通俗易懂的文字版Git教程，推荐多次翻阅</li>
-</ul>
-<p><a href="https://www.bilibili.com/video/BV1fv411B73p">Bilibili｜电子系科协2020年暑培 p1 Git</a></p>
-<p><a href="https://learngitbranching.js.org/?locale=zh_CN">可视化学习Git</a></p>
-<ul>
-<li>对Git中的高端操作不理解可以去试试可视动画</li>
-<li>初学阶段也可以通过闯关来加深对git的理解</li>
-</ul>
-<p><a href="https://git-scm.com/docs">Git docs｜快速查阅git操作</a></p>
-<p><a href="https://github.com/k88hudson/git-flight-rules">GitHub｜git-flight-rules</a></p>
-<ul>
-<li><strong>✡ RECOMMENDED ✡</strong></li>
-<li>如果你在使用git的过程中遇到了棘手的问题应该都可以在这里找到解决方法</li>
-</ul>
-<p><a href="http://iissnan.com/progit/html/zh/ch1_0.html">一个挺详细的 Git 中文手册</a></p>
-<p><a href="https://git-scm.com/book/en/v2">Git Pro｜进阶git的一本厚书</a></p>
-<ul>
-<li>一般没有必要看</li>
-</ul>
-<h2><a class="header" href="#linux" id="linux">Linux</a></h2>
-<p>开源类Unix操作系统，目前服务器安装的系统主要是<code>Linux</code>。如果要使用网络传输数据，那么跑在<code>Linux</code>上的服务器是必须的。</p>
-<p><a href="https://www.runoob.com/linux/linux-tutorial.html">菜鸟教程｜Linux</a></p>
-<h2><a class="header" href="#github" id="github">GitHub</a></h2>
-<p>世界范围的代码托管平台。</p>
-<h2><a class="header" href="#markdown" id="markdown">Markdown</a></h2>
-<p>一种轻量的格式文本编辑风格。与word等富文本编辑不同，markdown采用一些标记来表示文本格式。一般使用markdown编辑的文本文件后缀为<code>.md</code>，进行渲染可以得到格式文本。</p>
-<p>iOS Club 教程：<a href="https://www.bilibili.com/video/BV1jV411j7mz">面向开发的Markdown学习</a></p>
-<p>markdown编辑器推荐：</p>
-<ul>
-<li><a href="https://www.typora.io">Typora</a>
-<ul>
-<li>全平台免费markdown编辑器，所见即所得型markdown编辑器。</li>
-</ul>
-</li>
-<li><code>VS Code</code>安装Markdown插件</li>
-</ul>
-<h2><a class="header" href="#vs-code" id="vs-code">VS Code</a></h2>
-<p>非常受世界开发者欢迎的轻量文本编辑器。</p>
-<h2><a class="header" href="#虚拟机" id="虚拟机">虚拟机</a></h2>
-<p>通过软件模拟硬件的方式实现在不同的硬件上运行不兼容的系统。</p>
-<p><code>iOS</code>开发主要使用<code>Mac</code>进行开发，需要使用<code>Xcode</code>，如果在学习阶段<strong>没有</strong><code>Mac</code>可以参考清华云盘上的资源（<code>Groups/iOS-Club-THU/iOS-Club/培训Training</code>）安装虚拟机。在项目开发中如果没有<code>Mac</code>可以从社团借用。</p>
-<h2><a class="header" href="#lookin" id="lookin">Lookin</a></h2>
-<p><code>iOS</code>的<code>UI调试</code>工具</p>
-<p><a href="https://lookin.work">Lookin官网</a></p>
-<h2><a class="header" href="#cocoapods" id="cocoapods">CocoaPods</a></h2>
-<p>项目引入库管理</p>
-<p><a href="https://www.jianshu.com/p/93c4cd8390d3">CocoaPods简介</a></p>
-<h2><a class="header" href="#postman" id="postman">Postman</a></h2>
-<p>测试HTTP请求</p>
-<h1><a class="header" href="#other" id="other">Other</a></h1>
-<p><a href="https://developer.apple.com">Apple Developer</a></p>
-<p><a href="https://github.com/eesast/training2020">GitHub｜EESAST training2020</a></p>
-<ul>
-<li>清华大学电子系学生科协 2020 年暑期培训相关 PPT 与文档</li>
-<li>包括但不限于：Git、Linux、Docker、HTML/CSS/JS/TS/React/Node.js/MongoDB/GraphQL/Hasura/Apollo、CI/CD</li>
-<li><a href="https://eesast.github.io/training2020/">GitHub pages｜training2020</a></li>
-<li>视频链接：<a href="https://www.bilibili.com/video/BV1fv411B73p">Bilibili training2020</a></li>
-</ul>
-<p><a href="https://docs.eesast.com">EESΛST Docs</a></p>
-<ul>
-<li>电子系科协技术文档仓库：包括Languages、Tools、Game、Web等部分。</li>
-</ul>
-<p><a href="https://missing.csail.mit.edu">MIT course｜The Missing Semester of Your CS Education</a></p>
-<ul>
-<li><strong>✡ RECOMMENDED ✡</strong></li>
-<li>大学里的计算机课程通常专注于讲授从操作系统到机器学习这些学院派的课程或主题，而对于如何精通工具这一主题则往往会留给学生自行探索……在这个系列课程中，我们讲授命令行、强大的文本编辑器的使用、使用版本控制系统提供的多种特性等等……精通这些工具不仅可以帮助您更快的使用工具完成任务，并且可以帮助您解决在之前看来似乎无比复杂的问题。</li>
-<li>包括但不限于：shell、shell script、Vim、Git</li>
-<li><a href="https://missing-semester-cn.github.io">MIT course｜The Missing Semester of Your CS Education 中文讲稿</a></li>
-</ul>
-<p><a href="https://github.com/heroku/12factor">12factor for SAAS</a></p>
-<ul>
-<li>In the modern era, software is commonly delivered as a service: called web apps, or software-as-a-service. The twelve-factor app is a methodology for building software-as-a-service apps.</li>
-<li>文章阐述了网络服务应用的十二个要素。只要从事与网络相关的App开发，这篇文章能够给你提供一个较宏观的认识与标准。</li>
-<li><a href="https://www.12factor.net/zh_cn/">12factor｜中文翻译</a></li>
-</ul>
-<p><a href="https://github.com/ivmm/Student-resources">GitHub｜Student-resources</a></p>
-<ul>
-<li>本文介绍的是利用学生、教职工身份可以享受到的相关学生优惠、教育优惠或教师优惠的权益（比如如何白嫖高性能服务器</li>
-</ul>
-<p><a href="http://www.catb.org/%7Eesr/faqs/smart-questions.html">How To Ask Questions The Smart Way</a></p>
-<ul>
-<li><a href="https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md">GitHub｜提问的智慧 简体中文版</a></li>
-<li>提问的时候总是惹别人生气、或者别人根本不理你？可能是你的提问方式出了点问题。提问的智慧教你如何在信息时代优雅的向别人提问！</li>
-</ul>
-<p><a href="https://github.com/vpncn/vpncn.github.io">VPN in China</a></p>
-<h1><a class="header" href="#ios网络服务应用尝试" id="ios网络服务应用尝试">iOS网络服务应用尝试</a></h1>
-<blockquote>
-<p>Written by 杨希杰 on 210324</p>
-</blockquote>
-<ul>
-<li><a href="article/iOS_servise_app.html#ios%E7%BD%91%E7%BB%9C%E6%9C%8D%E5%8A%A1%E5%BA%94%E7%94%A8%E5%B0%9D%E8%AF%95">iOS网络服务应用尝试</a>
-<ul>
-<li><a href="article/iOS_servise_app.html#graphql">GraphQL</a>
-<ul>
-<li><a href="article/iOS_servise_app.html#introduction">Introduction</a></li>
-<li><a href="article/iOS_servise_app.html#resources">Resources</a></li>
-</ul>
-</li>
-<li><a href="article/iOS_servise_app.html#graphql-clientapollo-client-ios">GraphQL Client｜Apollo Client (iOS)</a></li>
-<li><a href="article/iOS_servise_app.html#graphql-serverhasura--databse">GraphQL Server｜Hasura + Databse</a></li>
-<li><a href="article/iOS_servise_app.html#%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8%E6%9C%8D%E5%8A%A1">对象存储服务</a></li>
-<li><a href="article/iOS_servise_app.html#%E7%99%BB%E5%BD%95%E9%AA%8C%E8%AF%81">登录验证</a></li>
-</ul>
-</li>
-<li><a href="article/iOS_servise_app.html#hasura-tutorial">Hasura Tutorial</a>
-<ul>
-<li><a href="article/iOS_servise_app.html#introduction-to-graphql">Introduction to GraphQL</a></li>
-<li><a href="article/iOS_servise_app.html#frontend-graphql-tutorial">Frontend GraphQL Tutorial</a></li>
-<li><a href="article/iOS_servise_app.html#hasura-tutorials">Hasura Tutorials</a></li>
-<li><a href="article/iOS_servise_app.html#sample-apps">Sample Apps</a></li>
-</ul>
-</li>
-</ul>
-<h2><a class="header" href="#graphql" id="graphql">GraphQL</a></h2>
-<h3><a class="header" href="#introduction-1" id="introduction-1">Introduction</a></h3>
-<p>一种前后端数据请求/交互的风格/标准/规范。是有着大公司做靠山、较新的查询语言规范，是一种基于图的查询语言。对比原有的REST请求风格，GraphQL能够让你每次都获取到不多不少的数据，结合社区的工具，几乎可以省掉后端的开发团队，让你的项目开发效率大大提升。</p>
-<blockquote>
-<p>GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data. GraphQL provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need and nothing more, makes it easier to evolve APIs over time, and enables powerful developer tools.</p>
-</blockquote>
-<p><code>GraphQL clients</code>是嵌入在前端/需要在前端导入的一个工具，这个工具能帮助你在UI中引入数据查询，让你用GraphQL的语句来向后端的<code>GraphQL server</code>发送请求。</p>
-<blockquote>
-<p><strong>GraphQL clients</strong> can help you handle queries, mutations, and subscriptions to a <strong>GraphQL server</strong>. They use the underlying structure of a GraphQL API to automate certain processes. This includes batching, UI updates, build-time schema validation, and more.</p>
-</blockquote>
-<h3><a class="header" href="#resources" id="resources">Resources</a></h3>
-<p><a href="https://graphql.org">GraphQL</a></p>
-<ul>
-<li>GraphQL官网</li>
-</ul>
-<p><a href="https://graphql.cn">GraphQL｜中文官网</a></p>
-<ul>
-<li>推荐看英文官网</li>
-</ul>
-<p><a href="https://graphql.org/learn/">GraphQL | Learn</a></p>
-<ul>
-<li><strong>IMPORTANT</strong></li>
-<li>入门GraphQL</li>
-</ul>
-<h2><a class="header" href="#graphql-clientapollo-client-ios" id="graphql-clientapollo-client-ios">GraphQL Client｜Apollo Client (iOS)</a></h2>
-<pre><code>Apollo is the industry-standard GraphQL implementation, providing the data graph layer that connects modern apps to the cloud.
-</code></pre>
-<p><a href="https://www.apollographql.com">Apollo</a></p>
-<ul>
-<li>Apollo官网</li>
-</ul>
-<p><a href="https://www.apollographql.com/docs/">Apollo docs｜Apollo Basics</a></p>
-<ul>
-<li><strong>IMPORTANT</strong></li>
-</ul>
-<p><a href="https://www.apollographql.com/docs/ios/">Apollo Client | iOS</a></p>
-<ul>
-<li><strong>IMPORTANT</strong></li>
-<li><a href="https://github.com/apollographql/apollo-ios">GitHub | Apollo Client | iOS</a></li>
-</ul>
-<h2><a class="header" href="#graphql-serverhasura--databse" id="graphql-serverhasura--databse">GraphQL Server｜Hasura + Databse</a></h2>
-<p><code>GraphQL Server</code>处理前端从<code>GraphQL Client</code>发送的<code>GraphQL请求</code>，在数据库中获取相应的数据并返回到前端/客户端。</p>
-<p>这里<code>Hasura</code>相当于一个控制台，帮你在中间操作数据库；同时<code>Hasura</code>也提供可视化的控制台，让数据库的管理变得方便。</p>
-<blockquote>
-<p>The Hasura GraphQL engine makes your data instantly accessible over a real-time GraphQL API, so you can build and ship modern apps and APIs faster. Hasura connects to your databases, REST servers, GraphQL servers, and third party APIs to provide a unified realtime GraphQL API across all your data sources.</p>
-</blockquote>
-<p><a href="https://hasura.io">Hasura</a></p>
-<ul>
-<li>Hasura官网</li>
-</ul>
-<p><a href="https://hasura.io/learn/">Hasura | Tutorials</a></p>
-<ul>
-<li><strong>IMPORTANT</strong></li>
-<li>教程资源整合，包括了从GraphQL到Hasura的所有内容</li>
-<li>具体见下方</li>
-</ul>
-<p><a href="https://hasura.io/docs/latest/graphql/core/index.html">Hasura | GraphQL Engine Documentation</a></p>
-<ul>
-<li><strong>IMPORTANT</strong></li>
-<li>关于Hasura的部署使用的文档</li>
-</ul>
-<p><a href="https://github.com/hasura/graphql-engine/">GitHub | GraphQL engine</a></p>
-<ul>
-<li><a href="https://realtime-chat.demo.hasura.app/">实时聊天软件展示</a>
-<a href="https://github.com/hasura/graphql-engine/tree/master/community/sample-apps/realtime-chat">实时聊天软件repo</a></li>
-<li><a href="https://github.com/hasura/graphql-engine/tree/master/community/sample-apps">其他的一些sample-app</a></li>
-</ul>
-<p><a href="https://cloud.hasura.io">Hasura Cloud</a></p>
-<ul>
-<li>Hasura Cloud相当于一个搭建好的Hasura平台，可以直接通过在其中创建的project开启console。</li>
-<li>注意这个是不带数据库的，你需要将一个已有的postgres数据库链接到Hasura上（这里数据库可以用Heroku免费的，但我并不清楚有这个的使用是不是有限制）</li>
-<li>免费版的可以自己尝试玩，但是有流量限制（1G/month），一分钟也只能请求60次</li>
-<li>标准版流量可叠加（20G/month，2刀 per additional GB），但没有请求限制。每月100刀</li>
-<li><a href="https://hasura.io/docs/latest/graphql/cloud/index.html">Hasura Cloud Documentation</a></li>
-</ul>
-<p>其他：</p>
-<ul>
-<li>Hasura-cli
-<ul>
-<li>记录每次在Hasura控制台对数据库的操作，方便对项目进行迁移</li>
-</ul>
-</li>
-<li>跑在服务器Docker上的postgres
-<ul>
-<li>也可以在服务器上安装postgres</li>
-<li>需要将数据库的地址或服务端口交给Hasura</li>
-</ul>
-</li>
-</ul>
-<h2><a class="header" href="#对象存储服务" id="对象存储服务">对象存储服务</a></h2>
-<p>图片和视频等资源存储在哪里？数据库里？服务器的文件路径下？云服务厂商提供的对象存储服务上？</p>
-<h2><a class="header" href="#登录验证" id="登录验证">登录验证</a></h2>
-<p>token、jwt需要去了解一下，密码加盐如何前后端中分别实现？</p>
-<h1><a class="header" href="#hasura-tutorial" id="hasura-tutorial">Hasura Tutorial</a></h1>
-<p><a href="https://hasura.io/learn/">Hasura | Tutorial</a></p>
-<ul>
-<li>一条龙的教程资源整合。非常详细的文档。总之就是非常推荐</li>
-<li><a href="https://github.com/hasura/learn-graphql">GitHub｜Hasura | Tutorials</a>
-<ul>
-<li>所有教程代码的存放仓库</li>
-</ul>
-</li>
-</ul>
-<h2><a class="header" href="#introduction-to-graphql" id="introduction-to-graphql">Introduction to GraphQL</a></h2>
-<p><a href="https://hasura.io/learn/graphql/intro-graphql/introduction/">Hasura Tutorial｜GraphQL intro</a></p>
-<ul>
-<li><strong>IMPORTANT</strong></li>
-<li><code>GraphQL</code>简介，包括：<code>GraphQL</code>是什么，<code>GraphQL</code>与<code>REST</code>的区别，<code>GraphQL</code>中的核心概念和术语，<code>GraphQL</code>三种请求数据的方式，<code>GraphQL Clients</code>和<code>GraphQL Servers</code></li>
-</ul>
-<h2><a class="header" href="#frontend-graphql-tutorial" id="frontend-graphql-tutorial">Frontend GraphQL Tutorial</a></h2>
-<p><a href="https://hasura.io/learn/graphql/ios/introduction/">Hasura Tutorial｜GraphQL Client with iOS</a></p>
-<ul>
-<li><strong>IMPORTANT</strong></li>
-</ul>
-<h2><a class="header" href="#hasura-tutorials" id="hasura-tutorials">Hasura Tutorials</a></h2>
-<p><a href="https://hasura.io/learn/graphql/hasura/introduction/">Hasura Tutorial｜Hasura Basics</a></p>
-<ul>
-<li><strong>IMPORTANT</strong></li>
-</ul>
-<p><a href="https://hasura.io/learn/graphql/hasura-auth-slack/introduction/">Hasura Tutorial｜Auth Patterns with Hasura</a></p>
-<ul>
-<li><strong>IMPORTANT</strong></li>
-</ul>
-<p><a href="article/">Hasura Tutorial｜Hasura Advanced</a></p>
-<ul>
-<li><strong>IMPORTANT</strong></li>
-</ul>
-<h2><a class="header" href="#sample-apps" id="sample-apps">Sample Apps</a></h2>
-<p><a href="https://whatsapp-clone.demo.hasura.app/sign-in">Hasura Tutorial｜WhatsApp Clone</a></p>
-<ul>
-<li><a href="https://github.com/hasura/graphql-engine/tree/master/community/sample-apps/whatsapp-clone-typescript-react">GitHub｜whatsapp-clone-typescript-react</a></li>
-</ul>
-<p><a href="https://react-apollo-todo.demo.hasura.app">Hasura Tutorial｜React to-do app</a></p>
-<ul>
-<li><a href="https://github.com/hasura/graphql-engine/tree/master/community/sample-apps/todo-auth0-jwt">GitHub｜todo-auth0-jwt</a></li>
-<li><a href="https://github.com/hasura/graphql-engine/tree/master/community/sample-apps/react-apollo-todo">GitHub｜react-apollo-todo</a></li>
-</ul>
 <h1><a class="header" href="#面向开发的markdown学习" id="面向开发的markdown学习">面向开发的Markdown学习</a></h1>
 <blockquote>
 <p>Started on 210409</p>
@@ -1198,7 +428,7 @@ Content in the first column | Content in the second column
 <p><a href="https://www.typora.io">Typora官网</a></p>
 <p>所见即所得的<code>markdown</code>编辑软件，全平台；各种意义上都应该是<code>markdown</code>编辑的首选！</p>
 <p>主要用来写单独的markdown（比如我今天要写讲稿了，用markdown写的话我就会考虑Typora）；也可以开一个文件夹专门放自己的笔记……</p>
-<h4><a class="header" href="#vs-code-1" id="vs-code-1">VS Code</a></h4>
+<h4><a class="header" href="#vs-code" id="vs-code">VS Code</a></h4>
 <p>安装插件<code>Markdown All in One</code>，会支持不少快捷操作。</p>
 <p><code>VS Code</code>作为程序员中口碑最好的编辑器，写写<code>markdown</code>什么的肯定没问题！拖入一个文件夹新建<code>markdown文件</code>就可以编辑了！</p>
 <p>一般来说，软件开发的项目中，代码都是和<code>markdown文件</code>在一起的，以后如果有一些需要在<code>VS Code</code>打开的项目，使用<code>VS Code</code>编写<code>README.md</code>或者其他的<code>markdown文件</code>也是很方便的一个选择。</p>
@@ -2255,6 +1485,997 @@ Date:   Fri May 21 18:30:57 2021 +0800
 <p>同上述<code>在sayHello分支上写代码</code>的内容，之后也是回到<code>main分支</code>进行合并</p>
 <h2><a class="header" href="#向github上的开源项目提交代码" id="向github上的开源项目提交代码">向GitHub上的开源项目提交代码</a></h2>
 <p>TODO</p>
+<h1><a class="header" href="#swift教学课后作业" id="swift教学课后作业">Swift教学课后作业</a></h1>
+<blockquote>
+<p>2021.10.17</p>
+<p>作业：<a href="https://github.com/Yang-Xijie">杨希杰</a></p>
+</blockquote>
+<ul>
+<li><a href="lecture/swift-hw.html#swift%E6%95%99%E5%AD%A6%E8%AF%BE%E5%90%8E%E4%BD%9C%E4%B8%9A">Swift教学课后作业</a>
+<ul>
+<li><a href="lecture/swift-hw.html#%E4%BD%9C%E4%B8%9A%E6%8F%90%E4%BA%A4%E6%96%B9%E5%BC%8F">作业提交方式</a></li>
+<li><a href="lecture/swift-hw.html#%E5%9F%BA%E7%A1%80">基础</a>
+<ul>
+<li><a href="lecture/swift-hw.html#%E6%9F%A5%E6%96%87%E6%A1%A3">查文档</a></li>
+<li><a href="lecture/swift-hw.html#%E5%BC%BA%E7%B1%BB%E5%9E%8B">强类型</a></li>
+<li><a href="lecture/swift-hw.html#%E5%8F%AF%E9%80%89%E7%B1%BB%E5%9E%8B">可选类型</a></li>
+<li><a href="lecture/swift-hw.html#%E5%87%BD%E6%95%B0">函数</a></li>
+<li><a href="lecture/swift-hw.html#%E7%BB%9F%E8%AE%A1%E5%90%84%E4%B8%AA%E4%B8%93%E4%B8%9A%E7%9A%84%E4%BA%BA%E6%95%B0">统计各个专业的人数</a></li>
+</ul>
+</li>
+<li><a href="lecture/swift-hw.html#%E8%BF%9B%E9%98%B6">进阶</a>
+<ul>
+<li><a href="lecture/swift-hw.html#error-handling">Error Handling</a></li>
+<li><a href="lecture/swift-hw.html#log">Log()</a></li>
+</ul>
+</li>
+<li><a href="lecture/swift-hw.html#%E5%85%B6%E4%BB%96">其他</a></li>
+</ul>
+</li>
+</ul>
+<h2><a class="header" href="#作业提交方式" id="作业提交方式">作业提交方式</a></h2>
+<ul>
+<li>基础部分为基本要求，进阶部分可自选；题目前有<code>Optional</code>也是选做。</li>
+<li>复制下面对应部分的作业，在括号或空白处中<strong>填空</strong>。</li>
+<li>提交作业需要将填好空的所有文本（包括题目）以<strong>邮件正文</strong>的形式发送到<code>564197835@qq.com</code>，邮件标题为<code>Swift作业 &lt;姓名&gt; &lt;学号&gt;</code>。</li>
+</ul>
+<h2><a class="header" href="#基础" id="基础">基础</a></h2>
+<h3><a class="header" href="#查文档" id="查文档">查文档</a></h3>
+<p>〇 Swift官网的网址是（）。我们一般会在官网上查找Swift的文档，即Language Guide，网址为（）。</p>
+<p>〇 在Xcode中打开开发者文档的方法是：在菜单栏（）中点击（），或使用快捷键（）。</p>
+<h3><a class="header" href="#强类型" id="强类型">强类型</a></h3>
+<p>观察下面的代码：（提示：观察不出来可以实际运行）</p>
+<pre><code class="language-swift">let a = 1
+a = 5
+var b = 4
+b = 4.5
+</code></pre>
+<p>〇 代码第二行报错的原因是（）。</p>
+<p>〇 代码第四行报错的原因是（）。</p>
+<h3><a class="header" href="#可选类型" id="可选类型">可选类型</a></h3>
+<p>〇 如果变量<code>a</code>是一个可选类型，我们可以通过方式（）实现：如果其不为空，则取出真实值赋给<code>b</code>；若其为空，则令<code>b</code>为<code>0</code>：</p>
+<p>A. <code>let b = a!</code></p>
+<p>B. <code>let b = (a != nil) ? a : 0</code></p>
+<p>C. <code>if let b = a { ... } else { let b = 0  ... }</code></p>
+<p>D. <code>if a != nil { b = a!  ... } else { b = 0  ... }</code></p>
+<h3><a class="header" href="#函数" id="函数">函数</a></h3>
+<p>〇 一个函数可以通过（）返回多个参数。</p>
+<p>〇 编写程序，计算10的阶乘并输出结果。要求：使用<code>...</code>运算符。【循环 区间生成运算符】
+（</p>
+<p>）</p>
+<p>〇 回顾函数闭包的相关知识，补全下列代码：</p>
+<pre><code class="language-swift">let fruits: [String] = [&quot;apple&quot;, &quot;orange&quot;, &quot;pear&quot;, &quot;pineapple&quot;]
+// 希望打印出 [&quot;pineapple&quot;, &quot;orange&quot;, &quot;apple&quot;, &quot;pear&quot;]
+// 即Array中的所有字符串按照长度从大到小排序
+
+// TODO
+</code></pre>
+<p>提示：</p>
+<p>阅读函数<code>sorted(by:)</code>的<a href="https://developer.apple.com/documentation/swift/sequence/2907222-sorted">文档</a>（<code>func sorted(by areInIncreasingOrder: (Self.Element, Self.Element) -&gt; Bool) -&gt; [Self.Element]</code>）</p>
+<p>如果你想直接在大括号中写函数的话，<code>$0</code>和<code>$1</code>可以分别指代第1个和第2个参数。</p>
+<h3><a class="header" href="#统计各个专业的人数" id="统计各个专业的人数">统计各个专业的人数</a></h3>
+<pre><code class="language-swift">import Foundation
+
+enum Major {
+    case A
+    case B
+    case C
+    case D
+}
+
+struct Student {
+    var name: String
+    var major: Major
+}
+
+let studentList: [Student] = [
+    Student(name: &quot;Alice&quot;, major: .A),
+    Student(name: &quot;Bob&quot;, major: .B),
+    Student(name: &quot;Carl&quot;, major: .C),
+    Student(name: &quot;David&quot;, major: .D),
+    Student(name: &quot;Eric&quot;, major: .A),
+    Student(name: &quot;Fred&quot;, major: .D),
+    Student(name: &quot;Gavin&quot;, major: .C),
+    Student(name: &quot;Henry&quot;, major: .D),
+    Student(name: &quot;Ivy&quot;, major: .B),
+    Student(name: &quot;Janet&quot;, major: .D),
+    Student(name: &quot;Kathy&quot;, major: .A)
+]
+
+// 题目：
+// 统计studentList中各个专业的同学名字和总数目，并按照你倾向的方式打印。
+
+// TODO
+</code></pre>
+<h2><a class="header" href="#进阶" id="进阶">进阶</a></h2>
+<h3><a class="header" href="#error-handling" id="error-handling">Error Handling</a></h3>
+<p>执行如下程序，结果为（</p>
+<p>）（共两行），简要解释输出结果：（）。</p>
+<pre><code class="language-swift">import Foundation
+
+struct Printer {
+    var paper: Int // 0 - 400
+    var ink: Float // 0 - 100 percentage
+    let inkPerPage: Float = 0.1
+
+    enum error: Error {
+        case outOfPaper
+        case noInk
+    }
+}
+
+struct File {
+    var name: String
+    var page: Int
+}
+
+func printFile(_ file: File, with printer: inout Printer) throws {
+    if printer.paper &lt;= file.page {
+        throw Printer.error.outOfPaper
+    } else if printer.ink &lt;= Float(file.page) * printer.inkPerPage {
+        throw Printer.error.noInk
+    } else {
+        printer.paper -= file.page
+        printer.ink -= Float(file.page) * printer.inkPerPage
+        print(&quot;File \&quot;\(file.name)\&quot; was successfully printed! (paper: \(printer.paper), ink: \(String(format: &quot;%2.1f&quot;, printer.ink))%)&quot;)
+    }
+}
+
+var myHomework = File(name: &quot;my homework&quot;, page: 4)
+var myReport = File(name: &quot;my report&quot;, page: 5)
+var myPrinter = Printer(paper: 7, ink: 80)
+do {
+    try printFile(myHomework, with: &amp;myPrinter)
+    try printFile(myReport, with: &amp;myPrinter)
+} catch {
+    print(error)
+}
+</code></pre>
+<h3><a class="header" href="#log" id="log">Log()</a></h3>
+<p>新建<code>Project - macOS - Command Line Tool</code>，复制运行如下代码：</p>
+<pre><code class="language-swift">import Foundation // 1
+
+struct Log: CustomStringConvertible { // 3
+    public var time: String // 4
+    public var log: String // 5
+
+    init(filePath: String = #file, line: Int = #line, column: Int = #column, funcName: String = #function) { // 7
+        let fileName = (filePath as NSString).lastPathComponent // 8
+
+        let formatter = DateFormatter() // 10
+        formatter.dateStyle = .none // 11
+        formatter.timeStyle = .medium // 12
+        time = formatter.string(from: Date()) // 13
+
+        log = &quot;\(fileName)(\(line),\(column)) \(funcName)&quot; // 15
+    }
+
+    public var description: String { // 18
+        return &quot;[\(time) \(log)]\n\t&quot; // 19
+    }
+
+    public var string: String { // 22
+        description // 23
+    } // 24
+
+    public var error: String { // 26
+        &quot;[ERROR] &quot; + description // 27
+    }
+}
+
+func MyPrint() { // 31
+    print(Log().string + &quot;Hello, world!&quot;) // 32
+    print(Log().error + &quot;Bye, world.&quot;) // 33
+}
+
+MyPrint() // 36
+
+// Literal        Type     Value
+//
+// #file          String   The name of the file in which it appears.
+// #line          Int      The line number on which it appears.
+// #column        Int      The column number in which it begins.
+// #function      String   The name of the declaration in which it appears.
+</code></pre>
+<p>〇 该程序的运行结果是（</p>
+<p>）。</p>
+<p>〇 第3行新建了一个结构体名为Log，后面冒号跟着的<code>CustomStringConvertible</code>是（），在结构体内部的变量（）完成了<code>CustomStringConvertible</code>。</p>
+<p>〇 （Optional）可以去掉第4行的<code>public</code>关键字吗？（）</p>
+<p>〇 第7行中，<code>filePath: String = #file</code>中<code>filePath</code>是参数名称，冒号后面的<code>String</code>是这个参数的（），<code>=</code>后面跟的是这个参数的（）。</p>
+<p>〇 （Optional）第8行中，<code>(filePath as NSString)</code>是在做（）。</p>
+<p>〇 第12行中出现了<code>.medium</code>，它们是（）的一种。</p>
+<p>〇（Optional）第12行如果要补全<code>.</code>前面的内容可以添加（）。提示：查看<code>.medium</code>的文档。</p>
+<p>〇 第13行中的<code>formatter.string(from: )</code>，这里string是一个（），看到<code>from</code>这一个介词可以推测<code>from</code>是参数的（）。</p>
+<p>〇 第19行的<code>\n</code>和<code>\t</code>是（）字符。</p>
+<p>〇 第22行定义了变量string，我们将其称作（计算属性）。将22 23 24这三行代码补充完整：（</p>
+<p>）。</p>
+<p>〇 第32行的<code>Log()</code>（）了一个结构体实例。</p>
+<p>〇 第32行的<code>+</code>表示（）。</p>
+<p>〇 第36行调用了函数<code>MyPrint</code>，该函数有（）个参数，（）个返回值。</p>
+<p>〇 （Optional）尝试如下步骤在<code>Xcode</code>中添加<code>code snippet</code>：</p>
+<p>To create a <code>code snippet</code>:</p>
+<ol>
+<li>Select: print(Log().string + &quot;&lt;\hashinfo\hash&gt;&quot;)</li>
+<li>Go to <code>Xcode -&gt; Editor -&gt; Create Code Snippet</code>.</li>
+<li>Change <code>\hash</code> to <code>#</code>.</li>
+<li>Set title as <code>Log()</code> and <code>completion</code> as <code>print</code>.</li>
+</ol>
+<p>Try typing <code>print</code> and select the code snippet.</p>
+<h2><a class="header" href="#其他-1" id="其他-1">其他</a></h2>
+<p>〇 （Optional）如果我们想导入并使用一个开源的第三方<code>Swift Package</code>，需要点击<code>Xcode</code>菜单栏（）（写出层级关系），然后添加该<code>Swift Package</code>的地址。之后在需要用到该包的代码文件最开始写上<code>import</code>语句就可以了。</p>
+<p>〇 <code>Swift</code>有一个非常好用的格式化工具<a href="https://github.com/nicklockwood/SwiftFormat">GitHub | SwiftFormat</a>，阅读其README说明，在自己的Xcode中添加该格式化工具并尝试使用。你在你的<code>Mac</code>上安装了吗？（）（安装了/还没/下次一定）。</p>
+<p>〇 （Optional）<code>Swift</code>目前的最新版本是<code>5.5</code>，这一个版本引入的一个重要更新是Concurrency WWDC链接<a href="https://developer.apple.com/wwdc21/10132">WWDC21 | Meet async/await in Swift</a>，感兴趣的同学可以自行查看。</p>
+<p>〇 （Optional）如果你还没有学习过Git，可以花时间掌握一下这个合作开发的必备工具。社团往期培训课程传送门 <a href="https://www.bilibili.com/video/BV1eh411v7gt">Git基础与进阶</a></p>
+<h1><a class="header" href="#training-july-2021" id="training-july-2021">Training July, 2021</a></h1>
+<ul>
+<li><a href="traning21/Traning_2021_July.html#training-july-2021">Training July, 2021</a></li>
+<li><a href="traning21/Traning_2021_July.html#introduction">Introduction</a></li>
+<li><a href="traning21/Traning_2021_July.html#arrangement">Arrangement</a>
+<ul>
+<li><a href="traning21/Traning_2021_July.html#schedule">Schedule</a></li>
+<li><a href="traning21/Traning_2021_July.html#%E7%AD%94%E7%96%91%E5%AE%89%E6%8E%92">答疑安排</a></li>
+</ul>
+</li>
+</ul>
+<h1><a class="header" href="#introduction" id="introduction">Introduction</a></h1>
+<p>在当今信息化时代，生活中的很多事情都已经可以用一款App来搞定。开发App，有很多需要涉及的内容：比如代码如何编写、用户界面如何设计、应用如何迭代更新、如何找到现在市场需要的应用……其中最重要的可能是各种设计，但最基础的还是<strong>编写代码</strong>。</p>
+<p>这个暑假，我们主要学习的是<code>Swift</code>和<code>SwiftUI</code>。苹果几年前推出了自己的编程语言<code>Swift</code>，使用这门全新的、现代的编程语言让我们的开发过程变得高效容易。苹果也推出了全新的声明式UI框架<code>SwiftUI</code>，让短短几行代码即可变成屏幕上的用户界面。</p>
+<p>这次暑培，主要是让大家熟练掌握<code>Swift</code>这门编程语言，使用<code>Swift</code>和<code>SwiftUI</code>来构建用户界面，为大家之后的实际参与开发打基础。在学习过程中，也希望大家能对App构建的过程、App设计的思路有一些简单的认识。</p>
+<h1><a class="header" href="#arrangement" id="arrangement">Arrangement</a></h1>
+<p>组织社团开发组的同学、社团内对iOS开发有兴趣的同学从【7月13日（周二 小学期第三周周二）】开始，通过查看<code>WWDC</code>与<code>SwiftUI</code>相关的教程、学习<a href="https://cs193p.sites.stanford.edu">Stanford CS193p - Developing Apps for iOS</a>的前六课，掌握使用<code>SwiftUI</code>开发<code>iOS App</code>的核心知识。在这期间开发组的核心成员将安排答疑坊，有任何问题我们都可以一起讨论。</p>
+<p><strong>在这之前</strong>，我们推荐没有编程经验的同学先学习<a href="https://www.icourse163.org/course/ZJU-1450024180">浙江大学 Swift创新导论</a>前三周课程中与<code>Swift</code>相关的部分，掌握编写程序的基本方法。如果有同学有其他语言编程经验，但希望提前学习<code>Swift</code>（Stanford的课程也会教你如何写<code>Swift</code>），可以参考<a href="https://www.bilibili.com/video/BV144411C7Gg">Aimls Swift编程基础</a>对<code>Swift</code>有一个提前的了解。</p>
+<p>具体的时间安排见下，具体的课程内容见<a href="https://thu-ios.github.io/tutorials/article/Training_2021_details.html">Training Details</a>。</p>
+<h2><a class="header" href="#schedule" id="schedule">Schedule</a></h2>
+<p><strong>〇 7月13日（周二，小学期第三周）</strong></p>
+<p><strong>✡</strong> 学习Swift语法</p>
+<p><strong>✡</strong> <a href="https://developer.apple.com/wwdc20/10119">WWDC20 Introduction to SwiftUI</a></p>
+<p><strong>〇 7月14日（周三，小学期第三周）</strong></p>
+<p><strong>✡</strong> 熟悉Swift语法</p>
+<p><strong>✡</strong> <a href="https://youtu.be/bqu6BquVi2M">Stanford cs193p Lecture 1 Getting Started with SwiftUI</a></p>
+<p><strong>〇 7月15日（周四，小学期第三周）</strong></p>
+<p><strong>✡</strong> <a href="https://youtu.be/3lahkdHEhW8">Stanford cs193p Lecture 2 Learning More about SwiftUI, Reading Assignment 1, Programming Assignment 1</a></p>
+<p><strong>〇 7月16日（周五，小学期第三周）</strong></p>
+<p><strong>✡</strong> <a href="https://youtu.be/--qKOhdgJAs">Stanford cs193p Lecture 3 MVVM</a></p>
+<p><strong>✡</strong> <a href="https://developer.apple.com/wwdc20/10037">WWDC20 App essentials in SwiftUI</a></p>
+<p><strong>〇 7月17日（周六，小学期第三周）</strong></p>
+<p><strong>✡</strong> <a href="https://youtu.be/oWZOFSYS5GE">Stanford cs193p Lecture 4 More MVVM enum Optionals, Reading Assignment 2, Programming Assignment 2</a></p>
+<p><strong>〇 7月19日（周一，小学期第四周）</strong></p>
+<p><strong>✡</strong> <a href="https://www.youtube.com/watch?v=ayQl_F_uMS4">Stanford cs193p Lecture 5 Properties Layout @ViewBuilder</a></p>
+<p><strong>✡</strong> <a href="https://developer.apple.com/wwdc20/10040">WWDC20 Data Essentials in SwiftUI</a></p>
+<p><strong>〇 7月20日（周二，小学期第四周）</strong></p>
+<p><strong>✡</strong> <a href="https://www.youtube.com/watch?v=Og9gXZpbKWo">Stanford cs193p Lecture 6 Protocols Shapes, Reading Assignment 3, Programming Assignment 3</a></p>
+<hr />
+<p><strong>Notice</strong> <a href="https://cs193p.sites.stanford.edu">Stanford cs193p主页</a></p>
+<p><strong>Notice</strong> Stanford课程链接点不开的同学，开发组的同学帮大家把视频和作业都下载搬运到了清华云盘，大家可以查看在清华云盘查看该课程（包含 <code>YouTube视频英文字幕</code> 和 <code>B站中英硬字幕搬运</code>）：<a href="https://cloud.tsinghua.edu.cn/d/bd289554fd0b4f9eb920/">https://cloud.tsinghua.edu.cn/d/bd289554fd0b4f9eb920/</a></p>
+<h2><a class="header" href="#答疑安排" id="答疑安排">答疑安排</a></h2>
+<p>7月13日（周二，小学期第三周）～ 7月20日（周二，小学期第四周）</p>
+<p>地点：微信交流群<code>Swift SwiftUI 答疑</code></p>
+<p>点击查看<a href="https://docs.qq.com/doc/DS2FEdU9Ma0pyUWZq">入群二维码</a></p>
+<h1><a class="header" href="#training-details-2021-july" id="training-details-2021-july">Training Details 2021, July</a></h1>
+<ul>
+<li><a href="traning21/Training_2021_details.html#training-details-2021-july">Training Details 2021, July</a>
+<ul>
+<li><a href="traning21/Training_2021_details.html#wwdc">WWDC</a></li>
+<li><a href="traning21/Training_2021_details.html#stanford-cs193p---developing-apps-for-ios">Stanford CS193p - Developing Apps for iOS</a>
+<ul>
+<li><a href="traning21/Training_2021_details.html#basic">Basic</a></li>
+<li><a href="traning21/Training_2021_details.html#advanced">Advanced</a></li>
+</ul>
+</li>
+<li><a href="traning21/Training_2021_details.html#%E6%B5%99%E6%B1%9F%E5%A4%A7%E5%AD%A6---swift%E5%88%9B%E6%96%B0%E5%AF%BC%E8%AE%BA">浙江大学 - Swift创新导论</a>
+<ul>
+<li><a href="traning21/Training_2021_details.html#%E7%AC%AC%E4%B8%80%E5%91%A8">第一周</a></li>
+<li><a href="traning21/Training_2021_details.html#%E7%AC%AC%E4%BA%8C%E5%91%A8">第二周</a></li>
+<li><a href="traning21/Training_2021_details.html#%E7%AC%AC%E4%B8%89%E5%91%A8">第三周</a></li>
+</ul>
+</li>
+<li><a href="traning21/Training_2021_details.html#aimls---swift%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80">Aimls - Swift编程基础</a></li>
+<li><a href="traning21/Training_2021_details.html#designcode---swiftui-ios">designcode - SwiftUI iOS</a></li>
+<li><a href="traning21/Training_2021_details.html#ios-club---markdown--git">iOS Club - Markdown &amp; Git</a></li>
+</ul>
+</li>
+<li><a href="traning21/Training_2021_details.html#%E9%99%84">附</a></li>
+</ul>
+<h2><a class="header" href="#wwdc" id="wwdc">WWDC</a></h2>
+<p>〇 <code>WWDC</code>可以说是每年<code>Apple</code>发布新技术的盛会。作为开发者，我们不仅可以在其中找到<code>Apple</code>关于新技术的介绍，也可以看到很多<code>Apple</code>为初学者准备的教程。大家只需要在<code>Mac</code>或其他设备上下载<code>Developer.app</code>，就可以看到每年<code>WWDC</code>的全部内容。我们这次主要关注与<code>SwiftUI</code>相关的内容</p>
+<p>〇 推荐大家先查看<code>WWDC20</code>的<code>Introduction to SwiftUI</code>，通过官方的<code>三明治App</code>的例子对<code>SwiftUI</code>有一个简单的了解。</p>
+<p>✡ WWDC20 Introduction to SwiftUI <a href="https://developer.apple.com/wwdc20/10119">https://developer.apple.com/wwdc20/10119</a></p>
+<p>这个talk介绍了swiftUI的基本特性。打开Xcode，编辑器的左侧显示了代码，右侧显示了一个带有该代码可视化表示的画布。在 SwiftUI 中，视图定义只是 Swift 代码，这意味着画布和代码编辑器只是查看和编辑相同代码的不同方式。如果在画布中选择某些内容，该选择也会反映在代码中。如果更改代码中的某些内容这种变化也反映在画布上。</p>
+<p>操作演示：</p>
+<ul>
+<li>文本旁边添加一个图像</li>
+<li>更改为字体</li>
+<li>添加圆角矩形</li>
+<li>NavigationView 支持在应用程序的不同部分之间导航</li>
+<li>NavigationLink 接收要推送的目的地</li>
+<li>……</li>
+</ul>
+<p>SwiftUI 中的视图非常轻巧。提取子视图几乎没有运行时开销。 SwiftUI 中的视图和传统 UI 框架中的视图完成相同的主要角色：它们定义了一个 UI。UI 编程中同步多线程代码很难。但是swiftUI淡化了它的难度。最重要的是能够在所有 Apple 平台之间使用相同的视图代码、模型代码和应用程序代码。也可以对特定平台进行改进。</p>
+<p>〇 在学习<code>Stanford课程</code>的过程中，可以参考下面两个<code>WWDC20</code>的session，对SwiftUI里面的<code>App Scene View</code>和<code>@State @ObservedObject</code>有更深入的了解，从而更好的管理自己的<code>App层次</code>和<code>App中的数据流动</code>。</p>
+<p>✡ WWDC20 App essentials in SwiftUI <a href="https://developer.apple.com/wwdc20/10037">https://developer.apple.com/wwdc20/10037</a></p>
+<p>今年<code>SwiftUI</code>拓展了使用用于声明场景和应用程序的新 <code>API</code> 。可以仅使用 <code>SwiftUI</code> 构建整个应用程序。这个talk介绍了 <code>SwiftUI</code> 的场景架构，并展示如何自定义应用程序中的场景，简要概述了可用于自定义应用程序的不同 API，以及可以从哪里了解更多信息。</p>
+<p>今年新增了 <code>DocumentGroup</code> 场景类型，它自动管理打开、编辑和保存基于文档的场景。更多信息在“在 SwiftUI 中构建基于文档的应用程序” session。</p>
+<p>✡ WWDC20 Data Essentials in SwiftUI <a href="https://developer.apple.com/wwdc20/10040">https://developer.apple.com/wwdc20/10040</a></p>
+<p>【Instantiate a Model Object in a View】</p>
+<p>Connect <code>data to show in views</code> with <code>data defined in Model</code>.</p>
+<p>Model class:</p>
+<pre><code class="language-swift">class Book: ObservableObject {
+	/// @Published: Once title changed, Views related with Book refreshed.
+	/// @Published works when this class is an ObservableObject
+    @Published var title = &quot;Great Expectations&quot; 
+}
+</code></pre>
+<p>SwiftUI codes:</p>
+<pre><code class="language-swift">struct LibraryView: View {
+    @StateObject var book = Book() // Book is a class conforming to ObservableObject. Only instantiating uses `@StateObject`
+    
+    var body: some View {
+        BookView(book: book)
+    }
+}
+
+struct BookView: View {
+    @ObservedObject var book: Book // Here book is not an instance of Model. So yse @ObservedObject
+
+    // ...
+}
+</code></pre>
+<p>【Share an Object Throughout the App】</p>
+<p>Save your time to pass arguments again and again if there are plenty of layers.</p>
+<pre><code class="language-swift">@main
+struct BookReader: App {
+    @StateObject var library = Library() // initiate ObservableObject with `@StateObject`
+    
+    var body: some Scene {
+        WindowGroup {
+            LibraryView()
+                .environmentObject(library) // Here pass `library` to all sub-views of LibraryView().
+        }
+    }
+}
+</code></pre>
+<pre><code class="language-swift">struct LibraryView: View {
+    @EnvironmentObject var library: Library // Get that EnvironmentObject
+    
+    // ...
+}
+</code></pre>
+<p>【Manage Mutable Values】</p>
+<p>〇 当层View中需要更改的值定义为<code>@State var</code>(因为要保存这个值，而不是每次refresh UI的时候值都回到初始值)
+〇 当层View使用的不可更改的值，定义该值为<code>let</code></p>
+<p>〇 当层View需要给下层View传值、且下层View只是使用而不改变该值，下层View中定义该值为<code>var</code>
+〇 当层View需要给下层View传值、且下层View会改变该值，下层View中定义该值为<code>@Binding var</code>，确保下层View改的是当层View值的引用（改的是同一个）；当层View传递时写<code>$foo</code></p>
+<p>〇 某值只有当层和subView用，加<code>private</code>，上层View无法访问到该量</p>
+<pre><code class="language-swift">struct PlayerView: View {
+    let episode: Episode
+    @State private var isPlaying: Bool = false
+    
+    var body: some View {
+        VStack {
+            Text(episode.title)
+            Text(episode.showTitle)
+            PlayButton(isPlaying: $isPlaying) // Pass a binding.
+        }
+    }
+}
+</code></pre>
+<pre><code class="language-swift">struct PlayButton: View {
+    @Binding var isPlaying: Bool
+    
+    var body: some View {
+        Button(action: {
+            self.isPlaying.toggle() // change isPlaying in sub-view. So use @Binding
+        }) {
+            Image(systemName: isPlaying ? &quot;pause.circle&quot; : &quot;play.circle&quot;)
+        }
+    }
+}
+</code></pre>
+<p>〇 通过下面这几个session，你可以看到每年苹果对<code>Swift</code>和<code>SwiftUI</code>的更新。<code>2019</code>年是Swift大版本<code>Swift5.0</code>推出的第一年，也是<code>SwiftUI</code>元年，再往前的WWDC和Swift与SwiftUI关系不大。</p>
+<p>注：<code>WWDC21</code>的内容，在今年秋季、各平台新系统发布才能正式运用。感兴趣的同学可以
+提前了解，但请注意没有办法在这个暑假使用。</p>
+<p>WWDC21 What's new in Swift <a href="https://developer.apple.com/wwdc21/10192">https://developer.apple.com/wwdc21/10192</a></p>
+<p>WWDC20 What's new in Swift <a href="https://developer.apple.com/wwdc20/10170">https://developer.apple.com/wwdc20/10170</a></p>
+<p>WWDC19 What's new in Swift <a href="https://developer.apple.com/wwdc19/402">https://developer.apple.com/wwdc19/402</a></p>
+<p>WWDC21 What's new in SwiftUI <a href="https://developer.apple.com/wwdc21/10018">https://developer.apple.com/wwdc21/10018</a></p>
+<p>WWDC20 What's new in SwiftUI <a href="https://developer.apple.com/wwdc20/10041">https://developer.apple.com/wwdc20/10041</a></p>
+<p>点进去之后，看完这些视频，可能会发现这些视频下面都会有一些相关的推荐，大家感兴趣也可以对<code>WWDC</code>推出的新内容做进一步的了解。</p>
+<p>〇 还有一些<code>WWDC19</code>的session，但这些视频已经<strong>过时</strong>，而且苹果在<code>WWDC20</code>上对这些视频进行了更新，也就是在上面列出来的那些；所以虽然<code>WWDC19</code>对于<code>Swift</code>和<code>SwiftUI</code>来说很重要，但我们现在只需要看新的session就好。</p>
+<p>大家如果想感受一下<code>SwiftUI</code>刚刚发布的时候大家的热情，可以看：</p>
+<p>WWDC19 Keynote <a href="https://developer.apple.com/wwdc19/101">https://developer.apple.com/wwdc19/101</a> 的2h6min34s - 2h14min22s</p>
+<p>还有下面的视频，前二十分钟对新推出的<code>SwiftUI</code>也有详细的介绍，感兴趣的同学也可以看一下：</p>
+<p>WWDC19 Platforms State of the Union <a href="https://developer.apple.com/wwdc19/103">https://developer.apple.com/wwdc19/103</a></p>
+<p>〇 另外，如果想跟进苹果最新发布的技术，每年<code>WWDC</code>的<code>Keynote</code>和<code>Platforms State of the Union</code>都可以关注一下，对设计和App开发感兴趣，每年的<code>Apple Design Awards</code>也可以进行关注；感兴趣的相关session也可以自己抽时间查看。</p>
+<h2><a class="header" href="#stanford-cs193p---developing-apps-for-ios" id="stanford-cs193p---developing-apps-for-ios">Stanford CS193p - Developing Apps for iOS</a></h2>
+<p>英文课程 Swift SwiftUI App设计思维</p>
+<p>课程网址：<a href="https://cs193p.sites.stanford.edu">https://cs193p.sites.stanford.edu</a></p>
+<p>课程视频（YouTube English）：<a href="https://youtube.com/playlist?list=PLpGHT1n4-mAsxuRxVPv7kj4-dQYoC3VVu">https://youtube.com/playlist?list=PLpGHT1n4-mAsxuRxVPv7kj4-dQYoC3VVu</a></p>
+<p>课程视频 中英字幕：<a href="https://www.bilibili.com/video/BV1fy4y1u7hX">https://www.bilibili.com/video/BV1fy4y1u7hX</a></p>
+<p>课程清华云盘链接（包含 YouTube视频英文字幕 和 B站中英硬字幕搬运）：<a href="https://cloud.tsinghua.edu.cn/d/bd289554fd0b4f9eb920/">https://cloud.tsinghua.edu.cn/d/bd289554fd0b4f9eb920/</a></p>
+<p>非常系统性的<code>Swift+SwiftUI</code>教程！老师已经开了很多年的iOS开发课程了。暑期我们希望大家能完成前六课的学习（六节课的内容还是蛮多的哦，希望大家认真对待），更希望大家看完前六课之后也继续学习后面的课程。希望这门课程能让你入门iOS开发！</p>
+<h3><a class="header" href="#basic" id="basic">Basic</a></h3>
+<p><strong>Lecture 1 Getting Started with SwiftUI</strong></p>
+<p>The first lecture jumps right into building the first application of the quarter: a card-matching game called Memorize.  It will be the foundation for the first few weeks of course material.</p>
+<p><strong>Lecture 2 Learning More about SwiftUI</strong></p>
+<p>Development on Memorize continues.  Creating reusable components (a Card in the game) and combining them to make more complex user-interfaces.</p>
+<p><strong>Lecture 3 MVVM</strong></p>
+<p>Conceptual overview of the architectural paradigm underlying the development of applications for iOS using SwiftUI (known as MVVM) and an explanation of a fundamental component of understanding the Swift programming language: its type system.  Then both of these are applied to the Memorize application started in the first two lectures.</p>
+<p><strong>Lecture 4 More MVVM enum Optionals</strong></p>
+<p>The MVVM architecture is fully applied to Memorize.  The important Swift concepts of enums and Optionals are covered and used to finish off the game logic of the Memorize game.</p>
+<p><strong>Lecture 5 Properties Layout @ViewBuilder</strong></p>
+<p>Explore property observers, computed properties, @State and @ViewBuilder.  The mechanisms behind how Views are layed out on screen are examined followed by a demo which chooses a better font for each card in Memorize depending on the space available.  Along the way, apply better access control to Memorize's internal API.</p>
+<p><strong>Lecture 6 Protocols Shapes</strong></p>
+<p>Discussion of what is perhaps the most important type in Swift: a protocol.  The demo combines the concepts of generics and protocols to make the cards better use the space available on screen.  Finally the Shape protocol is explained and the pie-shaped countdown timer is added to Memorize (but not yet animated).</p>
+<h3><a class="header" href="#advanced" id="advanced">Advanced</a></h3>
+<p>Lecture 7 ViewModifier Animation</p>
+<p>Lecture 8 Animation Demo</p>
+<p>Lecture 9 EmojiArt Drag/Drop</p>
+<p>Lecture 10 Gestures</p>
+<p>Lecture 11 Persistence Error Handling</p>
+<p>Lecture 12 Binding Sheet Navigation EditMode</p>
+<p>Lecture 13 Publisher More Persistence</p>
+<p>Lecture 14 Document Architecture</p>
+<h2><a class="header" href="#浙江大学---swift创新导论" id="浙江大学---swift创新导论">浙江大学 - Swift创新导论</a></h2>
+<p>中文课程 Swift语法 UIKit 项目实战</p>
+<p>链接：<a href="https://www.icourse163.org/course/ZJU-1450024180">https://www.icourse163.org/course/ZJU-1450024180</a></p>
+<p>前三周课程清华云盘链接：<a href="https://cloud.tsinghua.edu.cn/d/2ddcf31a51cf4a48b690/">https://cloud.tsinghua.edu.cn/d/2ddcf31a51cf4a48b690/</a></p>
+<p><strong>前三周的教程</strong>可以让没有编程经验的同学对<code>Swift</code>这门编程语言、<strong>编程思维</strong>和<code>iOS应用开发</code>有一个简单的了解。</p>
+<p>后面的课程<strong>并不推荐</strong>大家学习，因为并没有使用Apple最新的SwiftUI框架进行教学；但是有一些很好的例子能够培养大家的创新思维，感兴趣的同学也可以看看后面几周中一些实际的案例。</p>
+<h3><a class="header" href="#第一周" id="第一周">第一周</a></h3>
+<p>第1讲：课程概述</p>
+<p>第2讲：Swift浅析</p>
+<p>第3讲：Swift编程基础知识</p>
+<p>第4讲：移动应用设计流程</p>
+<p>第5讲：iOS 人机交互基础</p>
+<p>第6讲：iOS交互设计实践（一）</p>
+<p>第7讲：iOS交互设计实践（二）</p>
+<p>第8讲：常量、变量、函数</p>
+<p>第9讲：数组与字典</p>
+<p>第10讲：控制流（Control Flow）（一）</p>
+<p>第11讲：控制流（Control Flow）（二）</p>
+<h3><a class="header" href="#第二周" id="第二周">第二周</a></h3>
+<p>第12讲：函数（Functions）和闭包（Closures）（一）</p>
+<p>第13讲：函数（Functions）和闭包（Closures）（二）</p>
+<p>第14讲：Playground 实践应用（一）</p>
+<p>第15讲：Playground 实践应用（二）</p>
+<p>第16讲：对象（Objects）和类（Classes）（一）</p>
+<h3><a class="header" href="#第三周" id="第三周">第三周</a></h3>
+<p>第17讲：对象（Objects）和类（Classes）（二）</p>
+<p>第18讲：枚举（Enumeration）和结构（Structures）（一）</p>
+<p>第19讲：枚举（Enumeration）和结构（Structures）（二）</p>
+<p>第20讲：协议（Protocols）和拓展（Extensions）（一）</p>
+<p>第21讲：协议（Protocols）和拓展（Extensions）（二）</p>
+<p>第22讲：错误处理（Error handling）（一）</p>
+<p>第23讲：错误处理（Error handling）（二）</p>
+<h2><a class="header" href="#aimls---swift编程基础" id="aimls---swift编程基础">Aimls - Swift编程基础</a></h2>
+<p>中文教程 Swift语法</p>
+<p>Swift5.0语法讲解 链接：<a href="https://www.bilibili.com/video/BV144411C7Gg">https://www.bilibili.com/video/BV144411C7Gg</a></p>
+<p>Swift5.1新特性 SwiftUI初步了解：<a href="https://www.bilibili.com/video/BV1gJ411M72p">https://www.bilibili.com/video/BV1gJ411M72p</a></p>
+<p>全部课程知识点整理总结：<a href="https://www.bilibili.com/video/BV1jE411y7cw">https://www.bilibili.com/video/BV1jE411y7cw</a></p>
+<p>教程云盘链接：<a href="https://cloud.tsinghua.edu.cn/d/bba8530022af47de9e0b/">https://cloud.tsinghua.edu.cn/d/bba8530022af47de9e0b/</a></p>
+<p>学习Swift编程语法的教程。Stanford的教程中也会教你如何使用Swift，但其中主要是靠你自学，可能会有些累。<strong>有编程基础的同学</strong>可以二倍速观看上面的Swift教程，<strong>对Swift有一个简单的理解</strong>。为什么要用二倍速呢？只要学过一门编程语言，学习其他编程语言就会特别快。推荐大家在学习过程中<strong>做好笔记</strong>。</p>
+<h2><a class="header" href="#designcode---swiftui-ios" id="designcode---swiftui-ios">designcode - SwiftUI iOS</a></h2>
+<p>英文教程 较高质量的付费教程 不做要求 想提升的同学可以看（教程看得越多学到的东西越多）</p>
+<p>教程清华云盘链接：<a href="https://cloud.tsinghua.edu.cn/d/65cd3bfc68844bd68356/">https://cloud.tsinghua.edu.cn/d/65cd3bfc68844bd68356/</a></p>
+<p><a href="https://designcode.io">designcode.io</a></p>
+<ul>
+<li><a href="https://designcode.io/swiftui-ios14">designcode | SwiftUI 2 iOS14</a>
+<ul>
+<li><a href="https://www.bilibili.com/video/BV1fT4y157zK">Bilibili搬运｜中文字幕</a></li>
+</ul>
+</li>
+<li><a href="https://designcode.io/swiftui">designcode | SwiftUI iOS13 Part1</a>
+<ul>
+<li><a href="https://www.bilibili.com/video/BV1X7411R73g">Bilibili搬运｜中文字幕</a></li>
+</ul>
+</li>
+<li><a href="https://designcode.io/swiftui2">designcode | SwiftUI iOS13 Part2</a>
+<ul>
+<li><a href="https://www.bilibili.com/video/BV1X7411R73g">Bilibili搬运｜中文字幕</a></li>
+</ul>
+</li>
+<li><a href="https://designcode.io/swiftui3">designcode | SwiftUI iOS13 Part3</a>
+<ul>
+<li><a href="https://www.acfun.cn/v/ac15856717">Acfun搬运｜中文字幕</a></li>
+</ul>
+</li>
+</ul>
+<h2><a class="header" href="#ios-club---markdown--git" id="ios-club---markdown--git">iOS Club - Markdown &amp; Git</a></h2>
+<p>大家在学习的过程中可以使用Markdown来整理笔记。社团之前有Markdown的培训，已经上传至B站，不了解Markdown的同学可以进行查看。<a href="https://www.bilibili.com/video/BV1jV411j7mz">【教程】面向开发的Markdown学习</a></p>
+<p>在之后的开发过程中，一件重要的事情是团队成员间的代码协作，社团之前也有过版本控制工具Git的相关培训，以后打算进行团队开发、还不了解版本控制的同学可以进行查看。<a href="https://www.bilibili.com/video/BV1eh411v7gt">【教程】Git基础与进阶</a></p>
+<h1><a class="header" href="#附" id="附">附</a></h1>
+<p>全部课程的清华云盘链接：<a href="https://cloud.tsinghua.edu.cn/d/01f70b980e8946c3a8b7/">https://cloud.tsinghua.edu.cn/d/01f70b980e8946c3a8b7/</a></p>
+<h2><a class="header" href="#stanford-cs193p-l1-l6-观前引导" id="stanford-cs193p-l1-l6-观前引导">Stanford CS193p L1-L6 观前引导</a></h2>
+<blockquote>
+<p>Author: 王可 王拓为</p>
+</blockquote>
+<h3><a class="header" href="#lecture1-getting-started-with-swiftui" id="lecture1-getting-started-with-swiftui">Lecture1 Getting started with SwiftUI</a></h3>
+<blockquote>
+<p>介绍Xcode、SwiftUI的最基础界面编写。</p>
+</blockquote>
+<h4><a class="header" href="#重点" id="重点">重点：</a></h4>
+<ul>
+<li>
+<p>弄清楚下列代码中每个关键字的含义与作用</p>
+<pre><code class="language-swift">import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        Text(&quot;Hello, world!&quot;)
+            .padding()
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
+</code></pre>
+</li>
+<li>
+<p>弄清楚文件界面中每个文件的作用</p>
+</li>
+</ul>
+<h4><a class="header" href="#作业" id="作业">作业：</a></h4>
+<p>1.为什么要body的类型为some View？</p>
+<p>答案：因为body得到的可能不是严格的View类型。</p>
+<p>2.使用SwiftUI编写App时，整个程序的入口是哪个文件(类似于C中main函数)？</p>
+<p>答案：文件名为：<code> AppName+App.swift</code></p>
+<p>代码为</p>
+<pre><code class="language-swift">import SwiftUI
+
+@main
+struct lecture1App: App {
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+    }
+}
+</code></pre>
+<h3><a class="header" href="#lecture2-learning-more-about-swiftui" id="lecture2-learning-more-about-swiftui">Lecture2 Learning more about SwiftUI</a></h3>
+<blockquote>
+<p>本节课将更进一步地介绍一些SwiftUI的设计模式，包括View、ZStack等组件的互相嵌套，还讲了数组、Foreach、按钮的用法。</p>
+</blockquote>
+<h4><a class="header" href="#重点-1" id="重点-1">重点：</a></h4>
+<h5><a class="header" href="#函数相关" id="函数相关">函数相关</a></h5>
+<ul>
+<li>
+<p>函数的最后一个参量可写在括号外：</p>
+<pre><code class="language-swift">Button(action: {
+  
+},label:{Text(&quot;s&quot;)})
+
+Button(action: {}) {
+  Text(&quot;s&quot;)
+}
+</code></pre>
+<p>两者等价，这在实际使用时会更加简洁。</p>
+</li>
+</ul>
+<h5><a class="header" href="#界面相关" id="界面相关">界面相关</a></h5>
+<ul>
+<li>LazyGrid的用法</li>
+<li>ScrollView的用法</li>
+</ul>
+<h5><a class="header" href="#spcaer" id="spcaer">Spcaer()</a></h5>
+<ul>
+<li>一种设计样式，能尽可能的扩充空间</li>
+</ul>
+<h5><a class="header" href="#state" id="state">@State</a></h5>
+<ul>
+<li>变量修饰符，能在该值改变时同步对页面进行更新</li>
+</ul>
+<h4><a class="header" href="#作业-1" id="作业-1">作业：</a></h4>
+<p>照着课上的代码自己写一遍，做一些修改，最好能写到手机上体验一下</p>
+<h3><a class="header" href="#lecture3-mvvm-and-the-swift-type-system" id="lecture3-mvvm-and-the-swift-type-system">Lecture3 MVVM and the swift type system</a></h3>
+<blockquote>
+<p>本节课介绍在SwiftUI设计理念中极为重要的MVVM(Model-View-ViewModel)模式，同时介绍除VIew界面外，其他两个界面：Model，ViewModel的写法。</p>
+</blockquote>
+<h4><a class="header" href="#重点-2" id="重点-2">重点：</a></h4>
+<h5><a class="header" href="#mvvm设计范例" id="mvvm设计范例">MVVM设计范例</a></h5>
+<ul>
+<li>Model-&gt;ViewModel-&gt;View，有点类似于C++设计中，底层+界面控制+界面的逻辑。</li>
+</ul>
+<h5><a class="header" href="#struct与class的区别与联系" id="struct与class的区别与联系"><code>struct</code>与<code>class</code>的区别与联系</a></h5>
+<ul>
+<li>前者是面向过程的结构体，后者是面向对象的结构体</li>
+<li>其他区别见课程</li>
+</ul>
+<h4><a class="header" href="#作业-2" id="作业-2">作业：</a></h4>
+<ol>
+<li>
+<p>跟着老师把代码敲一遍，理清MVVM之间的关系。</p>
+</li>
+<li>
+<p>View界面是面向过程的还是面向对象的？</p>
+<p>答：面向过程。</p>
+</li>
+</ol>
+<h3><a class="header" href="#lecture-4-more-mvvm-enum-optionals" id="lecture-4-more-mvvm-enum-optionals">Lecture 4 More MVVM enum Optionals</a></h3>
+<blockquote>
+<p>在这一讲中， 前面提到的 MVVM 模型将被完整地应用到游戏 Memorize 的编写中。enums 和 Optionals 这两个 Swift 编程中的关键概念将被介绍并用于完善游戏 Memorize 的逻辑部分。</p>
+</blockquote>
+<h5><a class="header" href="#enum" id="enum">enum</a></h5>
+<ul>
+<li>
+<p>Another variety of data structure in addition to <code>struct</code> and <code>class</code></p>
+</li>
+<li>
+<p>Associated Data</p>
+</li>
+<li>
+<p>Setting the value of an enum</p>
+</li>
+<li>
+<p>Checking an enum's state</p>
+</li>
+<li>
+<p><code>break</code> statement &amp; <code>default</code> statement</p>
+</li>
+<li>
+<p>Methods yes, (stored) Properties no</p>
+</li>
+<li>
+<p>Getting all the cases of an enumeration</p>
+</li>
+</ul>
+<h5><a class="header" href="#optionals" id="optionals">Optionals</a></h5>
+<ul>
+<li>
+<p>An Optimal is just an enum</p>
+</li>
+<li>
+<p>We use Optional at any time we have a value that can sometimes be 'not set' or 'unspecified' or 'undetermined'</p>
+</li>
+</ul>
+<h4><a class="header" href="#lecture-5-properties-layout-viewbuilder" id="lecture-5-properties-layout-viewbuilder">Lecture 5 Properties Layout @ViewBuilder</a></h4>
+<blockquote>
+<p>在这一讲中，将介绍 property observers，computed properties，@State 和 @ViewBuilder。我们也将继续完善游戏 Memorize，并通过一个在给定空间中为卡片选取合适字体大小的例子揭示 Views 在屏幕上的布局方式的背后机制。在这一过程中，我们对游戏 Memorize 内部 API 实现了更好的访问控制。</p>
+</blockquote>
+<h5><a class="header" href="#swift-demo-warmup" id="swift-demo-warmup">Swift Demo Warmup</a></h5>
+<ul>
+<li>Access Control</li>
+</ul>
+<h5><a class="header" href="#viewbuilder" id="viewbuilder">@ViewBuilder</a></h5>
+<ul>
+<li>What exactly is that argument to <code>ZStack</code>, <code>Foreach</code>, <code>GeometryReader</code>, etc?</li>
+</ul>
+<h5><a class="header" href="#shape" id="shape">Shape</a></h5>
+<ul>
+<li>What if I want to draw my own View rather than constract it from other Views?</li>
+</ul>
+<h5><a class="header" href="#animation" id="animation">Animation</a></h5>
+<ul>
+<li>
+<p>Mobile app UIs look pretty bad without animation.</p>
+</li>
+<li>
+<p>Luckily, in SwiftUI, animation (almost) comes for free!</p>
+</li>
+</ul>
+<h5><a class="header" href="#viewmodifier" id="viewmodifier">ViewModifier</a></h5>
+<ul>
+<li>What exactly are functions like <code>foregroundColor</code>, <code>font</code>, <code>padding</code>, etc. doing?</li>
+</ul>
+<h4><a class="header" href="#lecture-6-protocols-shapes" id="lecture-6-protocols-shapes">Lecture 6 Protocols Shapes</a></h4>
+<blockquote>
+<p>在这一讲中，我们将讨论 Swift 编程中最重要的类型 —— protocol。为了使游戏 Memorize 中的卡片可以更好地使用屏幕上的给定空间，我们将结合使用 generic 和 protocol 两种概念。最后，我们使用名为 Shape 的 protocol 将一个饼状计时器加到游戏 Memorize 中。</p>
+</blockquote>
+<h5><a class="header" href="#property-observers" id="property-observers">Property Observers</a></h5>
+<ul>
+<li>&quot;Watching&quot; a var and reacting to changes</li>
+</ul>
+<h5><a class="header" href="#state-1" id="state-1">@State</a></h5>
+<ul>
+<li>
+<p>State that is entirely localized inside a View</p>
+</li>
+<li>
+<p>Only used for temporary state like presentation of alerts or editing things or animation</p>
+</li>
+</ul>
+<h5><a class="header" href="#animation-1" id="animation-1">Animation</a></h5>
+<ul>
+<li>
+<p>Implicit vs. Explicit Animation</p>
+</li>
+<li>
+<p>Animation Views (via their ViewModifiers which can implement the Animatable protocol)</p>
+</li>
+<li>
+<p>Transitions (animating the appearance/dissppearance of Views by specifying ViewModifiers)</p>
+</li>
+<li>
+<p>Animating Shapes (via the Animatable protocol)</p>
+</li>
+</ul>
+<h1><a class="header" href="#tools" id="tools">Tools</a></h1>
+<blockquote>
+<p>Written by 杨希杰 on 210324</p>
+</blockquote>
+<ul>
+<li><a href="article/Tools.html#tools">Tools</a>
+<ul>
+<li><a href="article/Tools.html#swift-formatter">Swift Formatter</a></li>
+<li><a href="article/Tools.html#google">Google</a></li>
+<li><a href="article/Tools.html#git">Git</a></li>
+<li><a href="article/Tools.html#linux">Linux</a></li>
+<li><a href="article/Tools.html#github">GitHub</a></li>
+<li><a href="article/Tools.html#markdown">Markdown</a></li>
+<li><a href="article/Tools.html#vs-code">VS Code</a></li>
+<li><a href="article/Tools.html#%E8%99%9A%E6%8B%9F%E6%9C%BA">虚拟机</a></li>
+<li><a href="article/Tools.html#lookin">Lookin</a></li>
+<li><a href="article/Tools.html#cocoapods">CocoaPods</a></li>
+<li><a href="article/Tools.html#postman">Postman</a></li>
+</ul>
+</li>
+<li><a href="article/Tools.html#other">Other</a></li>
+</ul>
+<h2><a class="header" href="#swift-formatter" id="swift-formatter">Swift Formatter</a></h2>
+<p><a href="https://github.com/nicklockwood/SwiftFormat">Xcode Extension｜Swift Format Tool</a></p>
+<ul>
+<li>格式化<code>Swift</code>代码的<code>Xcode</code>插件。结合<code>Xcode</code>自带的快捷键设定可以实现快捷键格式代码的功能</li>
+</ul>
+<h2><a class="header" href="#google" id="google">Google</a></h2>
+<p>当你开始开发应用之后，百度一定会无法满足你的需求。这时就要去请教你最好的朋友<code>Google</code>了。</p>
+<h2><a class="header" href="#git" id="git">Git</a></h2>
+<p>项目代码版本管理工具：<a href="https://git-scm.com">Git Official Site</a></p>
+<p>iOS Club 教程：<a href="https://www.bilibili.com/video/BV1eh411v7gt">Git基础与进阶</a></p>
+<p><a href="https://www.liaoxuefeng.com/wiki/896043488029600">廖雪峰｜Git教程</a></p>
+<ul>
+<li><strong>✡ RECOMMENDED ✡</strong></li>
+<li>非常通俗易懂的文字版Git教程，推荐多次翻阅</li>
+</ul>
+<p><a href="https://www.bilibili.com/video/BV1fv411B73p">Bilibili｜电子系科协2020年暑培 p1 Git</a></p>
+<p><a href="https://learngitbranching.js.org/?locale=zh_CN">可视化学习Git</a></p>
+<ul>
+<li>对Git中的高端操作不理解可以去试试可视动画</li>
+<li>初学阶段也可以通过闯关来加深对git的理解</li>
+</ul>
+<p><a href="https://git-scm.com/docs">Git docs｜快速查阅git操作</a></p>
+<p><a href="https://github.com/k88hudson/git-flight-rules">GitHub｜git-flight-rules</a></p>
+<ul>
+<li><strong>✡ RECOMMENDED ✡</strong></li>
+<li>如果你在使用git的过程中遇到了棘手的问题应该都可以在这里找到解决方法</li>
+</ul>
+<p><a href="http://iissnan.com/progit/html/zh/ch1_0.html">一个挺详细的 Git 中文手册</a></p>
+<p><a href="https://git-scm.com/book/en/v2">Git Pro｜进阶git的一本厚书</a></p>
+<ul>
+<li>一般没有必要看</li>
+</ul>
+<h2><a class="header" href="#linux" id="linux">Linux</a></h2>
+<p>开源类Unix操作系统，目前服务器安装的系统主要是<code>Linux</code>。如果要使用网络传输数据，那么跑在<code>Linux</code>上的服务器是必须的。</p>
+<p><a href="https://www.runoob.com/linux/linux-tutorial.html">菜鸟教程｜Linux</a></p>
+<h2><a class="header" href="#github" id="github">GitHub</a></h2>
+<p>世界范围的代码托管平台。</p>
+<h2><a class="header" href="#markdown" id="markdown">Markdown</a></h2>
+<p>一种轻量的格式文本编辑风格。与word等富文本编辑不同，markdown采用一些标记来表示文本格式。一般使用markdown编辑的文本文件后缀为<code>.md</code>，进行渲染可以得到格式文本。</p>
+<p>iOS Club 教程：<a href="https://www.bilibili.com/video/BV1jV411j7mz">面向开发的Markdown学习</a></p>
+<p>markdown编辑器推荐：</p>
+<ul>
+<li><a href="https://www.typora.io">Typora</a>
+<ul>
+<li>全平台免费markdown编辑器，所见即所得型markdown编辑器。</li>
+</ul>
+</li>
+<li><code>VS Code</code>安装Markdown插件</li>
+</ul>
+<h2><a class="header" href="#vs-code-1" id="vs-code-1">VS Code</a></h2>
+<p>非常受世界开发者欢迎的轻量文本编辑器。</p>
+<h2><a class="header" href="#虚拟机" id="虚拟机">虚拟机</a></h2>
+<p>通过软件模拟硬件的方式实现在不同的硬件上运行不兼容的系统。</p>
+<p><code>iOS</code>开发主要使用<code>Mac</code>进行开发，需要使用<code>Xcode</code>，如果在学习阶段<strong>没有</strong><code>Mac</code>可以参考清华云盘上的资源（<code>Groups/iOS-Club-THU/iOS-Club/培训Training</code>）安装虚拟机。在项目开发中如果没有<code>Mac</code>可以从社团借用。</p>
+<h2><a class="header" href="#lookin" id="lookin">Lookin</a></h2>
+<p><code>iOS</code>的<code>UI调试</code>工具</p>
+<p><a href="https://lookin.work">Lookin官网</a></p>
+<h2><a class="header" href="#cocoapods" id="cocoapods">CocoaPods</a></h2>
+<p>项目引入库管理</p>
+<p><a href="https://www.jianshu.com/p/93c4cd8390d3">CocoaPods简介</a></p>
+<h2><a class="header" href="#postman" id="postman">Postman</a></h2>
+<p>测试HTTP请求</p>
+<h1><a class="header" href="#other" id="other">Other</a></h1>
+<p><a href="https://developer.apple.com">Apple Developer</a></p>
+<p><a href="https://github.com/eesast/training2020">GitHub｜EESAST training2020</a></p>
+<ul>
+<li>清华大学电子系学生科协 2020 年暑期培训相关 PPT 与文档</li>
+<li>包括但不限于：Git、Linux、Docker、HTML/CSS/JS/TS/React/Node.js/MongoDB/GraphQL/Hasura/Apollo、CI/CD</li>
+<li><a href="https://eesast.github.io/training2020/">GitHub pages｜training2020</a></li>
+<li>视频链接：<a href="https://www.bilibili.com/video/BV1fv411B73p">Bilibili training2020</a></li>
+</ul>
+<p><a href="https://docs.eesast.com">EESΛST Docs</a></p>
+<ul>
+<li>电子系科协技术文档仓库：包括Languages、Tools、Game、Web等部分。</li>
+</ul>
+<p><a href="https://missing.csail.mit.edu">MIT course｜The Missing Semester of Your CS Education</a></p>
+<ul>
+<li><strong>✡ RECOMMENDED ✡</strong></li>
+<li>大学里的计算机课程通常专注于讲授从操作系统到机器学习这些学院派的课程或主题，而对于如何精通工具这一主题则往往会留给学生自行探索……在这个系列课程中，我们讲授命令行、强大的文本编辑器的使用、使用版本控制系统提供的多种特性等等……精通这些工具不仅可以帮助您更快的使用工具完成任务，并且可以帮助您解决在之前看来似乎无比复杂的问题。</li>
+<li>包括但不限于：shell、shell script、Vim、Git</li>
+<li><a href="https://missing-semester-cn.github.io">MIT course｜The Missing Semester of Your CS Education 中文讲稿</a></li>
+</ul>
+<p><a href="https://github.com/heroku/12factor">12factor for SAAS</a></p>
+<ul>
+<li>In the modern era, software is commonly delivered as a service: called web apps, or software-as-a-service. The twelve-factor app is a methodology for building software-as-a-service apps.</li>
+<li>文章阐述了网络服务应用的十二个要素。只要从事与网络相关的App开发，这篇文章能够给你提供一个较宏观的认识与标准。</li>
+<li><a href="https://www.12factor.net/zh_cn/">12factor｜中文翻译</a></li>
+</ul>
+<p><a href="https://github.com/ivmm/Student-resources">GitHub｜Student-resources</a></p>
+<ul>
+<li>本文介绍的是利用学生、教职工身份可以享受到的相关学生优惠、教育优惠或教师优惠的权益（比如如何白嫖高性能服务器</li>
+</ul>
+<p><a href="http://www.catb.org/%7Eesr/faqs/smart-questions.html">How To Ask Questions The Smart Way</a></p>
+<ul>
+<li><a href="https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md">GitHub｜提问的智慧 简体中文版</a></li>
+<li>提问的时候总是惹别人生气、或者别人根本不理你？可能是你的提问方式出了点问题。提问的智慧教你如何在信息时代优雅的向别人提问！</li>
+</ul>
+<p><a href="https://github.com/vpncn/vpncn.github.io">VPN in China</a></p>
+<h1><a class="header" href="#ios网络服务应用尝试" id="ios网络服务应用尝试">iOS网络服务应用尝试</a></h1>
+<blockquote>
+<p>Written by 杨希杰 on 210324</p>
+</blockquote>
+<ul>
+<li><a href="article/iOS_servise_app.html#ios%E7%BD%91%E7%BB%9C%E6%9C%8D%E5%8A%A1%E5%BA%94%E7%94%A8%E5%B0%9D%E8%AF%95">iOS网络服务应用尝试</a>
+<ul>
+<li><a href="article/iOS_servise_app.html#graphql">GraphQL</a>
+<ul>
+<li><a href="article/iOS_servise_app.html#introduction">Introduction</a></li>
+<li><a href="article/iOS_servise_app.html#resources">Resources</a></li>
+</ul>
+</li>
+<li><a href="article/iOS_servise_app.html#graphql-clientapollo-client-ios">GraphQL Client｜Apollo Client (iOS)</a></li>
+<li><a href="article/iOS_servise_app.html#graphql-serverhasura--databse">GraphQL Server｜Hasura + Databse</a></li>
+<li><a href="article/iOS_servise_app.html#%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8%E6%9C%8D%E5%8A%A1">对象存储服务</a></li>
+<li><a href="article/iOS_servise_app.html#%E7%99%BB%E5%BD%95%E9%AA%8C%E8%AF%81">登录验证</a></li>
+</ul>
+</li>
+<li><a href="article/iOS_servise_app.html#hasura-tutorial">Hasura Tutorial</a>
+<ul>
+<li><a href="article/iOS_servise_app.html#introduction-to-graphql">Introduction to GraphQL</a></li>
+<li><a href="article/iOS_servise_app.html#frontend-graphql-tutorial">Frontend GraphQL Tutorial</a></li>
+<li><a href="article/iOS_servise_app.html#hasura-tutorials">Hasura Tutorials</a></li>
+<li><a href="article/iOS_servise_app.html#sample-apps">Sample Apps</a></li>
+</ul>
+</li>
+</ul>
+<h2><a class="header" href="#graphql" id="graphql">GraphQL</a></h2>
+<h3><a class="header" href="#introduction-1" id="introduction-1">Introduction</a></h3>
+<p>一种前后端数据请求/交互的风格/标准/规范。是有着大公司做靠山、较新的查询语言规范，是一种基于图的查询语言。对比原有的REST请求风格，GraphQL能够让你每次都获取到不多不少的数据，结合社区的工具，几乎可以省掉后端的开发团队，让你的项目开发效率大大提升。</p>
+<blockquote>
+<p>GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data. GraphQL provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need and nothing more, makes it easier to evolve APIs over time, and enables powerful developer tools.</p>
+</blockquote>
+<p><code>GraphQL clients</code>是嵌入在前端/需要在前端导入的一个工具，这个工具能帮助你在UI中引入数据查询，让你用GraphQL的语句来向后端的<code>GraphQL server</code>发送请求。</p>
+<blockquote>
+<p><strong>GraphQL clients</strong> can help you handle queries, mutations, and subscriptions to a <strong>GraphQL server</strong>. They use the underlying structure of a GraphQL API to automate certain processes. This includes batching, UI updates, build-time schema validation, and more.</p>
+</blockquote>
+<h3><a class="header" href="#resources" id="resources">Resources</a></h3>
+<p><a href="https://graphql.org">GraphQL</a></p>
+<ul>
+<li>GraphQL官网</li>
+</ul>
+<p><a href="https://graphql.cn">GraphQL｜中文官网</a></p>
+<ul>
+<li>推荐看英文官网</li>
+</ul>
+<p><a href="https://graphql.org/learn/">GraphQL | Learn</a></p>
+<ul>
+<li><strong>IMPORTANT</strong></li>
+<li>入门GraphQL</li>
+</ul>
+<h2><a class="header" href="#graphql-clientapollo-client-ios" id="graphql-clientapollo-client-ios">GraphQL Client｜Apollo Client (iOS)</a></h2>
+<pre><code>Apollo is the industry-standard GraphQL implementation, providing the data graph layer that connects modern apps to the cloud.
+</code></pre>
+<p><a href="https://www.apollographql.com">Apollo</a></p>
+<ul>
+<li>Apollo官网</li>
+</ul>
+<p><a href="https://www.apollographql.com/docs/">Apollo docs｜Apollo Basics</a></p>
+<ul>
+<li><strong>IMPORTANT</strong></li>
+</ul>
+<p><a href="https://www.apollographql.com/docs/ios/">Apollo Client | iOS</a></p>
+<ul>
+<li><strong>IMPORTANT</strong></li>
+<li><a href="https://github.com/apollographql/apollo-ios">GitHub | Apollo Client | iOS</a></li>
+</ul>
+<h2><a class="header" href="#graphql-serverhasura--databse" id="graphql-serverhasura--databse">GraphQL Server｜Hasura + Databse</a></h2>
+<p><code>GraphQL Server</code>处理前端从<code>GraphQL Client</code>发送的<code>GraphQL请求</code>，在数据库中获取相应的数据并返回到前端/客户端。</p>
+<p>这里<code>Hasura</code>相当于一个控制台，帮你在中间操作数据库；同时<code>Hasura</code>也提供可视化的控制台，让数据库的管理变得方便。</p>
+<blockquote>
+<p>The Hasura GraphQL engine makes your data instantly accessible over a real-time GraphQL API, so you can build and ship modern apps and APIs faster. Hasura connects to your databases, REST servers, GraphQL servers, and third party APIs to provide a unified realtime GraphQL API across all your data sources.</p>
+</blockquote>
+<p><a href="https://hasura.io">Hasura</a></p>
+<ul>
+<li>Hasura官网</li>
+</ul>
+<p><a href="https://hasura.io/learn/">Hasura | Tutorials</a></p>
+<ul>
+<li><strong>IMPORTANT</strong></li>
+<li>教程资源整合，包括了从GraphQL到Hasura的所有内容</li>
+<li>具体见下方</li>
+</ul>
+<p><a href="https://hasura.io/docs/latest/graphql/core/index.html">Hasura | GraphQL Engine Documentation</a></p>
+<ul>
+<li><strong>IMPORTANT</strong></li>
+<li>关于Hasura的部署使用的文档</li>
+</ul>
+<p><a href="https://github.com/hasura/graphql-engine/">GitHub | GraphQL engine</a></p>
+<ul>
+<li><a href="https://realtime-chat.demo.hasura.app/">实时聊天软件展示</a>
+<a href="https://github.com/hasura/graphql-engine/tree/master/community/sample-apps/realtime-chat">实时聊天软件repo</a></li>
+<li><a href="https://github.com/hasura/graphql-engine/tree/master/community/sample-apps">其他的一些sample-app</a></li>
+</ul>
+<p><a href="https://cloud.hasura.io">Hasura Cloud</a></p>
+<ul>
+<li>Hasura Cloud相当于一个搭建好的Hasura平台，可以直接通过在其中创建的project开启console。</li>
+<li>注意这个是不带数据库的，你需要将一个已有的postgres数据库链接到Hasura上（这里数据库可以用Heroku免费的，但我并不清楚有这个的使用是不是有限制）</li>
+<li>免费版的可以自己尝试玩，但是有流量限制（1G/month），一分钟也只能请求60次</li>
+<li>标准版流量可叠加（20G/month，2刀 per additional GB），但没有请求限制。每月100刀</li>
+<li><a href="https://hasura.io/docs/latest/graphql/cloud/index.html">Hasura Cloud Documentation</a></li>
+</ul>
+<p>其他：</p>
+<ul>
+<li>Hasura-cli
+<ul>
+<li>记录每次在Hasura控制台对数据库的操作，方便对项目进行迁移</li>
+</ul>
+</li>
+<li>跑在服务器Docker上的postgres
+<ul>
+<li>也可以在服务器上安装postgres</li>
+<li>需要将数据库的地址或服务端口交给Hasura</li>
+</ul>
+</li>
+</ul>
+<h2><a class="header" href="#对象存储服务" id="对象存储服务">对象存储服务</a></h2>
+<p>图片和视频等资源存储在哪里？数据库里？服务器的文件路径下？云服务厂商提供的对象存储服务上？</p>
+<h2><a class="header" href="#登录验证" id="登录验证">登录验证</a></h2>
+<p>token、jwt需要去了解一下，密码加盐如何前后端中分别实现？</p>
+<h1><a class="header" href="#hasura-tutorial" id="hasura-tutorial">Hasura Tutorial</a></h1>
+<p><a href="https://hasura.io/learn/">Hasura | Tutorial</a></p>
+<ul>
+<li>一条龙的教程资源整合。非常详细的文档。总之就是非常推荐</li>
+<li><a href="https://github.com/hasura/learn-graphql">GitHub｜Hasura | Tutorials</a>
+<ul>
+<li>所有教程代码的存放仓库</li>
+</ul>
+</li>
+</ul>
+<h2><a class="header" href="#introduction-to-graphql" id="introduction-to-graphql">Introduction to GraphQL</a></h2>
+<p><a href="https://hasura.io/learn/graphql/intro-graphql/introduction/">Hasura Tutorial｜GraphQL intro</a></p>
+<ul>
+<li><strong>IMPORTANT</strong></li>
+<li><code>GraphQL</code>简介，包括：<code>GraphQL</code>是什么，<code>GraphQL</code>与<code>REST</code>的区别，<code>GraphQL</code>中的核心概念和术语，<code>GraphQL</code>三种请求数据的方式，<code>GraphQL Clients</code>和<code>GraphQL Servers</code></li>
+</ul>
+<h2><a class="header" href="#frontend-graphql-tutorial" id="frontend-graphql-tutorial">Frontend GraphQL Tutorial</a></h2>
+<p><a href="https://hasura.io/learn/graphql/ios/introduction/">Hasura Tutorial｜GraphQL Client with iOS</a></p>
+<ul>
+<li><strong>IMPORTANT</strong></li>
+</ul>
+<h2><a class="header" href="#hasura-tutorials" id="hasura-tutorials">Hasura Tutorials</a></h2>
+<p><a href="https://hasura.io/learn/graphql/hasura/introduction/">Hasura Tutorial｜Hasura Basics</a></p>
+<ul>
+<li><strong>IMPORTANT</strong></li>
+</ul>
+<p><a href="https://hasura.io/learn/graphql/hasura-auth-slack/introduction/">Hasura Tutorial｜Auth Patterns with Hasura</a></p>
+<ul>
+<li><strong>IMPORTANT</strong></li>
+</ul>
+<p><a href="article/">Hasura Tutorial｜Hasura Advanced</a></p>
+<ul>
+<li><strong>IMPORTANT</strong></li>
+</ul>
+<h2><a class="header" href="#sample-apps" id="sample-apps">Sample Apps</a></h2>
+<p><a href="https://whatsapp-clone.demo.hasura.app/sign-in">Hasura Tutorial｜WhatsApp Clone</a></p>
+<ul>
+<li><a href="https://github.com/hasura/graphql-engine/tree/master/community/sample-apps/whatsapp-clone-typescript-react">GitHub｜whatsapp-clone-typescript-react</a></li>
+</ul>
+<p><a href="https://react-apollo-todo.demo.hasura.app">Hasura Tutorial｜React to-do app</a></p>
+<ul>
+<li><a href="https://github.com/hasura/graphql-engine/tree/master/community/sample-apps/todo-auth0-jwt">GitHub｜todo-auth0-jwt</a></li>
+<li><a href="https://github.com/hasura/graphql-engine/tree/master/community/sample-apps/react-apollo-todo">GitHub｜react-apollo-todo</a></li>
+</ul>
 <h1><a class="header" href="#build-this-site" id="build-this-site">Build This Site</a></h1>
 <ul>
 <li><a href="postscript/site_build.html#build-this-site">Build This Site</a>
