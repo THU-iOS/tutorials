@@ -12,7 +12,7 @@
 
 [Git demos](./lecture/git-demos.md)
 
-[Swift]()
+[Swift](./lecture/Swift_train.md)
 
 [Swift homework](./lecture/swift-hw.md)
 
