@@ -238,4 +238,4 @@ print("\(THU.name) + \(THU.address) + \(THU.QSRanking)")
 
 - THU iOS Club的教程仓库：[Tutorial](https://thu-ios.github.io/tutorials)
 
-- 本次为大家准备了作业在：[Swift homework - Tutorial (thu-ios.github.io)](
+- 本次为大家准备了作业在：[Swift homework - Tutorial (thu-ios.github.io)](https://thu-ios.github.io/tutorials/lecture/swift-hw.html#统计各个专业的人数)
