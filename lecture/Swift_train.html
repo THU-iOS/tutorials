@@ -1,0 +1,424 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Swift - Tutorial</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="Tutorials for THU iOS Club">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="../favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="../favicon.png">
+        
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "ayu" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../foreword/site_info.html">Introduction</a></li><li class="spacer"></li><li class="chapter-item expanded ">Lecture</li><li class="chapter-item expanded affix "><a href="../lecture/markdown.html">Markdown</a></li><li class="chapter-item expanded affix "><a href="../lecture/git.html">Git</a></li><li class="chapter-item expanded affix "><a href="../lecture/git-demos.html">Git demos</a></li><li class="chapter-item expanded affix "><a href="../lecture/Swift_train.html" class="active">Swift</a></li><li class="chapter-item expanded affix "><a href="../lecture/swift-hw.html">Swift homework</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="../traning21/Traning_2021_July.html">Training 2021</a></li><li class="chapter-item expanded affix "><a href="../traning21/Training_2021_details.html">Training 2021 Details</a></li><li class="chapter-item expanded affix "><a href="../traning21/Stanford_cs193p_L1-L6.html">Stanford CS193p Learning</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="../article/Tools.html">Developing Tools</a></li><li class="chapter-item expanded affix "><a href="../article/iOS_servise_app.html">SaaS Framework</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="../postscript/site_build.html">About the Site</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Tutorial</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        <a href="https://github.com/THU-iOS/tutorial" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2><a class="header" href="#swift教学" id="swift教学">Swift教学</a></h2>
+<blockquote>
+<p>2021.10.17</p>
+<p>王可</p>
+</blockquote>
+<p>[TOC]</p>
+<h3><a class="header" href="#简单介绍" id="简单介绍">简单介绍</a></h3>
+<ul>
+<li>
+<p>苹果公司于2014年在<a href="https://zh.wikipedia.org/wiki/WWDC">苹果开发者年会</a>（WWDC）发布了Swift编程语言。经过7年的发展，swift日趋成熟，同时作为苹果目前主推的编程语言（之前是Object-C），官方和社区提供的库也十分丰富。</p>
+</li>
+<li>
+<p>swift兼具了许多现代编程语言的优点，容易编写且易于阅读和维护，学习起来很容易上手。</p>
+</li>
+</ul>
+<h3><a class="header" href="#基础" id="基础">基础</a></h3>
+<h4><a class="header" href="#常量与变量强类型类型推断" id="常量与变量强类型类型推断">常量与变量、强类型、类型推断</a></h4>
+<p><code>var</code>和<code>let</code></p>
+<pre><code class="language-swift">let a = 1
+a = 5
+var b = 4 //编译器会自动推断为Int类型
+b = 4.5 //如果强行赋值Double\Float类型会报错
+</code></pre>
+<h4><a class="header" href="#可选类型" id="可选类型">可选类型</a></h4>
+<pre><code class="language-swift">var x = &quot;321&quot;
+let y = Int(x)
+print(y)
+print(y!)
+</code></pre>
+<h4><a class="header" href="#元组tuples" id="元组tuples">元组(tuples)</a></h4>
+<pre><code class="language-swift">let tuple = (&quot;hello&quot;, &quot;world&quot;,2021)
+print(tuple.1)
+print(tuple.2)
+print(tuple.3)
+let (string1, string2, int1) = tuple
+print(&quot;\(string1) \(string2) \(int1)&quot;)
+</code></pre>
+<h4><a class="header" href="#区间运算符" id="区间运算符">区间运算符</a></h4>
+<h5><a class="header" href="#闭区间" id="闭区间">闭区间</a></h5>
+<pre><code class="language-swift">for i in 1...5 {
+  print(i)
+}
+</code></pre>
+<h5><a class="header" href="#半开区间" id="半开区间">半开区间</a></h5>
+<pre><code class="language-swift">for i in 1..&lt;5 {
+  print(i)
+}
+</code></pre>
+<h4><a class="header" href="#集合类型" id="集合类型">集合类型</a></h4>
+<ul>
+<li>
+<p>数组</p>
+<ul>
+<li>和<code>python</code> 的<code>list</code>类似</li>
+</ul>
+<pre><code class="language-swift">a = [1,2,3,4,5,&quot;str&quot;]
+for i in a {
+  print(i)
+}
+
+print(a.contains(6))
+a.append(6)
+print(a.contains(6))
+
+for i in a[1...] {
+  print(i)
+}
+</code></pre>
+</li>
+<li>
+<p>集合</p>
+<ul>
+<li>储存同种元素</li>
+<li>每个哈希值相同的元素只出现一次</li>
+<li>无顺序</li>
+</ul>
+<pre><code class="language-swift">var set: Set&lt;Int&gt; = [1,2,3,4]
+for i in set {
+    print(i)
+}
+set.insert(4.5)
+</code></pre>
+</li>
+<li>
+<p>字典:</p>
+<ul>
+<li>使用键来访问数据</li>
+</ul>
+<pre><code class="language-swift">var int2str: [Int: String] = [1: &quot;Joker&quot;, 2: &quot;Queen&quot;, 3: &quot;King&quot;]
+print(int2str[1])
+
+for (int,str) in int2str {
+  print(&quot;\(int):\(str)&quot;)
+}
+</code></pre>
+</li>
+</ul>
+<h3><a class="header" href="#函数与闭包" id="函数与闭包">函数与闭包</a></h3>
+<h4><a class="header" href="#函数" id="函数">函数</a></h4>
+<pre><code class="language-swift">func greet(person: String) -&gt; String {
+  return &quot;Hello &quot; + person + &quot;!&quot;
+}
+
+print(greet(person: &quot;Swift&quot;))
+</code></pre>
+<p><code>swift</code>函数又一个很符合自然语言的特性，变量在函数内和函数外可以有两个名字，这比较符合英语介词的使用习惯。</p>
+<pre><code class="language-swift">func greet(with person: String) -&gt; String {
+  return &quot;Hello &quot; + person + &quot;!&quot;
+}
+
+print(greet(with: &quot;Swift&quot;))
+</code></pre>
+<p>使用元组承载多重返回值</p>
+<pre><code class="language-swift">func firstLast(of array: [Int]) -&gt; (first: Int, last: Int) {
+    return (array[0], array.last!)
+}
+
+var a = [1,2,3,4,5]
+
+let (f, l) = firstLast(of: a)
+print(&quot;\(f),\(l)&quot;)
+
+</code></pre>
+<h4><a class="header" href="#闭包" id="闭包">闭包</a></h4>
+<p><code>闭包</code>是自包含的函数代码块，可以在代码中被传递和使用。Swift 中的闭包与 C 和 Objective-C 中的代码块（blocks）以及其他一些编程语言中的匿名函数（Lambdas）比较相似。</p>
+<pre><code class="language-swift">var numbers = [2,1,4,3]
+
+var sortedNumber = numbers.sorted(by: { (s1: Int, s2: Int) -&gt; Bool in return s1 &lt; s2})
+
+for i in sortedNumber {
+    print(i)
+}
+</code></pre>
+<p>属于非初级的内容，有兴趣可以深入研究。</p>
+<h3><a class="header" href="#类和结构体" id="类和结构体">类和结构体</a></h3>
+<p>类和结构体有许多相同之处，比如都定义属性、方法和协议等，它们的主要区别在于类有继承和引用计数等。</p>
+<pre><code class="language-swift">struct Student {
+    public var name: String
+    public var sex: String
+    private let ID: UUID
+    
+    init() {
+        self.name = &quot;Joker&quot;
+        self.sex = &quot;Man&quot;
+        self.ID = UUID.init()
+    }
+    
+    init(name: String, sex: String) {
+        self.name = name
+        self.sex = sex
+        self.ID = UUID.init()
+    }
+    
+    func getName() -&gt; String {
+      return self.name
+    }
+    
+    func getID() -&gt; UUID {
+      return self.ID
+    }
+}
+
+var joker = Student()
+var queen = Student(name: &quot;Queen&quot;, sex: &quot;Woman&quot;)
+
+print(&quot;\(joker.name) + \(joker.sex) + \(joker.getID())&quot;)
+print(&quot;\(queen.name) + \(queen.sex) + \(queen.getID())&quot;)
+ 
+</code></pre>
+<pre><code class="language-swift">class School {
+    var name: String
+    var address: String
+    init(name: String, address: String) {
+        self.name = name
+        self.address = address
+    }
+}
+
+class University: School {
+    var QSRanking: Int
+    init(name: String, address: String, QSRanking:Int) {
+        self.QSRanking = QSRanking
+        super.init(name: name, address: address)
+    }
+    
+    
+}
+
+var THU = University(name: &quot;Tsinghua&quot;, address: &quot;Beijing Haidian&quot;, QSRanking: 17)
+
+print(&quot;\(THU.name) + \(THU.address) + \(THU.QSRanking)&quot;)
+</code></pre>
+<h3><a class="header" href="#授人以渔" id="授人以渔">授人以渔</a></h3>
+<ul>
+<li>
+<p>推荐学习网站：https://swiftgg.gitbook.io/swift/</p>
+</li>
+<li>
+<p>如果你想开始学习开发App，推荐使用b站（Youtube）搜索CS193p开始学习。</p>
+<p><a href="https://www.bilibili.com/video/BV19N411Z7Qx?from=search&amp;seid=12181501869049735587&amp;spm_id_from=333.337.0.0">b站CS193p</a></p>
+<p><a href="https://www.youtube.com/watch?v=bqu6BquVi2M&amp;list=PLpGHT1n4-mAsxuRxVPv7kj4-dQYoC3VVu&amp;ab_channel=Stanford"> YouTube CS193p</a></p>
+</li>
+<li>
+<p>THU iOS Club的教程仓库：https://thu-ios.github.io/tutorials</p>
+</li>
+<li>
+<p>本次为大家准备了作业在：<a href="https://thu-ios.github.io/tutorials/lecture/swift-hw.html#%E7%BB%9F%E8%AE%A1%E5%90%84%E4%B8%AA%E4%B8%93%E4%B8%9A%E7%9A%84%E4%BA%BA%E6%95%B0">Swift homework - Tutorial (thu-ios.github.io)</a></p>
+</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../lecture/git-demos.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../lecture/swift-hw.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../lecture/git-demos.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../lecture/swift-hw.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
