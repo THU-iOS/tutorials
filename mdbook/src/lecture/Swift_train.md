@@ -4,7 +4,6 @@
 >
 > 王可
 
-[TOC]
 
 ### 简单介绍
 
@@ -229,7 +228,7 @@ print("\(THU.name) + \(THU.address) + \(THU.QSRanking)")
 
 ### 授人以渔
 
-- 推荐学习网站：https://swiftgg.gitbook.io/swift/
+- 推荐学习网站：[中文版教程](https://swiftgg.gitbook.io/swift/)
 
 - 如果你想开始学习开发App，推荐使用b站（Youtube）搜索CS193p开始学习。
 
@@ -237,6 +236,6 @@ print("\(THU.name) + \(THU.address) + \(THU.QSRanking)")
 
   [ YouTube CS193p](https://www.youtube.com/watch?v=bqu6BquVi2M&list=PLpGHT1n4-mAsxuRxVPv7kj4-dQYoC3VVu&ab_channel=Stanford)
 
-- THU iOS Club的教程仓库：https://thu-ios.github.io/tutorials
+- THU iOS Club的教程仓库：[Tutorial](https://thu-ios.github.io/tutorials)
 
-- 本次为大家准备了作业在：[Swift homework - Tutorial (thu-ios.github.io)](https://thu-ios.github.io/tutorials/lecture/swift-hw.html#统计各个专业的人数)
+- 本次为大家准备了作业在：[Swift homework - Tutorial (thu-ios.github.io)](
