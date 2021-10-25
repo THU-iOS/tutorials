@@ -1,19 +1,34 @@
-## Swift教学
+# Swift教学
 
 > 2021.10.17
 >
 > 王可
 
+- [Swift教学](#swift教学)
+  - [简单介绍](#简单介绍)
+  - [基础](#基础)
+    - [常量与变量、强类型、类型推断](#常量与变量强类型类型推断)
+    - [可选类型](#可选类型)
+    - [元组(tuples)](#元组tuples)
+    - [区间运算符](#区间运算符)
+      - [闭区间](#闭区间)
+      - [半开区间](#半开区间)
+    - [集合类型](#集合类型)
+  - [函数与闭包](#函数与闭包)
+    - [函数](#函数)
+    - [闭包](#闭包)
+  - [类和结构体](#类和结构体)
+  - [授人以渔](#授人以渔)
 
-### 简单介绍
+## 简单介绍
 
-- 苹果公司于2014年在[苹果开发者年会](https://zh.wikipedia.org/wiki/WWDC)（WWDC）发布了Swift编程语言。经过7年的发展，swift日趋成熟，同时作为苹果目前主推的编程语言（之前是Object-C），官方和社区提供的库也十分丰富。
+- 苹果公司于2014年在[苹果开发者年会](https://zh.wikipedia.org/wiki/WWDC)（WWDC）发布了Swift编程语言。经过7年的发展，Swift日趋成熟，同时作为苹果目前主推的编程语言（之前是Object-C），官方和社区提供的库也十分丰富。
 
-- swift兼具了许多现代编程语言的优点，容易编写且易于阅读和维护，学习起来很容易上手。
+- Swift兼具了许多现代编程语言的优点，容易编写且易于阅读和维护，学习起来很容易上手。
 
-### 基础
+## 基础
 
-#### 常量与变量、强类型、类型推断
+### 常量与变量、强类型、类型推断
 
 ```var```和```let```
 
@@ -24,7 +39,7 @@ var b = 4 //编译器会自动推断为Int类型
 b = 4.5 //如果强行赋值Double\Float类型会报错
 ```
 
-#### 可选类型
+### 可选类型
 
 ```swift
 var x = "321"
@@ -33,7 +48,7 @@ print(y)
 print(y!)
 ```
 
-#### 元组(tuples)
+### 元组(tuples)
 
 ```swift
 let tuple = ("hello", "world",2021)
@@ -44,9 +59,9 @@ let (string1, string2, int1) = tuple
 print("\(string1) \(string2) \(int1)")
 ```
 
-#### 区间运算符
+### 区间运算符
 
-##### 闭区间
+#### 闭区间
 
 ```swift
 for i in 1...5 {
@@ -54,7 +69,7 @@ for i in 1...5 {
 }
 ```
 
-##### 半开区间
+#### 半开区间
 
 ```swift
 for i in 1..<5 {
@@ -62,7 +77,7 @@ for i in 1..<5 {
 }
 ```
 
-#### 集合类型
+### 集合类型
 
 - 数组
 
@@ -110,9 +125,9 @@ for i in 1..<5 {
   }
   ```
 
-### 函数与闭包
+## 函数与闭包
 
-#### 函数
+### 函数
 
 ```swift
 func greet(person: String) -> String {
@@ -122,7 +137,7 @@ func greet(person: String) -> String {
 print(greet(person: "Swift"))
 ```
 
-```swift```函数又一个很符合自然语言的特性，变量在函数内和函数外可以有两个名字，这比较符合英语介词的使用习惯。
+```Swift```函数又一个很符合自然语言的特性，变量在函数内和函数外可以有两个名字，这比较符合英语介词的使用习惯。
 
 ```swift
 func greet(with person: String) -> String {
@@ -146,7 +161,7 @@ print("\(f),\(l)")
 
 ```
 
-#### 闭包
+### 闭包
 
 ```闭包```是自包含的函数代码块，可以在代码中被传递和使用。Swift 中的闭包与 C 和 Objective-C 中的代码块（blocks）以及其他一些编程语言中的匿名函数（Lambdas）比较相似。
 
@@ -162,7 +177,7 @@ for i in sortedNumber {
 
 属于非初级的内容，有兴趣可以深入研究。
 
-### 类和结构体
+## 类和结构体
 
 类和结构体有许多相同之处，比如都定义属性、方法和协议等，它们的主要区别在于类有继承和引用计数等。
 
@@ -198,7 +213,6 @@ var queen = Student(name: "Queen", sex: "Woman")
 
 print("\(joker.name) + \(joker.sex) + \(joker.getID())")
 print("\(queen.name) + \(queen.sex) + \(queen.getID())")
- 
 ```
 
 ```swift
@@ -217,8 +231,6 @@ class University: School {
         self.QSRanking = QSRanking
         super.init(name: name, address: address)
     }
-    
-    
 }
 
 var THU = University(name: "Tsinghua", address: "Beijing Haidian", QSRanking: 17)
@@ -226,7 +238,7 @@ var THU = University(name: "Tsinghua", address: "Beijing Haidian", QSRanking: 17
 print("\(THU.name) + \(THU.address) + \(THU.QSRanking)")
 ```
 
-### 授人以渔
+## 授人以渔
 
 - 推荐学习网站：[中文版教程](https://swiftgg.gitbook.io/swift/)
 
