@@ -1485,35 +1485,64 @@ Date:   Fri May 21 18:30:57 2021 +0800
 <p>同上述<code>在sayHello分支上写代码</code>的内容，之后也是回到<code>main分支</code>进行合并</p>
 <h2><a class="header" href="#向github上的开源项目提交代码" id="向github上的开源项目提交代码">向GitHub上的开源项目提交代码</a></h2>
 <p>TODO</p>
-<h2><a class="header" href="#swift教学" id="swift教学">Swift教学</a></h2>
+<h1><a class="header" href="#swift教学" id="swift教学">Swift教学</a></h1>
 <blockquote>
 <p>2021.10.17</p>
 <p>王可</p>
 </blockquote>
-<h3><a class="header" href="#简单介绍" id="简单介绍">简单介绍</a></h3>
 <ul>
-<li>
-<p>苹果公司于2014年在<a href="https://zh.wikipedia.org/wiki/WWDC">苹果开发者年会</a>（WWDC）发布了Swift编程语言。经过7年的发展，swift日趋成熟，同时作为苹果目前主推的编程语言（之前是Object-C），官方和社区提供的库也十分丰富。</p>
+<li><a href="lecture/Swift_train.html#swift%E6%95%99%E5%AD%A6">Swift教学</a>
+<ul>
+<li><a href="lecture/Swift_train.html#%E7%AE%80%E5%8D%95%E4%BB%8B%E7%BB%8D">简单介绍</a></li>
+<li><a href="lecture/Swift_train.html#%E5%9F%BA%E7%A1%80">基础</a>
+<ul>
+<li><a href="lecture/Swift_train.html#%E5%B8%B8%E9%87%8F%E4%B8%8E%E5%8F%98%E9%87%8F%E5%BC%BA%E7%B1%BB%E5%9E%8B%E7%B1%BB%E5%9E%8B%E6%8E%A8%E6%96%AD">常量与变量、强类型、类型推断</a></li>
+<li><a href="lecture/Swift_train.html#%E5%8F%AF%E9%80%89%E7%B1%BB%E5%9E%8B">可选类型</a></li>
+<li><a href="lecture/Swift_train.html#%E5%85%83%E7%BB%84tuples">元组(tuples)</a></li>
+<li><a href="lecture/Swift_train.html#%E5%8C%BA%E9%97%B4%E8%BF%90%E7%AE%97%E7%AC%A6">区间运算符</a>
+<ul>
+<li><a href="lecture/Swift_train.html#%E9%97%AD%E5%8C%BA%E9%97%B4">闭区间</a></li>
+<li><a href="lecture/Swift_train.html#%E5%8D%8A%E5%BC%80%E5%8C%BA%E9%97%B4">半开区间</a></li>
+</ul>
 </li>
-<li>
-<p>swift兼具了许多现代编程语言的优点，容易编写且易于阅读和维护，学习起来很容易上手。</p>
+<li><a href="lecture/Swift_train.html#%E9%9B%86%E5%90%88%E7%B1%BB%E5%9E%8B">集合类型</a></li>
+</ul>
+</li>
+<li><a href="lecture/Swift_train.html#%E5%87%BD%E6%95%B0%E4%B8%8E%E9%97%AD%E5%8C%85">函数与闭包</a>
+<ul>
+<li><a href="lecture/Swift_train.html#%E5%87%BD%E6%95%B0">函数</a></li>
+<li><a href="lecture/Swift_train.html#%E9%97%AD%E5%8C%85">闭包</a></li>
+</ul>
+</li>
+<li><a href="lecture/Swift_train.html#%E7%B1%BB%E5%92%8C%E7%BB%93%E6%9E%84%E4%BD%93">类和结构体</a></li>
+<li><a href="lecture/Swift_train.html#%E6%8E%88%E4%BA%BA%E4%BB%A5%E6%B8%94">授人以渔</a></li>
+</ul>
 </li>
 </ul>
-<h3><a class="header" href="#基础" id="基础">基础</a></h3>
-<h4><a class="header" href="#常量与变量强类型类型推断" id="常量与变量强类型类型推断">常量与变量、强类型、类型推断</a></h4>
+<h2><a class="header" href="#简单介绍" id="简单介绍">简单介绍</a></h2>
+<ul>
+<li>
+<p>苹果公司于2014年在<a href="https://zh.wikipedia.org/wiki/WWDC">苹果开发者年会</a>（WWDC）发布了Swift编程语言。经过7年的发展，Swift日趋成熟，同时作为苹果目前主推的编程语言（之前是Object-C），官方和社区提供的库也十分丰富。</p>
+</li>
+<li>
+<p>Swift兼具了许多现代编程语言的优点，容易编写且易于阅读和维护，学习起来很容易上手。</p>
+</li>
+</ul>
+<h2><a class="header" href="#基础" id="基础">基础</a></h2>
+<h3><a class="header" href="#常量与变量强类型类型推断" id="常量与变量强类型类型推断">常量与变量、强类型、类型推断</a></h3>
 <p><code>var</code>和<code>let</code></p>
 <pre><code class="language-swift">let a = 1
 a = 5
 var b = 4 //编译器会自动推断为Int类型
 b = 4.5 //如果强行赋值Double\Float类型会报错
 </code></pre>
-<h4><a class="header" href="#可选类型" id="可选类型">可选类型</a></h4>
+<h3><a class="header" href="#可选类型" id="可选类型">可选类型</a></h3>
 <pre><code class="language-swift">var x = &quot;321&quot;
 let y = Int(x)
 print(y)
 print(y!)
 </code></pre>
-<h4><a class="header" href="#元组tuples" id="元组tuples">元组(tuples)</a></h4>
+<h3><a class="header" href="#元组tuples" id="元组tuples">元组(tuples)</a></h3>
 <pre><code class="language-swift">let tuple = (&quot;hello&quot;, &quot;world&quot;,2021)
 print(tuple.1)
 print(tuple.2)
@@ -1521,18 +1550,18 @@ print(tuple.3)
 let (string1, string2, int1) = tuple
 print(&quot;\(string1) \(string2) \(int1)&quot;)
 </code></pre>
-<h4><a class="header" href="#区间运算符" id="区间运算符">区间运算符</a></h4>
-<h5><a class="header" href="#闭区间" id="闭区间">闭区间</a></h5>
+<h3><a class="header" href="#区间运算符" id="区间运算符">区间运算符</a></h3>
+<h4><a class="header" href="#闭区间" id="闭区间">闭区间</a></h4>
 <pre><code class="language-swift">for i in 1...5 {
   print(i)
 }
 </code></pre>
-<h5><a class="header" href="#半开区间" id="半开区间">半开区间</a></h5>
+<h4><a class="header" href="#半开区间" id="半开区间">半开区间</a></h4>
 <pre><code class="language-swift">for i in 1..&lt;5 {
   print(i)
 }
 </code></pre>
-<h4><a class="header" href="#集合类型" id="集合类型">集合类型</a></h4>
+<h3><a class="header" href="#集合类型" id="集合类型">集合类型</a></h3>
 <ul>
 <li>
 <p>数组</p>
@@ -1581,15 +1610,15 @@ for (int,str) in int2str {
 </code></pre>
 </li>
 </ul>
-<h3><a class="header" href="#函数与闭包" id="函数与闭包">函数与闭包</a></h3>
-<h4><a class="header" href="#函数" id="函数">函数</a></h4>
+<h2><a class="header" href="#函数与闭包" id="函数与闭包">函数与闭包</a></h2>
+<h3><a class="header" href="#函数" id="函数">函数</a></h3>
 <pre><code class="language-swift">func greet(person: String) -&gt; String {
   return &quot;Hello &quot; + person + &quot;!&quot;
 }
 
 print(greet(person: &quot;Swift&quot;))
 </code></pre>
-<p><code>swift</code>函数又一个很符合自然语言的特性，变量在函数内和函数外可以有两个名字，这比较符合英语介词的使用习惯。</p>
+<p><code>Swift</code>函数又一个很符合自然语言的特性，变量在函数内和函数外可以有两个名字，这比较符合英语介词的使用习惯。</p>
 <pre><code class="language-swift">func greet(with person: String) -&gt; String {
   return &quot;Hello &quot; + person + &quot;!&quot;
 }
@@ -1607,7 +1636,7 @@ let (f, l) = firstLast(of: a)
 print(&quot;\(f),\(l)&quot;)
 
 </code></pre>
-<h4><a class="header" href="#闭包" id="闭包">闭包</a></h4>
+<h3><a class="header" href="#闭包" id="闭包">闭包</a></h3>
 <p><code>闭包</code>是自包含的函数代码块，可以在代码中被传递和使用。Swift 中的闭包与 C 和 Objective-C 中的代码块（blocks）以及其他一些编程语言中的匿名函数（Lambdas）比较相似。</p>
 <pre><code class="language-swift">var numbers = [2,1,4,3]
 
@@ -1618,7 +1647,7 @@ for i in sortedNumber {
 }
 </code></pre>
 <p>属于非初级的内容，有兴趣可以深入研究。</p>
-<h3><a class="header" href="#类和结构体" id="类和结构体">类和结构体</a></h3>
+<h2><a class="header" href="#类和结构体" id="类和结构体">类和结构体</a></h2>
 <p>类和结构体有许多相同之处，比如都定义属性、方法和协议等，它们的主要区别在于类有继承和引用计数等。</p>
 <pre><code class="language-swift">struct Student {
     public var name: String
@@ -1651,7 +1680,6 @@ var queen = Student(name: &quot;Queen&quot;, sex: &quot;Woman&quot;)
 
 print(&quot;\(joker.name) + \(joker.sex) + \(joker.getID())&quot;)
 print(&quot;\(queen.name) + \(queen.sex) + \(queen.getID())&quot;)
- 
 </code></pre>
 <pre><code class="language-swift">class School {
     var name: String
@@ -1668,15 +1696,13 @@ class University: School {
         self.QSRanking = QSRanking
         super.init(name: name, address: address)
     }
-    
-    
 }
 
 var THU = University(name: &quot;Tsinghua&quot;, address: &quot;Beijing Haidian&quot;, QSRanking: 17)
 
 print(&quot;\(THU.name) + \(THU.address) + \(THU.QSRanking)&quot;)
 </code></pre>
-<h3><a class="header" href="#授人以渔" id="授人以渔">授人以渔</a></h3>
+<h2><a class="header" href="#授人以渔" id="授人以渔">授人以渔</a></h2>
 <ul>
 <li>
 <p>推荐学习网站：<a href="https://swiftgg.gitbook.io/swift/">中文版教程</a></p>
@@ -1695,13 +1721,15 @@ print(&quot;\(THU.name) + \(THU.address) + \(THU.QSRanking)&quot;)
 </ul>
 <h1><a class="header" href="#swift教学课后作业" id="swift教学课后作业">Swift教学课后作业</a></h1>
 <blockquote>
-<p>2021.10.17</p>
-<p>作业：<a href="https://github.com/Yang-Xijie">杨希杰</a></p>
+<p>2021.10.17 添加作业内容</p>
+<p>2021.10.25 更新作业答案</p>
+<p>作业：<a href="https://github.com/Yang-Xijie">杨希杰</a>
+<a href="lecture/./Swift_train.html">讲稿</a></p>
 </blockquote>
 <ul>
 <li><a href="lecture/swift-hw.html#swift%E6%95%99%E5%AD%A6%E8%AF%BE%E5%90%8E%E4%BD%9C%E4%B8%9A">Swift教学课后作业</a>
 <ul>
-<li><a href="lecture/swift-hw.html#%E4%BD%9C%E4%B8%9A%E6%8F%90%E4%BA%A4%E6%96%B9%E5%BC%8F">作业提交方式</a></li>
+<li><a href="lecture/swift-hw.html#introduction">Introduction</a></li>
 <li><a href="lecture/swift-hw.html#%E5%9F%BA%E7%A1%80">基础</a>
 <ul>
 <li><a href="lecture/swift-hw.html#%E6%9F%A5%E6%96%87%E6%A1%A3">查文档</a></li>
@@ -1720,12 +1748,31 @@ print(&quot;\(THU.name) + \(THU.address) + \(THU.QSRanking)&quot;)
 <li><a href="lecture/swift-hw.html#%E5%85%B6%E4%BB%96">其他</a></li>
 </ul>
 </li>
+<li><a href="lecture/swift-hw.html#%E7%AD%94%E6%A1%88">答案</a>
+<ul>
+<li><a href="lecture/swift-hw.html#%E5%9F%BA%E7%A1%80-1">基础</a>
+<ul>
+<li><a href="lecture/swift-hw.html#%E6%9F%A5%E6%96%87%E6%A1%A3-1">查文档</a></li>
+<li><a href="lecture/swift-hw.html#%E5%BC%BA%E7%B1%BB%E5%9E%8B-1">强类型</a></li>
+<li><a href="lecture/swift-hw.html#%E5%8F%AF%E9%80%89%E7%B1%BB%E5%9E%8B-1">可选类型</a></li>
+<li><a href="lecture/swift-hw.html#%E5%87%BD%E6%95%B0-1">函数</a></li>
+<li><a href="lecture/swift-hw.html#%E7%BB%9F%E8%AE%A1%E5%90%84%E4%B8%AA%E4%B8%93%E4%B8%9A%E7%9A%84%E4%BA%BA%E6%95%B0-1">统计各个专业的人数</a></li>
 </ul>
-<h2><a class="header" href="#作业提交方式" id="作业提交方式">作业提交方式</a></h2>
+</li>
+<li><a href="lecture/swift-hw.html#%E8%BF%9B%E9%98%B6-1">进阶</a>
+<ul>
+<li><a href="lecture/swift-hw.html#error-handling-1">Error Handling</a></li>
+<li><a href="lecture/swift-hw.html#log-1">Log()</a></li>
+</ul>
+</li>
+<li><a href="lecture/swift-hw.html#%E5%85%B6%E4%BB%96-1">其他</a></li>
+</ul>
+</li>
+</ul>
+<h2><a class="header" href="#introduction" id="introduction">Introduction</a></h2>
 <ul>
 <li>基础部分为基本要求，进阶部分可自选；题目前有<code>Optional</code>也是选做。</li>
 <li>复制下面对应部分的作业，在括号或空白处中<strong>填空</strong>。</li>
-<li>提交作业需要将填好空的所有文本（包括题目）以<strong>邮件正文</strong>的形式发送到<code>564197835@qq.com</code>，邮件标题为<code>Swift作业 &lt;姓名&gt; &lt;学号&gt;</code>。</li>
 </ul>
 <h2><a class="header" href="#基础-1" id="基础-1">基础</a></h2>
 <h3><a class="header" href="#查文档" id="查文档">查文档</a></h3>
@@ -1747,7 +1794,7 @@ b = 4.5
 <p>C. <code>if let b = a { ... } else { let b = 0  ... }</code></p>
 <p>D. <code>if a != nil { b = a!  ... } else { b = 0  ... }</code></p>
 <h3><a class="header" href="#函数-1" id="函数-1">函数</a></h3>
-<p>〇 一个函数可以通过（）返回多个参数。</p>
+<p>〇 一个函数可以通过（）返回多个值。</p>
 <p>〇 编写程序，计算10的阶乘并输出结果。要求：使用<code>...</code>运算符。【循环 区间生成运算符】
 （</p>
 <p>）</p>
@@ -1914,6 +1961,248 @@ MyPrint() // 36
 <p>〇 <code>Swift</code>有一个非常好用的格式化工具<a href="https://github.com/nicklockwood/SwiftFormat">GitHub | SwiftFormat</a>，阅读其README说明，在自己的Xcode中添加该格式化工具并尝试使用。你在你的<code>Mac</code>上安装了吗？（）（安装了/还没/下次一定）。</p>
 <p>〇 （Optional）<code>Swift</code>目前的最新版本是<code>5.5</code>，这一个版本引入的一个重要更新是Concurrency WWDC链接<a href="https://developer.apple.com/wwdc21/10132">WWDC21 | Meet async/await in Swift</a>，感兴趣的同学可以自行查看。</p>
 <p>〇 （Optional）如果你还没有学习过Git，可以花时间掌握一下这个合作开发的必备工具。社团往期培训课程传送门 <a href="https://www.bilibili.com/video/BV1eh411v7gt">Git基础与进阶</a></p>
+<h1><a class="header" href="#答案" id="答案">答案</a></h1>
+<h2><a class="header" href="#基础-2" id="基础-2">基础</a></h2>
+<h3><a class="header" href="#查文档-1" id="查文档-1">查文档</a></h3>
+<p>〇 Swift官网的网址是（<a href="https://swift.org">https://swift.org</a>）。我们一般会在官网上查找Swift的文档，即Language Guide，网址为（<a href="https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html">https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html</a>）。</p>
+<p>〇 在Xcode中打开开发者文档的方法是：在菜单栏（<code>Window</code>）中点击（<code>Developer Documentation</code>），或使用快捷键（<code>shift cmd 0</code>）。</p>
+<h3><a class="header" href="#强类型-1" id="强类型-1">强类型</a></h3>
+<p>观察下面的代码：（提示：观察不出来可以实际运行）</p>
+<pre><code class="language-swift">let a = 1
+a = 5
+var b = 4
+b = 4.5
+</code></pre>
+<p>〇 代码第二行报错的原因是（<code>a是一个常量无法更改</code>）。</p>
+<p>〇 代码第四行报错的原因是（<code>由类型推断机制，b的类型为Int，无法将小数4.5赋值给b</code>）。</p>
+<h3><a class="header" href="#可选类型-2" id="可选类型-2">可选类型</a></h3>
+<p>〇 如果变量<code>a</code>是一个可选类型，我们可以通过方式（<code>BCD</code>）实现：如果其不为空，则取出真实值赋给<code>b</code>；若其为空，则令<code>b</code>为<code>0</code>：</p>
+<p>A. <code>let b = a!</code></p>
+<p>B. <code>let b = (a != nil) ? a : 0</code></p>
+<p>C. <code>if let b = a { ... } else { let b = 0  ... }</code></p>
+<p>D. <code>if a != nil { b = a!  ... } else { b = 0  ... }</code></p>
+<h3><a class="header" href="#函数-2" id="函数-2">函数</a></h3>
+<p>〇 一个函数可以通过（<code>元组</code>）返回多个值。</p>
+<p>〇 编写程序，计算10的阶乘并输出结果。要求：使用<code>...</code>运算符。提示：循环 区间生成运算符
+（</p>
+<pre><code class="language-swift">var result: Int = 1
+for i in 2 ... 10 {
+    result *= i
+}
+
+print(result)
+</code></pre>
+<p>）</p>
+<p>〇 回顾函数闭包的相关知识，补全下列代码：</p>
+<pre><code class="language-swift">let fruits: [String] = [&quot;apple&quot;, &quot;orange&quot;, &quot;pear&quot;, &quot;pineapple&quot;]
+// 希望打印出 [&quot;pineapple&quot;, &quot;orange&quot;, &quot;apple&quot;, &quot;pear&quot;]
+// 即Array中的所有字符串按照长度从大到小排序
+
+// TODO
+</code></pre>
+<p>提示：</p>
+<p>阅读函数<code>sorted(by:)</code>的<a href="https://developer.apple.com/documentation/swift/sequence/2907222-sorted">文档</a>（<code>func sorted(by areInIncreasingOrder: (Self.Element, Self.Element) -&gt; Bool) -&gt; [Self.Element]</code>）</p>
+<p>如果你想直接在大括号中写函数的话，<code>$0</code>和<code>$1</code>可以分别指代第1个和第2个参数。</p>
+<p>答案：</p>
+<pre><code class="language-swift">print(fruits.sorted(by: { $0.count &gt; $1.count }))
+</code></pre>
+<p>或</p>
+<pre><code class="language-swift">func longer(a: String, b: String) -&gt; Bool {
+    return a.count &gt; b.count
+}
+
+print(fruits.sorted(by: longer))
+</code></pre>
+<h3><a class="header" href="#统计各个专业的人数-1" id="统计各个专业的人数-1">统计各个专业的人数</a></h3>
+<pre><code class="language-swift">import Foundation
+
+enum Major {
+    case A
+    case B
+    case C
+    case D
+}
+
+struct Student {
+    var name: String
+    var major: Major
+}
+
+let studentList: [Student] = [
+    Student(name: &quot;Alice&quot;, major: .A),
+    Student(name: &quot;Bob&quot;, major: .B),
+    Student(name: &quot;Carl&quot;, major: .C),
+    Student(name: &quot;David&quot;, major: .D),
+    Student(name: &quot;Eric&quot;, major: .A),
+    Student(name: &quot;Fred&quot;, major: .D),
+    Student(name: &quot;Gavin&quot;, major: .C),
+    Student(name: &quot;Henry&quot;, major: .D),
+    Student(name: &quot;Ivy&quot;, major: .B),
+    Student(name: &quot;Janet&quot;, major: .D),
+    Student(name: &quot;Kathy&quot;, major: .A)
+]
+
+// 题目：
+// 统计studentList中各个专业的同学名字和总数目，并按照你倾向的方式打印。
+
+// TODO
+</code></pre>
+<p>一种解答：</p>
+<pre><code class="language-swift">var studentDict: [Major: [Student]] = [Major.A: [], Major.B: [], Major.C: [], Major.D: []]
+
+for student in studentList {
+    switch student.major {
+    case .A:
+        studentDict[.A]!.append(student)
+    case .B:
+        studentDict[.B]!.append(student)
+    case .C:
+        studentDict[.C]!.append(student)
+    case .D:
+        studentDict[.D]!.append(student)
+    }
+}
+
+for major in [Major.A, Major.B, Major.C, Major.D] {
+    let students = studentDict[major]!
+    let studentNames = students.map { $0.name }
+    print(&quot;\(major)(\(students.count)): \(studentNames.joined(separator: &quot;, &quot;))&quot;)
+}
+</code></pre>
+<h2><a class="header" href="#进阶-1" id="进阶-1">进阶</a></h2>
+<h3><a class="header" href="#error-handling-1" id="error-handling-1">Error Handling</a></h3>
+<p>执行如下程序，结果为（</p>
+<pre><code>File &quot;my homework&quot; was successfully printed! (paper: 3, ink: 79.6%)
+outOfPaper
+</code></pre>
+<p>）（共两行），简要解释输出结果：（<code>作业打印之后打印机的纸张不足以打印报告，因此抛出错误 outOfPaper</code>）。</p>
+<pre><code class="language-swift">import Foundation
+
+struct Printer {
+    var paper: Int // 0 - 400
+    var ink: Float // 0 - 100 percentage
+    let inkPerPage: Float = 0.1
+
+    enum error: Error {
+        case outOfPaper
+        case noInk
+    }
+}
+
+struct File {
+    var name: String
+    var page: Int
+}
+
+func printFile(_ file: File, with printer: inout Printer) throws {
+    if printer.paper &lt;= file.page {
+        throw Printer.error.outOfPaper
+    } else if printer.ink &lt;= Float(file.page) * printer.inkPerPage {
+        throw Printer.error.noInk
+    } else {
+        printer.paper -= file.page
+        printer.ink -= Float(file.page) * printer.inkPerPage
+        print(&quot;File \&quot;\(file.name)\&quot; was successfully printed! (paper: \(printer.paper), ink: \(String(format: &quot;%2.1f&quot;, printer.ink))%)&quot;)
+    }
+}
+
+var myHomework = File(name: &quot;my homework&quot;, page: 4)
+var myReport = File(name: &quot;my report&quot;, page: 5)
+var myPrinter = Printer(paper: 7, ink: 80)
+do {
+    try printFile(myHomework, with: &amp;myPrinter)
+    try printFile(myReport, with: &amp;myPrinter)
+} catch {
+    print(error)
+}
+</code></pre>
+<h3><a class="header" href="#log-1" id="log-1">Log()</a></h3>
+<p>新建<code>Project - macOS - Command Line Tool</code>，复制运行如下代码：</p>
+<pre><code class="language-swift">import Foundation // 1
+
+struct Log: CustomStringConvertible { // 3
+    public var time: String // 4
+    public var log: String // 5
+
+    init(filePath: String = #file, line: Int = #line, column: Int = #column, funcName: String = #function) { // 7
+        let fileName = (filePath as NSString).lastPathComponent // 8
+
+        let formatter = DateFormatter() // 10
+        formatter.dateStyle = .none // 11
+        formatter.timeStyle = .medium // 12
+        time = formatter.string(from: Date()) // 13
+
+        log = &quot;\(fileName)(\(line),\(column)) \(funcName)&quot; // 15
+    }
+
+    public var description: String { // 18
+        return &quot;[\(time) \(log)]\n\t&quot; // 19
+    }
+
+    public var string: String { // 22
+        description // 23
+    } // 24
+
+    public var error: String { // 26
+        &quot;[ERROR] &quot; + description // 27
+    }
+}
+
+func MyPrint() { // 31
+    print(Log().string + &quot;Hello, world!&quot;) // 32
+    print(Log().error + &quot;Bye, world.&quot;) // 33
+}
+
+MyPrint() // 36
+
+// Literal        Type     Value
+//
+// #file          String   The name of the file in which it appears.
+// #line          Int      The line number on which it appears.
+// #column        Int      The column number in which it begins.
+// #function      String   The name of the declaration in which it appears.
+</code></pre>
+<p>〇 该程序的运行结果是（</p>
+<pre><code>[23:51:18 main.swift(32,14) MyPrint()]
+	Hello, world!
+[ERROR] [23:51:18 main.swift(33,14) MyPrint()]
+	Bye, world.
+Program ended with exit code: 0
+</code></pre>
+<p>）。</p>
+<p>〇 第3行新建了一个结构体名为Log，后面冒号跟着的<code>CustomStringConvertible</code>是（<code>协议</code>），在结构体内部的变量（<code>description</code>）完成了<code>CustomStringConvertible</code>。</p>
+<p>〇 （Optional）可以去掉第4行的<code>public</code>关键字吗？（可以。这里加上<code>public</code>是为了使得变量属性更加明确。）</p>
+<p>〇 第7行中，<code>filePath: String = #file</code>中<code>filePath</code>是参数名称，冒号后面的<code>String</code>是这个参数的（<code>类型</code>），<code>=</code>后面跟的是这个参数的（<code>默认值</code>）。</p>
+<p>〇 （Optional）第8行中，<code>(filePath as NSString)</code>是在做（<code>类型转换</code>）。</p>
+<p>〇 第12行中出现了<code>.medium</code>，它们是（<code>枚举值</code>）的一种。</p>
+<p>〇（Optional）第12行如果要补全<code>.</code>前面的内容可以添加（<code>DateFormatter.Style</code>）。提示：查看<code>.medium</code>的文档。</p>
+<p>〇 第13行中的<code>formatter.string(from: )</code>，这里<code>string</code>是一个（<code>函数</code>），看到<code>from</code>这一个介词可以推测<code>from</code>是参数的（<code>外部名称</code>）。</p>
+<p>〇 第19行的<code>\n</code>和<code>\t</code>是（<code>转义</code>）字符。</p>
+<p>〇 第22行定义了变量string，我们将其称作（计算属性）。将22 23 24这三行代码补充完整：（</p>
+<pre><code class="language-swift">public var string: String {
+    get {
+        return description
+    }
+}
+</code></pre>
+<p>）。</p>
+<p>〇 第32行的<code>Log()</code>（<code>新建</code>）了一个结构体实例。</p>
+<p>〇 第32行的<code>+</code>表示（<code>字符串拼接</code>）。</p>
+<p>〇 第36行调用了函数<code>MyPrint</code>，该函数有（<code>0</code>）个参数，（<code>0</code>）个返回值。</p>
+<p>〇 （Optional）尝试如下步骤在<code>Xcode</code>中添加<code>code snippet</code>：</p>
+<p>To create a <code>code snippet</code>:</p>
+<ol>
+<li>Select: print(Log().string + &quot;&lt;\hashinfo\hash&gt;&quot;)</li>
+<li>Go to <code>Xcode -&gt; Editor -&gt; Create Code Snippet</code>.</li>
+<li>Change <code>\hash</code> to <code>#</code>.</li>
+<li>Set title as <code>Log()</code> and <code>completion</code> as <code>print</code>.</li>
+</ol>
+<p>Try typing <code>print</code> and select the code snippet.</p>
+<h2><a class="header" href="#其他-2" id="其他-2">其他</a></h2>
+<p>〇 （Optional）如果我们想导入并使用一个开源的第三方<code>Swift Package</code>，需要点击<code>Xcode</code>菜单栏（<code>File -&gt; Swift Packages -&gt; Add Package Dependency...</code>）（写出层级关系），然后添加该<code>Swift Package</code>的地址。之后在需要用到该包的代码文件最开始写上<code>import</code>语句就可以了。</p>
+<p>〇 <code>Swift</code>有一个非常好用的格式化工具<a href="https://github.com/nicklockwood/SwiftFormat">GitHub | SwiftFormat</a>，阅读其README说明，在自己的Xcode中添加该格式化工具并尝试使用。你在你的<code>Mac</code>上安装了吗？（）（安装了/还没/下次一定）。</p>
+<p>〇 （Optional）<code>Swift</code>目前的最新版本是<code>5.5</code>，这一个版本引入的一个重要更新是Concurrency WWDC链接<a href="https://developer.apple.com/wwdc21/10132">WWDC21 | Meet async/await in Swift</a>，感兴趣的同学可以自行查看。</p>
+<p>〇 （Optional）如果你还没有学习过Git，可以花时间掌握一下这个合作开发的必备工具。社团往期培训课程传送门 <a href="https://www.bilibili.com/video/BV1eh411v7gt">Git基础与进阶</a></p>
 <h1><a class="header" href="#training-july-2021" id="training-july-2021">Training July, 2021</a></h1>
 <ul>
 <li><a href="traning21/Traning_2021_July.html#training-july-2021">Training July, 2021</a></li>
@@ -1925,7 +2214,7 @@ MyPrint() // 36
 </ul>
 </li>
 </ul>
-<h1><a class="header" href="#introduction" id="introduction">Introduction</a></h1>
+<h1><a class="header" href="#introduction-1" id="introduction-1">Introduction</a></h1>
 <p>在当今信息化时代，生活中的很多事情都已经可以用一款App来搞定。开发App，有很多需要涉及的内容：比如代码如何编写、用户界面如何设计、应用如何迭代更新、如何找到现在市场需要的应用……其中最重要的可能是各种设计，但最基础的还是<strong>编写代码</strong>。</p>
 <p>这个暑假，我们主要学习的是<code>Swift</code>和<code>SwiftUI</code>。苹果几年前推出了自己的编程语言<code>Swift</code>，使用这门全新的、现代的编程语言让我们的开发过程变得高效容易。苹果也推出了全新的声明式UI框架<code>SwiftUI</code>，让短短几行代码即可变成屏幕上的用户界面。</p>
 <p>这次暑培，主要是让大家熟练掌握<code>Swift</code>这门编程语言，使用<code>Swift</code>和<code>SwiftUI</code>来构建用户界面，为大家之后的实际参与开发打基础。在学习过程中，也希望大家能对App构建的过程、App设计的思路有一些简单的认识。</p>
@@ -2548,7 +2837,7 @@ Button(action: {}) {
 </li>
 </ul>
 <h2><a class="header" href="#graphql" id="graphql">GraphQL</a></h2>
-<h3><a class="header" href="#introduction-1" id="introduction-1">Introduction</a></h3>
+<h3><a class="header" href="#introduction-2" id="introduction-2">Introduction</a></h3>
 <p>一种前后端数据请求/交互的风格/标准/规范。是有着大公司做靠山、较新的查询语言规范，是一种基于图的查询语言。对比原有的REST请求风格，GraphQL能够让你每次都获取到不多不少的数据，结合社区的工具，几乎可以省掉后端的开发团队，让你的项目开发效率大大提升。</p>
 <blockquote>
 <p>GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data. GraphQL provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need and nothing more, makes it easier to evolve APIs over time, and enables powerful developer tools.</p>
